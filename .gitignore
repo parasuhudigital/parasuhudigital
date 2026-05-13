@@ -34,6 +34,6 @@ yarn-error.log*
 next-env.d.ts
 
 # tina cms
-/tina/tina-lock.json
 /public/admin
-# generated files committed so Vercel can build without TinaCloud credentials
+# tina-lock.json IS committed (required by TinaCloud for indexing)
+# /tina/__generated__/ IS committed (so Vercel can build without TinaCloud creds)

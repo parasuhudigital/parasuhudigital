@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "node scripts/build.mjs",
+    "build": "node --env-file-if-exists=.env.local scripts/build.mjs",
     "build:next-only": "next build",
     "start": "next start",
     "lint": "next lint",

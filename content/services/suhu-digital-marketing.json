@@ -1,0 +1,38 @@
+{
+  "name": "Suhu Digital Marketing",
+  "tagline": "Strategi digital end-to-end, satu meja.",
+  "icon": "Rocket",
+  "description": "Full-funnel strategy: awareness, leads, conversion, retention. Cocok buat bisnis yang mau scaling serius.",
+  "hero": {
+    "title": "Strategi full-funnel,",
+    "titleHighlight": "satu pintu, hasil maksimal.",
+    "subtitle": "Daripada nge-handle vendor terpisah untuk SEO, ads, content, dan socmed — kita jadi partner strategis lo yang ngerti semua layer marketing."
+  },
+  "features": [
+    "Marketing audit & strategy",
+    "Customer journey mapping",
+    "Full-funnel campaign execution",
+    "CRM & marketing automation setup",
+    "Brand positioning & messaging",
+    "Analytics & attribution modeling",
+    "Monthly strategic review",
+    "Dedicated account manager"
+  ],
+  "tiers": [
+    {
+      "name": "Growth",
+      "price": "Rp 35-75jt/bulan",
+      "for": "Bisnis yang mau scaling 2-5x dalam 12 bulan"
+    },
+    {
+      "name": "Scale",
+      "price": "Rp 100-200jt/bulan",
+      "for": "Brand established, mau go nasional"
+    },
+    {
+      "name": "Enterprise",
+      "price": "Custom",
+      "for": "Multi-brand, multi-region operations"
+    }
+  ]
+}

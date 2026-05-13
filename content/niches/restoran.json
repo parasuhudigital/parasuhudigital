@@ -1,0 +1,198 @@
+{
+  "name": "Restoran & F&B",
+  "icon": "UtensilsCrossed",
+  "metaTitle": "Jasa Digital Marketing Restoran & F&B — Resto, Cafe, Brand F&B | Para Suhu Digital",
+  "metaDescription": "Spesialis digital marketing untuk restoran, cafe, dan brand F&B. Hyper-local SEO, food content, multi-channel order funnel (direct + GoFood/Grab), reputation management.",
+  "hero": {
+    "eyebrow": "Industri Restoran & F&B",
+    "title": "Restoran lo butuh",
+    "titleHighlight": "kursi penuh tiap hari, bukan cuma weekend.",
+    "subtitle": "Bukan IG cantik tapi resto sepi customer. Kita bantu resto, kafe, brand F&B bangun arus customer lokal + delivery + brand awareness yang sustain."
+  },
+  "stats": [
+    {
+      "value": "3-5x",
+      "label": "Direct Order Growth"
+    },
+    {
+      "value": "4.8/5",
+      "label": "Google Rating Avg"
+    },
+    {
+      "value": "+35%",
+      "label": "Foot Traffic Outlet"
+    },
+    {
+      "value": "5.8x",
+      "label": "Avg ROAS"
+    }
+  ],
+  "painPoints": [
+    {
+      "title": "Lokal radius terbatas",
+      "description": "Customer dari 5-10km. Iklan ke audience nasional = budget kebakar tanpa hasil. Harus dominasi local awareness di radius operasional aja."
+    },
+    {
+      "title": "Kompetisi GoFood/GrabFood ketat",
+      "description": "Resto kompetitor kasih promo 50%, sulit kompetisi murni dari harga. Kalau 100% ngandelin platform, margin tipis & kena fee 20-30%."
+    },
+    {
+      "title": "Operasional sibuk, gak sempet kelola digital",
+      "description": "Owner fokus ke dapur & service, socmed terbengkalai. Posting cuma kalau inget, balas DM lambat, customer experience digital amburadul."
+    },
+    {
+      "title": "Visual content butuh produksi konsisten",
+      "description": "Menu baru, event, daily special — semua harus update content. Tanpa food photography reguler, IG/TikTok jadi gak menggoda audience."
+    },
+    {
+      "title": "Margin tipis, sensitif ke CAC",
+      "description": "Margin F&B 15-25%, tiap rupiah marketing harus drive direct order, bukan vanity metric. Kalau CAC > AOV margin, bisnis defisit walau order ramai."
+    },
+    {
+      "title": "Reputasi review (Google, Tripadvisor) crucial",
+      "description": "Satu review buruk bisa drop traffic 30-50% kalau sampai bikin rating turun di bawah 4.0. Tanpa ORM aktif, brand image rusak diam-diam."
+    }
+  ],
+  "approach": [
+    {
+      "title": "Hyper-local SEO domination",
+      "description": "Google Business Profile + Google Maps optimization + 'resto {area}' + 'delivery {area}'. Dominasi local search = customer datang langsung dari Google free."
+    },
+    {
+      "title": "Visual content engine",
+      "description": "Daily content menu, reels eating shot, customer testimoni, behind-the-scenes dapur. Konten yang triggering hunger sebelum prospek sempat skip."
+    },
+    {
+      "title": "Multi-channel order funnel",
+      "description": "Direct WhatsApp + GoFood + GrabFood + dine-in promo — semua tracked. Push customer ke direct order (margin lebih tebal) tapi tetep aktif di platform."
+    },
+    {
+      "title": "Reputation management aktif",
+      "description": "ORM Google Maps & Tripadvisor: respon review (positif & negatif), proactively dorong customer puas kasih review, monitor rating trend. Brand image dijaga konsisten."
+    }
+  ],
+  "relevantServices": [
+    {
+      "id": "suhu-website",
+      "angle": "Online menu + table reservation + direct delivery order. Bypass platform fee untuk customer loyal."
+    },
+    {
+      "id": "suhu-seo",
+      "angle": "Hyper-local: 'resto {area}', 'cafe {area}', 'delivery {kategori} {area}'. Google Business optimization full."
+    },
+    {
+      "id": "suhu-ads",
+      "angle": "Meta + Google Ads geofenced ke radius 5-10km operasional. Audience local food enthusiast + interest targeting."
+    },
+    {
+      "id": "suhu-socmed",
+      "angle": "Daily content menu, reels eating, behind-the-scenes dapur, customer feature. Brand voice yang relate sama target customer."
+    },
+    {
+      "id": "suhu-creative",
+      "angle": "Food photography profesional, video production menu, brand identity. Asset visual yang scalable di semua channel."
+    }
+  ],
+  "caseStudies": [
+    {
+      "title": "Restoran Chain F&B — Multi-outlet Jakarta",
+      "category": "Casual dining, 6 outlet",
+      "duration": "14 bulan engagement",
+      "services": [
+        "Suhu Socmed",
+        "Suhu SEO",
+        "Suhu Ads"
+      ],
+      "metrics": [
+        {
+          "label": "Direct order",
+          "value": "+4.6x"
+        },
+        {
+          "label": "Google rating",
+          "value": "4.2→4.8"
+        },
+        {
+          "label": "Traffic outlet",
+          "value": "+35%"
+        }
+      ],
+      "summary": "Hyper-local strategy per outlet + ORM aktif + content engine harian. Google rating naik signifikan, direct order jadi 60% (sebelumnya 20%) — fee platform turun drastis."
+    },
+    {
+      "title": "Cafe Specialty Coffee — Bandung",
+      "category": "Specialty coffee shop, single outlet",
+      "duration": "10 bulan engagement",
+      "services": [
+        "Suhu Socmed",
+        "Suhu Creative"
+      ],
+      "metrics": [
+        {
+          "label": "IG follower",
+          "value": "+42K"
+        },
+        {
+          "label": "Weekend status",
+          "value": "Full booked"
+        },
+        {
+          "label": "Brand collab",
+          "value": "8 deal"
+        }
+      ],
+      "summary": "Brand-building lewat aesthetic content + barista feature + collab dengan local creator. Weekend full booked sustained, 8 collab partnership masuk dari inbound inquiry."
+    },
+    {
+      "title": "F&B Brand Frozen Food — National",
+      "category": "D2C frozen food brand",
+      "duration": "8 bulan engagement",
+      "services": [
+        "Suhu Website",
+        "Suhu Ads"
+      ],
+      "metrics": [
+        {
+          "label": "D2C revenue",
+          "value": "Rp 850jt/bln"
+        },
+        {
+          "label": "Distributor signup",
+          "value": "+12 kota"
+        },
+        {
+          "label": "ROAS",
+          "value": "5.8x"
+        }
+      ],
+      "summary": "D2C website + Meta Ads dengan creative video cooking demo. Plus parallel acquisition distributor di 12 kota — channel B2B & B2C jalan paralel, revenue stream diversifikasi."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Bisa handle resto single outlet atau khusus multi-cabang?",
+      "a": "Cocok dua-duanya. Single outlet biasanya butuh hyper-local focus + content engine + ORM. Multi-cabang butuh strategy per-outlet (Google Business sendiri, geofenced ads, reporting per outlet) supaya tau cabang mana yang underperforming."
+    },
+    {
+      "q": "Cocok untuk resto premium, fast casual, atau warung lokal?",
+      "a": "Cocok semua tier, tapi strategy beda. Premium: brand storytelling + visual aesthetic + experience. Fast casual: efficiency + value + accessibility. Warung lokal: community + word-of-mouth + Google Maps domination. Strategy disesuaikan dengan positioning & budget."
+    },
+    {
+      "q": "Bagaimana strategi handle competition di GoFood/GrabFood?",
+      "a": "Kita gak adu promo 50% (suicide margin). Strategy: (1) Optimize listing & photo di platform supaya CTR tinggi, (2) Push customer loyal ke direct order via WA/website (no fee platform), (3) Build brand authority sehingga customer cari nama brand spesifik bukan kategori generic. Margin sehat dijaga."
+    },
+    {
+      "q": "Apakah handle food photography & video production?",
+      "a": "Iya. Tier Business+ include monthly food shoot di outlet lo (atau studio kalau frozen food). Tier Starter pakai existing asset + creative direction supaya hasil tetep professional."
+    },
+    {
+      "q": "Bagaimana cara handle review negatif & ORM Google Maps?",
+      "a": "Review negatif gak bisa dihapus, tapi response yang baik bisa mitigate impact. Kita kelola SOP balas review (max 24 jam), template per kategori complaint, dan proactive outreach ke customer puas untuk dorong review positif. Goal: rating overall 4.5+ stabil."
+    },
+    {
+      "q": "Berapa minimum ad spend untuk niche F&B lokal?",
+      "a": "Untuk single outlet di radius 5-10km, minimum Rp 5-8jt/bulan ad spend udah lumayan impactful (geofenced sempit, kompetisi local lebih murah dari nasional). Multi-outlet atau D2C brand butuh Rp 25-50jt/bulan tergantung scale. Management fee di luar ad spend."
+    }
+  ],
+  "whatsappMessage": "Halo Para Suhu, saya owner/manager resto atau brand F&B — interest sama jasa digital marketing F&B. Bisa diskusi?"
+}

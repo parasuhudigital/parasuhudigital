@@ -1,0 +1,38 @@
+{
+  "name": "Suhu Website",
+  "tagline": "Website yang bukan cuma cantik, tapi bikin closing.",
+  "icon": "Globe",
+  "description": "Landing page, company profile, e-commerce, dan custom web — dibangun cepat, performa kenceng, siap convert.",
+  "hero": {
+    "title": "Website yang bikin",
+    "titleHighlight": "bisnis lo closing.",
+    "subtitle": "Bukan website portfolio yang dipajang aja. Kita bangun website yang ngerti funnel, optimized untuk SEO, dan cepet banget pas dibuka."
+  },
+  "features": [
+    "Landing page conversion-optimized",
+    "Company profile premium",
+    "E-commerce (Shopify, WooCommerce, custom)",
+    "Custom web app",
+    "Mobile-first responsive",
+    "Performance 95+ PageSpeed",
+    "SEO-ready out of the box",
+    "Free maintenance 1 bulan post-launch"
+  ],
+  "tiers": [
+    {
+      "name": "Starter",
+      "price": "Rp 15-30jt",
+      "for": "Single landing page atau small site (1-5 halaman)"
+    },
+    {
+      "name": "Business",
+      "price": "Rp 35-75jt",
+      "for": "Company profile / e-commerce dengan custom design"
+    },
+    {
+      "name": "Premium",
+      "price": "Rp 100jt+",
+      "for": "Custom web app, marketplace, multi-tenant"
+    }
+  ]
+}

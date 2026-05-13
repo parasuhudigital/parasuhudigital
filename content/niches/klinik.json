@@ -1,0 +1,198 @@
+{
+  "name": "Klinik & Kesehatan",
+  "icon": "Stethoscope",
+  "metaTitle": "Jasa Digital Marketing Klinik & Kesehatan — Dokter, Klinik, RS | Para Suhu Digital",
+  "metaDescription": "Spesialis digital marketing untuk klinik, praktik dokter, dan healthcare provider. Local SEO, Google Business, Meta & Google Ads compliant regulasi medis di Indonesia.",
+  "hero": {
+    "eyebrow": "Industri Klinik & Kesehatan",
+    "title": "Klinik lo butuh",
+    "titleHighlight": "pasien yang booking, bukan cuma nanya.",
+    "subtitle": "Bukan tanya 'jam buka berapa?' terus ilang. Kita bantu klinik, praktik dokter, dan healthcare provider dapetin pasien serius — dari awareness sampai booking appointment."
+  },
+  "stats": [
+    {
+      "value": "3-6x",
+      "label": "Avg Booking Increase"
+    },
+    {
+      "value": "40-65%",
+      "label": "Penurunan CPL"
+    },
+    {
+      "value": "Top 3",
+      "label": "Google Maps Local"
+    },
+    {
+      "value": "24/7",
+      "label": "Booking via Chatbot"
+    }
+  ],
+  "painPoints": [
+    {
+      "title": "Pasien cuma nanya, jarang booking",
+      "description": "Inbox WhatsApp penuh tanya jadwal & harga, tapi konversi ke appointment rendah. Tim admin keburu burn out filter manual lead serius vs iseng."
+    },
+    {
+      "title": "Google Maps & search visibility lemah",
+      "description": "Klinik kompetitor di radius 2km ranking lebih atas. Saat orang search 'klinik {spesialisasi} terdekat', lo invisible."
+    },
+    {
+      "title": "Trust gap dengan calon pasien",
+      "description": "Pasien skeptis, butuh edukasi & social proof sebelum commit. Tanpa konten edukatif, brand lo gak punya kredibilitas online."
+    },
+    {
+      "title": "Regulasi konten medis ketat",
+      "description": "Iklan kesehatan banyak rule (Kemenkes, BPOM, ITE, KKI). Agency umum sering bikin iklan compliant jadi-jadinya — risiko suspend & sanksi."
+    },
+    {
+      "title": "Operasional sibuk, digital terbengkalai",
+      "description": "Dokter & owner fokus ke pasien. Socmed jarang update, balas DM lambat, prospek ngambek pindah ke klinik lain."
+    },
+    {
+      "title": "Word-of-mouth bagus tapi gak scalable",
+      "description": "Pasien lama puas, tapi referral organik gak cukup untuk fill kapasitas. Butuh sistem akuisisi yang sistemik & terukur."
+    }
+  ],
+  "approach": [
+    {
+      "title": "Local SEO domination",
+      "description": "Google Business Profile dioptimasi maksimal + on-page SEO. Ranking organik di 'klinik {area} {spesialisasi}' jadi engine traffic gratis jangka panjang."
+    },
+    {
+      "title": "Edukasi-led content",
+      "description": "Artikel & video edukatif yang bangun trust + ranking di Google. Pasien datang dengan awareness yang lebih tinggi — closing jadi lebih gampang."
+    },
+    {
+      "title": "Compliant ads strategy",
+      "description": "Kita familiar sama regulasi Kemenkes, BPOM, ITE, dan KKI. Creative & landing page disusun supaya gak di-takedown — campaign jalan lancar."
+    },
+    {
+      "title": "Booking funnel terstandarisasi",
+      "description": "WhatsApp chatbot + form yang kualifikasi pasien dan langsung schedule appointment. Admin cuma confirm slot — bukan lagi sales filter manual."
+    }
+  ],
+  "relevantServices": [
+    {
+      "id": "suhu-website",
+      "angle": "Profil klinik, dokter database, booking online, integrasi WhatsApp & sistem antrian. Mobile-first karena 80% pasien browse via HP."
+    },
+    {
+      "id": "suhu-seo",
+      "angle": "Local SEO + Google Business: 'klinik {area}', 'dokter {spesialisasi} terdekat'. High-intent keyword yang langsung drive booking."
+    },
+    {
+      "id": "suhu-ads",
+      "angle": "Meta & Google Ads compliant regulasi medis. Audience targeting demografis + interest health-conscious, funnel ke WA/booking."
+    },
+    {
+      "id": "suhu-socmed",
+      "angle": "Edukasi konten harian, profil dokter, before-after compliant. Bangun authority di IG, TikTok, dan Threads."
+    },
+    {
+      "id": "suhu-ai",
+      "angle": "Chatbot triage 24/7 yang jawab FAQ, ngumpulin keluhan, dan schedule appointment otomatis. Admin lo cuma handle case kompleks."
+    }
+  ],
+  "caseStudies": [
+    {
+      "title": "Klinik Kecantikan Premium — Jakarta Selatan",
+      "category": "Aesthetic clinic, 3 cabang",
+      "duration": "8 bulan engagement",
+      "services": [
+        "Suhu Website",
+        "Suhu SEO",
+        "Suhu Ads"
+      ],
+      "metrics": [
+        {
+          "label": "Booking/bulan",
+          "value": "+5.3x"
+        },
+        {
+          "label": "CPL",
+          "value": "-52%"
+        },
+        {
+          "label": "Keyword page 1",
+          "value": "18 kw"
+        }
+      ],
+      "summary": "Microsite per cabang + Google Business optimized + Meta Ads dengan creative testimoni real. Booking organic vs paid jadi 60:40, sustainable jangka panjang."
+    },
+    {
+      "title": "Klinik Gigi Multi-cabang — Bandung",
+      "category": "Dental clinic, 5 cabang",
+      "duration": "14 bulan engagement",
+      "services": [
+        "Suhu Socmed",
+        "Suhu Ads"
+      ],
+      "metrics": [
+        {
+          "label": "Pasien baru/bulan",
+          "value": "+3.8x"
+        },
+        {
+          "label": "IG follower",
+          "value": "+28K"
+        },
+        {
+          "label": "Retention booking",
+          "value": "78%"
+        }
+      ],
+      "summary": "Konten edukasi dental harian + ads geofenced per cabang. Brand awareness di Bandung naik signifikan, retention booking tinggi karena pasien teredukasi sebelum datang."
+    },
+    {
+      "title": "Praktik Dokter Spesialis — Surabaya",
+      "category": "Solo practitioner, single clinic",
+      "duration": "6 bulan engagement",
+      "services": [
+        "Suhu Website",
+        "Suhu SEO"
+      ],
+      "metrics": [
+        {
+          "label": "Booking online",
+          "value": "65%"
+        },
+        {
+          "label": "Organic traffic",
+          "value": "+420%"
+        },
+        {
+          "label": "No-show rate",
+          "value": "-30%"
+        }
+      ],
+      "summary": "Website profesional dengan booking online + content SEO authority-building. 65% booking sekarang via website, no-show turun karena confirmation otomatis."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Apakah ngerti regulasi iklan kesehatan (Kemenkes, BPOM, ITE)?",
+      "a": "Iya, ini area expertise utama kita di vertical klinik. Kita familiar sama Permenkes No. 1787 (iklan layanan kesehatan), Peraturan BPOM untuk produk kosmetik & obat, serta UU ITE. Tiap creative & landing kita review compliance dulu sebelum publish — supaya iklan gak di-takedown atau klinik kena sanksi."
+    },
+    {
+      "q": "Berapa lama klinik bisa muncul di Google Maps 'terdekat'?",
+      "a": "Untuk Google Business Profile optimization, biasanya 4-8 minggu udah keliatan naik di ranking '3-pack' (top 3 local results). Faktor utama: completeness profil, review count & quality, citation NAP konsisten, dan content posting reguler. Kita handle semua aspek itu."
+    },
+    {
+      "q": "Bisa handle klinik multi-cabang?",
+      "a": "Bisa. Setiap cabang dapet Google Business Profile sendiri, landing page khusus area, dan ad campaign geofenced. Reporting per-cabang supaya lo tau cabang mana yang performing baik dan mana yang butuh perhatian khusus."
+    },
+    {
+      "q": "Cocok untuk praktik dokter solo atau khusus klinik besar?",
+      "a": "Cocok dua-duanya. Tier Starter untuk praktik solo (Rp 5-10jt/bulan), bisa cover Google Business + 1-2 channel acquisition. Tier Business & Enterprise untuk klinik multi-spesialisasi atau jaringan dengan 3+ cabang."
+    },
+    {
+      "q": "Apakah handle integrasi booking system?",
+      "a": "Iya. Kita bisa integrasi dengan sistem yang lo udah pake (Halodoc Provider, Alodokter Mitra, atau custom EMR). Kalau lo belum punya, kita bisa build booking system custom dengan reminder otomatis via WA."
+    },
+    {
+      "q": "Bagaimana cara handle review negatif & ORM?",
+      "a": "Kita kelola response template & SOP balas review (Google, Halodoc, social media). Review negatif gak bisa dihapus, tapi cara respond nya yang nentuin persepsi prospek. Kita juga proactively dorong pasien puas untuk kasih review supaya rating overall tetep solid."
+    }
+  ],
+  "whatsappMessage": "Halo Para Suhu, saya owner/manager klinik — interest sama jasa digital marketing kesehatan. Bisa diskusi?"
+}

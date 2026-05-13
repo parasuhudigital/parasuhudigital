@@ -1,0 +1,198 @@
+{
+  "name": "Travel & Wisata",
+  "icon": "Plane",
+  "metaTitle": "Jasa Digital Marketing Travel & Wisata — Tour Operator, Travel Agent | Para Suhu Digital",
+  "metaDescription": "Spesialis digital marketing untuk travel agent, tour operator, dan destinasi wisata. Strategi domestic + inbound, content visual, dan booking funnel untuk peak & low season.",
+  "hero": {
+    "eyebrow": "Industri Travel & Wisata",
+    "title": "Travel lo butuh",
+    "titleHighlight": "booking yang ramai sepanjang tahun.",
+    "subtitle": "Bukan cuma peak season terus low season sepi. Kita bantu travel agent, tour operator, dan destinasi wisata bangun pipeline booking yang konsisten — domestic + inbound market."
+  },
+  "stats": [
+    {
+      "value": "4-7x",
+      "label": "Booking Increase"
+    },
+    {
+      "value": "+85K",
+      "label": "IG Follower Growth"
+    },
+    {
+      "value": "8.5x",
+      "label": "Avg ROAS"
+    },
+    {
+      "value": "ID+EN",
+      "label": "Bilingual Funnel"
+    }
+  ],
+  "painPoints": [
+    {
+      "title": "Musiman ekstrem, cashflow goncang",
+      "description": "Peak season penuh, low season sepi total. Tim & operasional fixed cost, tapi revenue swing 5-10x antara musim — susah planning jangka panjang."
+    },
+    {
+      "title": "Kalah saing sama OTA besar",
+      "description": "Traveloka, Tiket.com, Agoda punya ad spend & branding power yang gak masuk akal untuk diadu. Kompetisi harga head-to-head = bunuh diri."
+    },
+    {
+      "title": "Audience harus jangkau luas, budget terbatas",
+      "description": "Domestic + inbound (foreigner) butuh bahasa, channel, dan creative berbeda. Sulit balance budget per market dengan budget yang tipis."
+    },
+    {
+      "title": "Visual content jadi makanan utama",
+      "description": "Reels, drone shot, video tour, photography — semua mahal & makan waktu. Tanpa konten visual rajin update, brand lo invisible di IG/TikTok."
+    },
+    {
+      "title": "Buyer impulsive tapi cepet banding",
+      "description": "Keputusan booking dipengaruhi review, testimoni, urgency. Tanpa social proof yang dibangun konsisten, prospek loncat ke kompetitor sebelum closing."
+    },
+    {
+      "title": "Margin tipis, butuh volume",
+      "description": "Komisi travel agent kecil, perlu volume gede untuk healthy. CAC harus diketat-jaga, kalau gak balance — operasional defisit walau booking ramai."
+    }
+  ],
+  "approach": [
+    {
+      "title": "Niche positioning",
+      "description": "Bukan kompetisi sama OTA, tapi spesialisasi: premium custom trip, hidden gem, adventure niche, halal tourism, dll. Audience yang spesifik = margin lebih sehat."
+    },
+    {
+      "title": "Visual storytelling engine",
+      "description": "Reels, video tour, drone shot, behind-the-scenes — konten yang bikin orang ngerasain 'gua pengen kayak gitu juga'. Aspirational, bukan promosi."
+    },
+    {
+      "title": "Multi-language funnel",
+      "description": "Kalau bidik inbound market, kita bangun parallel funnel ID + EN dengan creative dan targeting per geo berbeda. Tracking lead asal market."
+    },
+    {
+      "title": "Urgency & social proof",
+      "description": "Live booking counter, testimoni real-time, limited slot reminder, expiring promo. Buyer travel impulsive — dorong commitment lebih cepat."
+    }
+  ],
+  "relevantServices": [
+    {
+      "id": "suhu-website",
+      "angle": "Booking system + itinerary builder + payment gateway. Multi-currency untuk inbound, multi-language untuk dual market."
+    },
+    {
+      "id": "suhu-seo",
+      "angle": "Long-tail keyword: 'paket wisata {destinasi}', 'tour {area} {durasi} hari', 'honeymoon package {destinasi}'. High-intent travel research."
+    },
+    {
+      "id": "suhu-ads",
+      "angle": "Meta + TikTok Ads dengan dynamic creative per destinasi. Geo-targeting + interest layering yang nyentuh wanderlust audience."
+    },
+    {
+      "id": "suhu-socmed",
+      "angle": "Reels harian destinasi, IG carousel itinerary, TikTok travel hack. Brand jadi inspirasi sebelum jadi keputusan booking."
+    },
+    {
+      "id": "suhu-creative",
+      "angle": "Trip video production, drone shot, photography, brand identity travel. Asset yang scalable di-deploy ke semua channel."
+    }
+  ],
+  "caseStudies": [
+    {
+      "title": "Tour Operator Bali — Premium custom trip",
+      "category": "Inbound + domestic premium",
+      "duration": "18 bulan engagement",
+      "services": [
+        "Suhu Socmed",
+        "Suhu Ads",
+        "Suhu Website"
+      ],
+      "metrics": [
+        {
+          "label": "Booking inbound",
+          "value": "+6.2x"
+        },
+        {
+          "label": "AOV",
+          "value": "Rp 35→65jt"
+        },
+        {
+          "label": "IG follower",
+          "value": "+85K"
+        }
+      ],
+      "summary": "Reposisi dari generic Bali tour jadi premium custom curated trip. Funnel bilingual ID+EN dengan ad spend mayoritas ke audience Singapura, Australia, Eropa."
+    },
+    {
+      "title": "Travel Agent Honeymoon — Jakarta",
+      "category": "Honeymoon & couple package",
+      "duration": "8 bulan engagement",
+      "services": [
+        "Suhu Ads",
+        "Suhu SEO"
+      ],
+      "metrics": [
+        {
+          "label": "Lead/bulan",
+          "value": "+4.5x"
+        },
+        {
+          "label": "Conversion rate",
+          "value": "18%"
+        },
+        {
+          "label": "ROAS",
+          "value": "9.4x"
+        }
+      ],
+      "summary": "Hyper-niche di honeymoon segment, content authority-building via blog + Meta Ads dengan creative video honeymoon real-couple. Premium positioning = margin tebal."
+    },
+    {
+      "title": "Destinasi Wisata Komodo — DMO branding",
+      "category": "Destination marketing",
+      "duration": "10 bulan engagement",
+      "services": [
+        "Suhu Creative",
+        "Suhu Socmed"
+      ],
+      "metrics": [
+        {
+          "label": "IG awareness",
+          "value": "+850%"
+        },
+        {
+          "label": "Booking partner",
+          "value": "+12"
+        },
+        {
+          "label": "Viral content",
+          "value": "3 piece"
+        }
+      ],
+      "summary": "Branding ulang destinasi + content engine reels harian. 3 piece konten viral cumulative reach 18M, 12 partner tour operator masuk pipeline distribusi."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Bisa handle inbound market (foreigner) juga?",
+      "a": "Iya, kita biasa handle parallel funnel ID + EN. Kalau lo bidik market Singapore, Australia, atau Eropa — kita bangun creative bilingual, targeting per geo, dan integrasi dengan payment gateway multi-currency. Inbound tourist biasanya AOV 2-3x lebih tinggi dari domestic."
+    },
+    {
+      "q": "Gimana strategi nge-handle low season?",
+      "a": "Beberapa pendekatan: (1) Brand-building campaign di low season — biaya iklan lebih murah karena kompetisi sepi, (2) Pre-sale package dengan early-bird discount, (3) Content engine yang tetep jalan supaya organic traffic gak drop. Tujuannya: smooth out revenue curve."
+    },
+    {
+      "q": "Bisa integrasi sama OTA (Traveloka, Tiket.com)?",
+      "a": "Iya, OTA optimization adalah bagian dari strategy distribusi. Tapi kita kasih warning: jangan 100% ngandelin OTA, karena algoritma & komisi mereka berubah sewaktu-waktu. Fokus utama tetap di owned channel (website + database lo sendiri)."
+    },
+    {
+      "q": "Konten visual produksinya gimana? Outsource?",
+      "a": "Untuk client di tier Business+, kita bisa kirim tim production untuk shoot on-location (drone, video, photo). Untuk tier Starter, biasanya kita coordinate dengan in-house team lo + kasih creative direction. Atau pakai stock footage premium yang udah kita curated."
+    },
+    {
+      "q": "Berapa minimum ad spend buat travel niche?",
+      "a": "Untuk Meta Ads di Indonesia, minimum yang masuk akal Rp 15-20jt/bulan untuk dapet data yang representative. Untuk inbound (target Australia/Eropa), Rp 30-50jt/bulan baru bisa konsisten. Ad spend ini di luar management fee kita."
+    },
+    {
+      "q": "Bagaimana ROI campaign biasanya bisa di-measure?",
+      "a": "Kita track full funnel: impression → click → form/WA → consult → booking → completed trip. ROAS dihitung dari booking confirmed (bukan inquiry), termasuk LTV repeat booking. Reporting weekly + monthly strategic review."
+    }
+  ],
+  "whatsappMessage": "Halo Para Suhu, saya owner/manager travel agent atau tour operator — interest sama jasa digital marketing travel. Bisa diskusi?"
+}

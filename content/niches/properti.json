@@ -1,0 +1,198 @@
+{
+  "name": "Properti",
+  "icon": "Building2",
+  "metaTitle": "Jasa Digital Marketing Properti — Developer, Agen, Cluster | Para Suhu Digital",
+  "metaDescription": "Spesialis digital marketing untuk industri properti. Website per cluster, SEO local, Meta & Google Ads dengan funnel WhatsApp — buat developer, agen, dan investor properti di Indonesia.",
+  "hero": {
+    "eyebrow": "Industri Properti",
+    "title": "Properti lo butuh",
+    "titleHighlight": "buyer yang siap closing.",
+    "subtitle": "Bukan lead yang nanya 'maaf cuma survey aja'. Kita bantu developer, agen, dan marketing properti dapetin pipeline lead berkualitas — dari awareness sampai akad."
+  },
+  "stats": [
+    {
+      "value": "4-8x",
+      "label": "Avg Lead Increase"
+    },
+    {
+      "value": "30-60%",
+      "label": "Penurunan CPL"
+    },
+    {
+      "value": "3-6",
+      "label": "Bulan ke Closing"
+    },
+    {
+      "value": "95+",
+      "label": "PageSpeed Website"
+    }
+  ],
+  "painPoints": [
+    {
+      "title": "Lead banyak, closing seuprit",
+      "description": "Inquiry dari marketplace numpuk, tapi 90% cuma window shopping. Hot lead tenggelam di noise, tim sales kewalahan filter manual."
+    },
+    {
+      "title": "Budget iklan kebakar tanpa attribution",
+      "description": "Bakar puluhan juta di Meta & Google tiap bulan, tapi gak tau channel mana yang bener-bener nge-deliver buyer sampai akad."
+    },
+    {
+      "title": "Sales cycle 3-12 bulan, lead dingin",
+      "description": "Prospek butuh nurturing panjang. Tanpa CRM, drip content, dan auto follow-up, leads ilang ke kompetitor yang lebih persisten."
+    },
+    {
+      "title": "Trust online lemah",
+      "description": "Buyer riset online berbulan-bulan sebelum akad. Tanpa presence digital yang credible, prospek mundur dan pilih developer yang lebih established."
+    },
+    {
+      "title": "Listing kompleks, ribet kelola",
+      "description": "Tiap cluster/tower butuh landing page sendiri. Update harga, unit available, virtual tour, brosur — semua manual dan rawan inconsistent."
+    },
+    {
+      "title": "Marketplace bukan tempat closing",
+      "description": "OLX, Rumah123, Lamudi cuma awareness. Kalau 100% ngandelin marketplace, lo nempatin diri di posisi commodity yang gampang diadu harga."
+    }
+  ],
+  "approach": [
+    {
+      "title": "Persona-based funnel",
+      "description": "Buyer first-home, investor, dan end-user butuh messaging beda. Kita segmentasi audience & tailor creative per persona — relevance naik, CPL turun."
+    },
+    {
+      "title": "Trust content engine",
+      "description": "Video walkthrough, neighborhood guide, mortgage simulator, testimoni real client. Konten yang ngebangun kredibilitas, sekaligus di-rank di Google."
+    },
+    {
+      "title": "Nurturing otomatis 24/7",
+      "description": "WhatsApp chatbot, drip email, retargeting ads. Prospek diingetin terus tanpa tim lo capek follow-up manual — sampai mereka siap site visit."
+    },
+    {
+      "title": "Attribution & ROAS tracking",
+      "description": "Tau persis tiap rupiah iklan datang dari channel mana, di-track sampai akad — bukan cuma sampai form submit. Decision data-driven, bukan feeling."
+    }
+  ],
+  "relevantServices": [
+    {
+      "id": "suhu-website",
+      "angle": "Landing per cluster/tower + portal listing master. Mobile-first, load < 2 detik, mortgage calculator built-in, integrasi WhatsApp & form CRM."
+    },
+    {
+      "id": "suhu-seo",
+      "angle": "Local & transactional keyword: 'rumah dijual {kota}', 'apartemen {area}', 'cluster {nama}'. High-intent search, lead organik yang gratis."
+    },
+    {
+      "id": "suhu-ads",
+      "angle": "Meta, Google, TikTok Ads dengan funnel WhatsApp + lead form. Audience targeting based on income, life-stage, behavior. Daily optimization."
+    },
+    {
+      "id": "suhu-socmed",
+      "angle": "Video walkthrough, drone shot, reels harian, neighborhood content. Brand jadi top-of-mind di Instagram & TikTok — bukan cuma OLX."
+    },
+    {
+      "id": "suhu-ai",
+      "angle": "Chatbot WhatsApp/web yang nge-kualifikasi lead 24/7. Ngumpulin budget, area preference, timeline — sales tim cuma handle lead yang udah hot."
+    }
+  ],
+  "caseStudies": [
+    {
+      "title": "Developer Apartemen Premium — Jakarta Selatan",
+      "category": "Mid-rise residential, 240 unit",
+      "duration": "6 bulan engagement",
+      "services": [
+        "Suhu Website",
+        "Suhu Ads",
+        "Suhu SEO"
+      ],
+      "metrics": [
+        {
+          "label": "Lead/bulan",
+          "value": "+4.2x"
+        },
+        {
+          "label": "CPL",
+          "value": "-58%"
+        },
+        {
+          "label": "Unit closed",
+          "value": "12 unit"
+        }
+      ],
+      "summary": "Bangun microsite per tower + funnel ads Meta & Google dengan retargeting visitor. Hasil: lead volume naik 4x, sales cycle dari avg 9 bulan jadi 5 bulan."
+    },
+    {
+      "title": "Agen Properti Premium — Bali",
+      "category": "Villa & investment property",
+      "duration": "12 bulan engagement",
+      "services": [
+        "Suhu Socmed",
+        "Suhu Ads"
+      ],
+      "metrics": [
+        {
+          "label": "Booking site visit",
+          "value": "+8x"
+        },
+        {
+          "label": "IG follower",
+          "value": "+35K"
+        },
+        {
+          "label": "Inquiry international",
+          "value": "65%"
+        }
+      ],
+      "summary": "Konten reels harian dengan villa tour + ads bilingual (EN/ID) targeting investor Asia & Eropa. Brand jadi go-to untuk premium villa di Canggu & Ubud."
+    },
+    {
+      "title": "Cluster Residential — Bekasi Selatan",
+      "category": "Landed house, 84 unit",
+      "duration": "4 bulan kampanye",
+      "services": [
+        "Suhu Website",
+        "Suhu Ads"
+      ],
+      "metrics": [
+        {
+          "label": "Sold out",
+          "value": "84 unit"
+        },
+        {
+          "label": "ROAS",
+          "value": "7.2x"
+        },
+        {
+          "label": "Cost per Booking Fee",
+          "value": "Rp 480K"
+        }
+      ],
+      "summary": "Landing page mobile-first + Meta Ads dengan lookalike audience dari closed buyer. Sold out 84 unit dalam 90 hari, ROAS 7.2x dari total ad spend."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Berapa lama lead mulai datang setelah campaign launch?",
+      "a": "Untuk paid ads (Meta/Google), biasanya hari ke-3 sampai ke-7 udah mulai konsisten dapet lead. Untuk SEO organik, 3-6 bulan untuk halaman 1 di keyword medium competition. Kita kasih weekly report supaya lo tau performance real-time."
+    },
+    {
+      "q": "Bisa pegang multiple proyek/cluster sekaligus?",
+      "a": "Bisa. Kita biasa handle developer dengan 3-8 cluster/tower aktif. Setiap proyek punya landing page sendiri, tracking sendiri, dan budget allocation sendiri — supaya performance tiap proyek bisa di-compare apple-to-apple."
+    },
+    {
+      "q": "Bedanya pakai Para Suhu vs agency umum untuk properti?",
+      "a": "Agency umum biasanya satu-size-fits-all. Kita spesialis vertical — udah ngerti buyer journey properti yang panjang (3-12 bulan), funnel WhatsApp yang dominan di Indonesia, dan integrasi sama CRM properti yang lo pake. Plus, dari 50+ klien historis, sebagian besar di sektor properti."
+    },
+    {
+      "q": "Cocok untuk developer kecil/agen independen, atau khusus developer besar?",
+      "a": "Cocok dua-duanya. Tier Starter (Rp 5-10jt/bulan ads management) untuk agen independen atau developer 1-2 proyek. Tier Business & Enterprise untuk developer dengan multiple proyek aktif yang butuh full-funnel strategy."
+    },
+    {
+      "q": "Apakah handle juga listing di marketplace (Rumah123, OLX, Lamudi)?",
+      "a": "Iya, marketplace optimization adalah bagian dari strategy distribusi kita. Tapi fokus utama tetap di owned channel (website + database lo sendiri) — supaya lo gak dependent ke platform pihak ketiga yang algoritmanya bisa berubah kapan aja."
+    },
+    {
+      "q": "Berapa minimum komitmen?",
+      "a": "Untuk project-based (website, branding): no minimum, one-time payment. Untuk retainer (SEO, Ads, Socmed): minimum 3 bulan supaya hasilnya bisa di-measure dan optimasi-nya kompound. Kita gak bikin lo kontrak panjang yang ngunci tanpa output jelas."
+    }
+  ],
+  "whatsappMessage": "Halo Para Suhu, saya developer/agen properti — interest sama jasa digital marketing properti. Bisa diskusi?"
+}

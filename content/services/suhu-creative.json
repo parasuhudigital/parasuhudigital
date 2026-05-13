@@ -1,0 +1,38 @@
+{
+  "name": "Suhu Creative",
+  "tagline": "Visual yang nge-stop scroll, nge-lock attention.",
+  "icon": "Palette",
+  "description": "Branding, logo, design konten, video production, photography. Visual yang jadi identitas bisnis lo.",
+  "hero": {
+    "title": "Visual yang bikin",
+    "titleHighlight": "brand lo recognizable.",
+    "subtitle": "Bukan cuma design cantik. Kita bikin visual identity yang konsisten across channel, dan ngebantu brand lo stand out di market yang noise."
+  },
+  "features": [
+    "Brand identity (logo + guideline)",
+    "Content design (IG feed, story, reels)",
+    "Video production & editing",
+    "Product photography",
+    "Motion graphics & animation",
+    "Packaging design",
+    "Pitch deck & presentation design",
+    "Print collateral (brosur, kartu nama, dll)"
+  ],
+  "tiers": [
+    {
+      "name": "Starter",
+      "price": "Rp 10-25jt",
+      "for": "Logo + brand guideline basic"
+    },
+    {
+      "name": "Brand Package",
+      "price": "Rp 35-75jt",
+      "for": "Full branding + content templates"
+    },
+    {
+      "name": "Premium",
+      "price": "Rp 100jt+",
+      "for": "Full visual identity + content production"
+    }
+  ]
+}

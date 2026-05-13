@@ -1,0 +1,38 @@
+{
+  "name": "Suhu Socmed",
+  "tagline": "Akun socmed yang aktif, engaging, dan dipercaya.",
+  "icon": "Hash",
+  "description": "Content planning, posting, community management, influencer collab. Brand lo jadi top-of-mind di socmed.",
+  "hero": {
+    "title": "Akun socmed yang",
+    "titleHighlight": "punya audience loyal.",
+    "subtitle": "Bukan cuma posting harian. Kita bangun audience engaged dengan konten yang resonate, dan brand presence yang konsisten."
+  },
+  "features": [
+    "Content strategy & calendar",
+    "Daily/weekly posting",
+    "Community management",
+    "Reels & TikTok production",
+    "Influencer outreach & management",
+    "Engagement tracking",
+    "Monthly analytics report",
+    "Platform: IG, TikTok, FB, LinkedIn, X"
+  ],
+  "tiers": [
+    {
+      "name": "Starter",
+      "price": "Rp 8-15jt/bulan",
+      "for": "1-2 platform, 3-5 posts/minggu"
+    },
+    {
+      "name": "Business",
+      "price": "Rp 20-40jt/bulan",
+      "for": "Multi-platform, daily posting, video content"
+    },
+    {
+      "name": "Premium",
+      "price": "Rp 50jt+/bulan",
+      "for": "Full team, influencer mgmt, content shoot"
+    }
+  ]
+}

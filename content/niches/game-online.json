@@ -1,0 +1,198 @@
+{
+  "name": "Game Online",
+  "icon": "Gamepad2",
+  "metaTitle": "Jasa Digital Marketing Game Online — Publisher, Developer, Esports | Para Suhu Digital",
+  "metaDescription": "Spesialis digital marketing untuk game publisher, developer indie, dan platform gaming. UAC, community building, influencer & streamer activation, live ops marketing.",
+  "hero": {
+    "eyebrow": "Industri Game Online",
+    "title": "Game lo butuh",
+    "titleHighlight": "player loyal, bukan one-time install.",
+    "subtitle": "Bukan install gede tapi DAU drop minggu kedua. Kita bantu game developer, publisher, dan platform gaming bangun community + monetization yang sustainable jangka panjang."
+  },
+  "stats": [
+    {
+      "value": "$0.40",
+      "label": "Avg CPI"
+    },
+    {
+      "value": "32%",
+      "label": "D7 Retention"
+    },
+    {
+      "value": "+85K",
+      "label": "Community Growth"
+    },
+    {
+      "value": "24/7",
+      "label": "Discord Bot Mod"
+    }
+  ],
+  "painPoints": [
+    {
+      "title": "Audience super segmented per genre",
+      "description": "FPS, MOBA, casual, hyper-casual, RPG — tiap genre punya behavior, channel, dan messaging beda. Agency umum sering one-size-fits-all = budget kebakar tanpa hasil."
+    },
+    {
+      "title": "Acquisition mahal, retention rendah",
+      "description": "Install banyak tapi D7/D30 retention rontok. CPI naik terus karena kompetisi adv, kalau retention buruk LTV gak nutup CAC — bisnis gak sustainable."
+    },
+    {
+      "title": "Community building butuh effort konsisten",
+      "description": "Discord, IG, TikTok, YouTube, Reddit — semua butuh handling. Game yang berhasil punya community engine yang jalan tiap hari, bukan posting random."
+    },
+    {
+      "title": "Dependency ke platform & publisher",
+      "description": "Algoritma store (Play Store, App Store), demonetization, policy change bisa nge-bunuh game overnight. Owned channel jadi insurance penting."
+    },
+    {
+      "title": "Influencer & streamer crucial tapi expensive",
+      "description": "Streamer Tier-1 mahal & susah measure ROI. Tanpa tracking yang clear, budget influencer keluar tapi gak tau impact ke install & retention."
+    },
+    {
+      "title": "Monetization sensitif ke player sentiment",
+      "description": "Player jijik kalau ads terlalu agresif atau IAP terlalu push. Balance antara revenue & player satisfaction butuh data-driven approach."
+    }
+  ],
+  "approach": [
+    {
+      "title": "Genre-specific strategy",
+      "description": "Sebelum eksekusi, deep dive ke audience persona per genre. Behavior pemain MOBA beda jauh sama casual puzzle — strategy disesuaikan dari atas sampai bawah funnel."
+    },
+    {
+      "title": "Community-first marketing",
+      "description": "Discord, Reddit, FB group, jadi engine retention bukan sekadar IG/TikTok. Player jadi part of community = retention naik signifikan & word-of-mouth jalan."
+    },
+    {
+      "title": "Influencer & UGC partnership",
+      "description": "Curated streamer & content creator dengan tracking ROI clear (custom link, promo code, attribution). UGC challenge untuk amplify organic reach."
+    },
+    {
+      "title": "Live ops integration",
+      "description": "Marketing campaign align sama in-game event, season pass, content drop. Spike marketing momentum di window paling crucial — saat player paling engage."
+    }
+  ],
+  "relevantServices": [
+    {
+      "id": "suhu-website",
+      "angle": "Landing page game + community hub + leaderboard + integrasi Discord. Pre-registration funnel sebelum launch."
+    },
+    {
+      "id": "suhu-ads",
+      "angle": "Meta + TikTok + Google UAC dengan creative dynamic per persona. Playable ads, video ads, dan reward-based untuk casual game."
+    },
+    {
+      "id": "suhu-socmed",
+      "angle": "Daily content, meme, gameplay highlight, community engagement. Brand voice game yang resonate sama player base."
+    },
+    {
+      "id": "suhu-creative",
+      "angle": "Trailer game, key art, video production, motion design. Asset creative yang bikin player penasaran dari first impression."
+    },
+    {
+      "id": "suhu-ai",
+      "angle": "Discord bot custom, automated community moderation, sentiment tracker. Skala community besar dengan effort tim kecil."
+    }
+  ],
+  "caseStudies": [
+    {
+      "title": "Mobile Game Publisher — Hyper-casual",
+      "category": "Hyper-casual mobile game",
+      "duration": "8 bulan engagement",
+      "services": [
+        "Suhu Ads",
+        "Suhu Socmed",
+        "Suhu Creative"
+      ],
+      "metrics": [
+        {
+          "label": "CPI",
+          "value": "$0.42"
+        },
+        {
+          "label": "D7 retention",
+          "value": "32%"
+        },
+        {
+          "label": "Spend scale",
+          "value": "$50K/bln"
+        }
+      ],
+      "summary": "Creative iteration weekly + UAC scaling agresif. Dari $5K/bulan jadi $50K/bulan tanpa CPI naik — scale-up sukses karena creative engine konsisten produktif."
+    },
+    {
+      "title": "MOBA Indie Studio — Indonesia",
+      "category": "Indie MOBA, pre-launch",
+      "duration": "14 bulan engagement",
+      "services": [
+        "Suhu Socmed",
+        "Suhu AI"
+      ],
+      "metrics": [
+        {
+          "label": "Community member",
+          "value": "+85K"
+        },
+        {
+          "label": "Discord active",
+          "value": "25K"
+        },
+        {
+          "label": "Soft launch retention",
+          "value": "+180%"
+        }
+      ],
+      "summary": "Community building 14 bulan pre-launch — Discord engine + content harian + tournament grassroots. Soft launch retention jauh di atas industry benchmark karena community udah hot."
+    },
+    {
+      "title": "Esport Tournament Platform",
+      "category": "B2B2C esport platform",
+      "duration": "18 bulan engagement",
+      "services": [
+        "Suhu Website",
+        "Suhu Digital Marketing"
+      ],
+      "metrics": [
+        {
+          "label": "Registered team",
+          "value": "+12x"
+        },
+        {
+          "label": "Sponsor deal",
+          "value": "6 brand"
+        },
+        {
+          "label": "Viewership",
+          "value": "2.4M"
+        }
+      ],
+      "summary": "Build platform tournament + acquisition campaign team competitive + sponsor outreach paralel. 6 brand sponsorship deal, viewership cumulative 2.4M."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Cocok untuk indie studio atau cuma major publisher?",
+      "a": "Cocok dua-duanya. Indie studio biasanya butuh community-first approach (organic engine, Discord, content) karena ad budget terbatas. Major publisher butuh skala UAC + influencer partnership + live ops marketing. Strategy disesuaikan dengan budget & lifecycle game."
+    },
+    {
+      "q": "Bisa handle UAC (Universal App Campaign) Google?",
+      "a": "Iya, UAC adalah salah satu specialty kita untuk game niche. Kita handle creative pipeline (video + image ads), audience signal, dan optimization daily. Plus reporting yang fokus ke CPI, D7 retention, dan LTV — bukan vanity metric."
+    },
+    {
+      "q": "Strategi creative refresh untuk avoid creative fatigue?",
+      "a": "Untuk game niche, creative fatigue datang cepat (2-4 minggu). Kita biasa produce 8-15 creative variant per bulan (mix video + playable + image), rotation berdasarkan performance data. Plus A/B test framework yang struktural."
+    },
+    {
+      "q": "Bisa integrasi influencer & streamer outreach?",
+      "a": "Iya, dari sourcing creator, contract negotiation, brief, sampai tracking ROI dengan custom link & promo code. Kita punya database creator gaming Indonesia tier mid-large. Pricing influencer di luar management fee."
+    },
+    {
+      "q": "Bagaimana cara nge-handle community moderation skala besar?",
+      "a": "Pakai kombinasi: (1) Discord bot custom yang auto-mod sentiment & toxic content, (2) Trained community manager dari tim kita, (3) Trusted player jadi moderator volunteer dengan SOP clear. Komunitas 50K+ member bisa di-manage dengan tim 2-3 orang."
+    },
+    {
+      "q": "Apakah handle juga ASO (App Store Optimization)?",
+      "a": "Iya, ASO adalah bagian dari acquisition strategy untuk mobile game. Kita optimize title, description, screenshot, video preview, keyword, dan localization per geo. Improvement ranking di store bisa drop CPI 20-40% — efek compound jangka panjang."
+    }
+  ],
+  "whatsappMessage": "Halo Para Suhu, saya developer/publisher game atau owner platform gaming — interest sama jasa digital marketing game. Bisa diskusi?"
+}

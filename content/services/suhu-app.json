@@ -1,0 +1,38 @@
+{
+  "name": "Suhu App",
+  "tagline": "Aplikasi mobile yang bikin user balik lagi.",
+  "icon": "Smartphone",
+  "description": "iOS, Android, atau cross-platform. Marketplace, booking, member app, on-demand — kita yang bangun.",
+  "hero": {
+    "title": "Aplikasi mobile yang",
+    "titleHighlight": "addictive, bukan annoying.",
+    "subtitle": "Bangun app yang ngerti UX modern, performa smooth, dan strategi retention yang bener. Bukan cuma launch terus ditinggal."
+  },
+  "features": [
+    "iOS native (Swift)",
+    "Android native (Kotlin)",
+    "Cross-platform (React Native)",
+    "Progressive Web App (PWA)",
+    "Backend integration",
+    "Push notification setup",
+    "Analytics & funnel tracking",
+    "App Store + Play Store submission"
+  ],
+  "tiers": [
+    {
+      "name": "Lite (PWA)",
+      "price": "Rp 35-75jt",
+      "for": "Web-based app yang feel native"
+    },
+    {
+      "name": "Standard",
+      "price": "Rp 100-200jt",
+      "for": "React Native cross-platform, 5-10 feature"
+    },
+    {
+      "name": "Premium",
+      "price": "Rp 250jt+",
+      "for": "Native iOS + Android dengan backend lengkap"
+    }
+  ]
+}

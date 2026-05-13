@@ -1,0 +1,99 @@
+fragment BlogParts on Blog {
+  __typename
+  title
+  excerpt
+  date
+  author
+  cover
+  tags
+  category
+  featured
+  body
+}
+
+fragment NicheParts on Niche {
+  __typename
+  name
+  icon
+  metaTitle
+  metaDescription
+  hero {
+    __typename
+    eyebrow
+    title
+    titleHighlight
+    subtitle
+  }
+  stats {
+    __typename
+    value
+    label
+  }
+  painPoints {
+    __typename
+    title
+    description
+  }
+  approach {
+    __typename
+    title
+    description
+  }
+  relevantServices {
+    __typename
+    id
+    angle
+  }
+  caseStudies {
+    __typename
+    title
+    category
+    duration
+    services
+    metrics {
+      __typename
+      label
+      value
+    }
+    summary
+  }
+  faqs {
+    __typename
+    q
+    a
+  }
+  whatsappMessage
+}
+
+fragment ServiceParts on Service {
+  __typename
+  name
+  tagline
+  icon
+  description
+  hero {
+    __typename
+    title
+    titleHighlight
+    subtitle
+  }
+  features
+  tiers {
+    __typename
+    name
+    price
+    for
+  }
+}
+
+fragment TestimonialParts on Testimonial {
+  __typename
+  clientName
+  clientRole
+  avatar
+  quote
+  niche
+  services
+  rating
+  featured
+}

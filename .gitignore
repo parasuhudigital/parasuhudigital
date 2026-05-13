@@ -32,3 +32,8 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# tina cms
+/tina/tina-lock.json
+/public/admin
+# generated files committed so Vercel can build without TinaCloud credentials

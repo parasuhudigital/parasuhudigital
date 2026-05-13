@@ -1,0 +1,38 @@
+{
+  "name": "Suhu Ads",
+  "tagline": "Iklan yang ROAS-nya bikin kaget.",
+  "icon": "Target",
+  "description": "Meta Ads, Google Ads, TikTok Ads, YouTube Ads. Setiap rupiah iklan diukur, dioptimasi, di-scale.",
+  "hero": {
+    "title": "Setiap rupiah iklan,",
+    "titleHighlight": "ada accountability-nya.",
+    "subtitle": "Bosan boring ads yang burn budget tanpa hasil? Kita kelola ads dengan strategi funnel jelas, A/B testing rutin, dan optimasi harian."
+  },
+  "features": [
+    "Meta Ads (Facebook + Instagram)",
+    "Google Ads (Search, Display, Shopping)",
+    "TikTok Ads",
+    "YouTube Ads",
+    "LinkedIn Ads (B2B)",
+    "Creative production untuk ads",
+    "Funnel strategy & audience research",
+    "Daily monitoring & weekly reporting"
+  ],
+  "tiers": [
+    {
+      "name": "Starter",
+      "price": "Rp 5-10jt/bulan",
+      "for": "Ad spend < Rp 30jt/bulan, 1-2 platform"
+    },
+    {
+      "name": "Business",
+      "price": "Rp 15-25jt/bulan",
+      "for": "Ad spend Rp 30-100jt/bulan, multi-platform"
+    },
+    {
+      "name": "Enterprise",
+      "price": "10-15% of ad spend",
+      "for": "Ad spend Rp 100jt+/bulan, full-funnel"
+    }
+  ]
+}

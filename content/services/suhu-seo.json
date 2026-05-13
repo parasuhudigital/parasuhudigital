@@ -1,0 +1,38 @@
+{
+  "name": "Suhu SEO",
+  "tagline": "Halaman 1 Google tanpa drama.",
+  "icon": "TrendingUp",
+  "description": "Riset keyword, on-page, off-page, technical SEO. Bisnis lo muncul di pencarian yang relevan dan ngalirin leads.",
+  "hero": {
+    "title": "Halaman 1 Google,",
+    "titleHighlight": "tanpa janji manis.",
+    "subtitle": "SEO bukan magic, tapi sistem. Kita pakai approach data-driven: riset, eksekusi, measure, repeat. Hasil mulai keliatan dalam 3-6 bulan."
+  },
+  "features": [
+    "Keyword research (high-intent)",
+    "On-page SEO optimization",
+    "Technical SEO audit & fix",
+    "Content strategy & writing",
+    "Backlink building (white-hat)",
+    "Local SEO (Google Business)",
+    "Monthly reporting & analysis",
+    "Competitor tracking"
+  ],
+  "tiers": [
+    {
+      "name": "Starter",
+      "price": "Rp 8-15jt/bulan",
+      "for": "Local SEO + 5-10 keyword target"
+    },
+    {
+      "name": "Business",
+      "price": "Rp 20-40jt/bulan",
+      "for": "Nasional, 20-50 keyword, content marketing"
+    },
+    {
+      "name": "Enterprise",
+      "price": "Rp 50jt+/bulan",
+      "for": "Multi-domain, full content team, link building"
+    }
+  ]
+}

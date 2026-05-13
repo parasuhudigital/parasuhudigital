@@ -1,0 +1,38 @@
+{
+  "name": "Suhu AI",
+  "tagline": "AI yang nge-leverage bisnis lo, bukan replace.",
+  "icon": "Sparkles",
+  "description": "AI chatbot, automation, content AI, custom GPT, AI tools integration. Bikin tim lo bekerja kayak punya 10x karyawan.",
+  "hero": {
+    "title": "Integrasi AI yang",
+    "titleHighlight": "actually berguna.",
+    "subtitle": "Banyak yang ngomong AI, sedikit yang ngerti cara implement-nya. Kita bantu bisnis lo adopt AI dengan use case yang real & ROI yang ke-measure."
+  },
+  "features": [
+    "AI chatbot (customer service, sales)",
+    "Custom GPT untuk internal team",
+    "Content automation (blog, social, email)",
+    "AI-powered analytics",
+    "Workflow automation (n8n, Make, Zapier)",
+    "AI integration ke existing tools",
+    "Training & change management",
+    "Monthly optimization"
+  ],
+  "tiers": [
+    {
+      "name": "Pilot",
+      "price": "Rp 15-30jt",
+      "for": "1 use case (chatbot atau automation)"
+    },
+    {
+      "name": "Implementation",
+      "price": "Rp 50-100jt",
+      "for": "3-5 AI use case + training tim"
+    },
+    {
+      "name": "Transformation",
+      "price": "Rp 150jt+",
+      "for": "Full AI integration across departments"
+    }
+  ]
+}

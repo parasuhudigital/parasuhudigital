@@ -4,18 +4,27 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "node scripts/build.mjs",
+    "build:next-only": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "tina:dev": "tinacms dev -c \"next dev\""
+  },
+  "overrides": {
+    "better-sqlite3": "^12.1.0"
   },
   "dependencies": {
+    "@tinacms/cli": "^2.3.0",
+    "clsx": "^2.1.1",
+    "framer-motion": "^11.3.8",
+    "gray-matter": "^4.0.3",
+    "lucide-react": "^0.408.0",
     "next": "14.2.5",
+    "next-mdx-remote": "^6.0.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "framer-motion": "^11.3.8",
-    "lucide-react": "^0.408.0",
-    "clsx": "^2.1.1",
-    "tailwind-merge": "^2.4.0"
+    "tailwind-merge": "^2.4.0",
+    "tinacms": "^3.8.0"
   },
   "devDependencies": {
     "@types/node": "^20.14.10",

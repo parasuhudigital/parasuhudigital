@@ -1,0 +1,198 @@
+{
+  "name": "Otomotif",
+  "icon": "Car",
+  "metaTitle": "Jasa Digital Marketing Otomotif — Dealer Mobil, Motor, Showroom | Para Suhu Digital",
+  "metaDescription": "Spesialis digital marketing untuk dealer mobil, motor, showroom otomotif. Test drive funnel, lead nurturing, dan retargeting untuk high-ticket decision otomotif Indonesia.",
+  "hero": {
+    "eyebrow": "Industri Otomotif",
+    "title": "Showroom lo butuh",
+    "titleHighlight": "test drive yang serius beli.",
+    "subtitle": "Bukan iseng nge-check kompetisi. Kita bantu dealer, showroom, dan brand otomotif dapetin lead serius — yang siap negosiasi & DP, bukan window shopping doang."
+  },
+  "stats": [
+    {
+      "value": "3-5x",
+      "label": "Test Drive Booking"
+    },
+    {
+      "value": "20-25%",
+      "label": "Closing Rate"
+    },
+    {
+      "value": "-45%",
+      "label": "CPL Reduction"
+    },
+    {
+      "value": "2-6 bln",
+      "label": "Decision Cycle"
+    }
+  ],
+  "painPoints": [
+    {
+      "title": "High-ticket, decision panjang",
+      "description": "Mobil/motor butuh 2-6 bulan consideration. Lead bisa ilang ke kompetitor kalau gak di-nurture konsisten — sayang banget cost akuisisi yang udah kebakar."
+    },
+    {
+      "title": "Trust crucial, riset panjang",
+      "description": "Buyer riset spek, review, testimoni berbulan-bulan sebelum decision. Tanpa konten authority & social proof, prospek pilih dealer yang keliatan lebih kredibel."
+    },
+    {
+      "title": "Kompetisi harga ketat",
+      "description": "Tiap dealer kasih promo, susah differentiate murni dari harga. Margin tipis, akhirnya race-to-the-bottom yang nge-bunuh profitability."
+    },
+    {
+      "title": "Lead lambat convert, susah di-track",
+      "description": "Showroom visit ≠ closing. Tanpa CRM & follow-up sistematis, sales tim cuma ngandelin memory & spreadsheet — banyak prospek hot yang nge-cold."
+    },
+    {
+      "title": "After-sales jarang dimanage",
+      "description": "Service, spare part, accessory adalah revenue stream yang biasanya ditinggal. Padahal customer existing 5x lebih murah di-retain daripada akuisisi baru."
+    },
+    {
+      "title": "Brand awareness vs sales activation gak balance",
+      "description": "Banyak dealer brand image bagus tapi sales loss ke dealer kompetitor di area sama. Awareness ada, tapi closing ke kompetitor yang lebih agresif."
+    }
+  ],
+  "approach": [
+    {
+      "title": "Persona-based targeting",
+      "description": "First buyer, upgrade buyer, fleet/corporate butuh creative & messaging beda. Kita segmentasi audience supaya tiap creative resonate ke audience yang tepat."
+    },
+    {
+      "title": "Test drive funnel terstruktur",
+      "description": "From ad → landing → form → reminder otomatis → showroom visit. Tracking lengkap supaya tau drop-off step mana yang perlu di-optimize."
+    },
+    {
+      "title": "Content educational & honest",
+      "description": "Review jujur, comparison vs kompetitor, after-sales tips. Bangun authority + audience trust — buyer datang ke showroom udah convinced 70%."
+    },
+    {
+      "title": "Retargeting & nurturing CRM",
+      "description": "Visitor showroom yang belum closing tetep di-touch via WA broadcast, email drip, retargeting ads. Sales cycle 6 bulan dijaga tetep warm sampai decision."
+    }
+  ],
+  "relevantServices": [
+    {
+      "id": "suhu-website",
+      "angle": "Catalog mobil/motor dengan filter, simulasi kredit interactive, test drive booking, dan integrasi WhatsApp ke sales team."
+    },
+    {
+      "id": "suhu-seo",
+      "angle": "High-intent keyword: 'harga {model}', 'promo {brand} {area}', review keyword. Ranking organik = lead murah & sustainable."
+    },
+    {
+      "id": "suhu-ads",
+      "angle": "Meta + Google + YouTube Ads dengan dynamic creative per persona. Retargeting agresif untuk visitor showroom yang belum closing."
+    },
+    {
+      "id": "suhu-socmed",
+      "angle": "Reels test drive, comparison content, ownership story dari customer existing. Brand jadi top-of-mind di IG/TikTok automotive."
+    },
+    {
+      "id": "suhu-ai",
+      "angle": "Chatbot pricing & simulasi kredit otomatis 24/7. Prospek bisa eksplorasi spec & cicilan tanpa nungguin admin online."
+    }
+  ],
+  "caseStudies": [
+    {
+      "title": "Dealer Mobil Premium Multi-brand — Jakarta",
+      "category": "Dealer mobil, 3 brand line",
+      "duration": "9 bulan engagement",
+      "services": [
+        "Suhu Website",
+        "Suhu Ads",
+        "Suhu SEO"
+      ],
+      "metrics": [
+        {
+          "label": "Test drive booking",
+          "value": "+3.7x"
+        },
+        {
+          "label": "Closing rate",
+          "value": "22%"
+        },
+        {
+          "label": "CPL",
+          "value": "-45%"
+        }
+      ],
+      "summary": "Website unified untuk 3 brand + funnel ads ter-segmentasi per brand. CRM integration supaya tiap lead di-follow-up otomatis selama 60-90 hari sampai closing."
+    },
+    {
+      "title": "Dealer Motor Sport — Bekasi",
+      "category": "Motor sport & adventure",
+      "duration": "12 bulan engagement",
+      "services": [
+        "Suhu Socmed",
+        "Suhu Ads"
+      ],
+      "metrics": [
+        {
+          "label": "Inquiry",
+          "value": "+5.4x"
+        },
+        {
+          "label": "Brand awareness",
+          "value": "+320%"
+        },
+        {
+          "label": "Fleet order",
+          "value": "4 perusahaan"
+        }
+      ],
+      "summary": "Content engine reels harian dengan ride content + ads geofenced ke radius 30km. Plus 4 fleet deal masuk dari LinkedIn outreach paralel."
+    },
+    {
+      "title": "Distributor Mobil EV — Jakarta",
+      "category": "Electric vehicle distributor",
+      "duration": "6 bulan engagement",
+      "services": [
+        "Suhu Website",
+        "Suhu Digital Marketing"
+      ],
+      "metrics": [
+        {
+          "label": "Booking pre-order",
+          "value": "280 unit"
+        },
+        {
+          "label": "Organic traffic",
+          "value": "+680%"
+        },
+        {
+          "label": "Lead quality score",
+          "value": "8.4/10"
+        }
+      ],
+      "summary": "Launch campaign untuk brand EV baru — landing edukatif + content marketing soal EV ownership + community building. Pre-order 280 unit dalam 6 bulan."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Bisa handle multi-brand dealer atau khusus single brand?",
+      "a": "Bisa dua-duanya. Multi-brand dealer biasanya butuh unified website dengan brand showcase + funnel ads ter-segmentasi per brand. Single brand bisa lebih dalem ke product story & community building. Strategy disesuaikan dengan setup lo."
+    },
+    {
+      "q": "Bedanya targeting first buyer vs upgrade buyer?",
+      "a": "First buyer (usia 25-35, household income medium) butuh edukasi: simulasi kredit, comparison, cost of ownership. Upgrade buyer (usia 35-50, sudah punya mobil) butuh story: lifestyle upgrade, premium feature, prestige. Creative & landing dipisah per persona supaya conversion optimal."
+    },
+    {
+      "q": "Bagaimana strategi handle sales cycle yang panjang?",
+      "a": "Kombinasi: (1) CRM yang nge-tag tiap lead ke stage funnel, (2) Drip content otomatis selama 60-180 hari via WA/email, (3) Retargeting ads untuk visitor yang belum convert, (4) Sales team SOP follow-up dengan touch interval clear. Tujuannya: gak ada lead yang ilang tanpa nurturing."
+    },
+    {
+      "q": "Bisa integrasi dengan CRM dealer existing?",
+      "a": "Bisa. Kita biasa integrasi dengan tools yang umum dipake dealer otomotif (HubSpot, Salesforce, atau custom CRM via API). Kalau lo belum punya, kita rekomendasi solusi yang fit budget & scale lo."
+    },
+    {
+      "q": "Cocok untuk dealer kecil atau showroom besar?",
+      "a": "Cocok dua-duanya. Tier Starter untuk dealer single-outlet (Rp 8-15jt/bulan). Tier Business & Enterprise untuk dealer multi-outlet atau distributor regional yang butuh full-funnel strategy."
+    },
+    {
+      "q": "Bagaimana dengan after-sales (service & spare part) marketing?",
+      "a": "After-sales adalah revenue stream yang sering ditinggal, padahal margin-nya tebal. Kita bisa bangun campaign retention: service reminder WA otomatis, loyalty program, spare part promo, accessory upsell. Customer existing biasanya 5x lebih murah di-monetize ulang."
+    }
+  ],
+  "whatsappMessage": "Halo Para Suhu, saya owner/manager dealer otomotif — interest sama jasa digital marketing otomotif. Bisa diskusi?"
+}

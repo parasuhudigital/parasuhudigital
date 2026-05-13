@@ -1,0 +1,38 @@
+{
+  "name": "Suhu Software",
+  "tagline": "Custom software yang nge-otomatisin bisnis lo.",
+  "icon": "Code2",
+  "description": "CRM, ERP, POS, dashboard, automation tools. Bikin operasional bisnis lo jadi lebih efisien dan scalable.",
+  "hero": {
+    "title": "Custom software yang",
+    "titleHighlight": "kerja, bukan ribetin.",
+    "subtitle": "Bisnis lo punya workflow unik yang gak match dengan SaaS off-the-shelf? Kita bangun software custom yang fit 100% sama operasional lo."
+  },
+  "features": [
+    "Custom CRM",
+    "ERP (inventory, finance, HR)",
+    "POS system",
+    "Admin dashboard & analytics",
+    "Automation workflow",
+    "API integration",
+    "User role & permission management",
+    "Training & documentation"
+  ],
+  "tiers": [
+    {
+      "name": "Starter",
+      "price": "Rp 25-50jt",
+      "for": "1-3 modul sederhana"
+    },
+    {
+      "name": "Business",
+      "price": "Rp 75-150jt",
+      "for": "5-10 modul dengan custom workflow"
+    },
+    {
+      "name": "Enterprise",
+      "price": "Rp 200jt+",
+      "for": "Full custom system + integration kompleks"
+    }
+  ]
+}

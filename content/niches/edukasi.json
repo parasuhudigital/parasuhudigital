@@ -1,0 +1,197 @@
+{
+  "name": "Edukasi",
+  "icon": "GraduationCap",
+  "metaTitle": "Jasa Digital Marketing Edukasi — Sekolah, Kampus, Bimbel, EdTech | Para Suhu Digital",
+  "metaDescription": "Spesialis digital marketing untuk institusi edukasi: sekolah, kampus, bimbel, dan EdTech. Lead nurturing, dual-persona messaging (parent vs student), content authority.",
+  "hero": {
+    "eyebrow": "Industri Edukasi",
+    "title": "Edukasi lo butuh",
+    "titleHighlight": "student yang enroll, bukan window shopping.",
+    "subtitle": "Bukan brosur yang dibagi tapi gak di-baca. Kita bantu sekolah, kampus, bimbel, dan EdTech bangun pipeline calon student yang siap daftar — dari awareness sampai pembayaran."
+  },
+  "stats": [
+    {
+      "value": "3-5x",
+      "label": "Pendaftar Increase"
+    },
+    {
+      "value": "-40%",
+      "label": "Cost per Enrollment"
+    },
+    {
+      "value": "60-90",
+      "label": "Hari Nurturing"
+    },
+    {
+      "value": "+540%",
+      "label": "Organic Traffic"
+    }
+  ],
+  "painPoints": [
+    {
+      "title": "Sales cycle 3-12 bulan",
+      "description": "Calon student riset banyak option, decision dipengaruhi ortu/keluarga. Tanpa nurturing panjang, prospek hot bisa balik dingin sebelum musim daftar tiba."
+    },
+    {
+      "title": "Kompetisi free alternatives",
+      "description": "YouTube gratis, free webinar, free course mengencerkan willingness to pay. Brand lo butuh positioning value yang jauh di atas alternatif gratis."
+    },
+    {
+      "title": "Trust & credibility crucial",
+      "description": "Track record alumni, akreditasi, testimoni jadi penentu. Tanpa social proof sistematis, prospek pilih institusi yang lebih established."
+    },
+    {
+      "title": "Tipe buyer kompleks (dual-persona)",
+      "description": "Parent yang decide, student yang influence (atau sebaliknya). Messaging untuk dua audience harus paralel — kalau cuma 1 angle, lo loss separuh prospek."
+    },
+    {
+      "title": "Konten edukasi butuh produksi serius",
+      "description": "Video pembelajaran, course preview, sample lesson — semua butuh kualitas produksi. Konten template asal-asalan = brand keliatan amatir."
+    },
+    {
+      "title": "Seasonal: PPDB, semester, intake batch",
+      "description": "Di luar window pendaftaran, leads turun drastis. Strategy harus jaga awareness off-season biar musim daftar pipeline udah penuh."
+    }
+  ],
+  "approach": [
+    {
+      "title": "Content-led authority",
+      "description": "Free value content (tips ujian, hack belajar, sample lesson) → bangun trust → convert ke paid program. Inbound marketing engine yang sustainable."
+    },
+    {
+      "title": "Dual-persona messaging",
+      "description": "Creative parent: ROI, career outcome, akreditasi, success story. Creative student: lifestyle, peer community, learning experience. Funnel paralel dengan tracking per persona."
+    },
+    {
+      "title": "Lead nurturing panjang",
+      "description": "Drip email/WA 60-90 hari sampai musim daftar tiba. Touch point reguler dengan content edukatif + urgency promo + alumni story."
+    },
+    {
+      "title": "Testimoni & alumni story engine",
+      "description": "Real alumni story dengan outcome konkret (kerja di mana, gaji berapa, kuliah di mana). Social proof = highest-converting asset di niche edukasi."
+    }
+  ],
+  "relevantServices": [
+    {
+      "id": "suhu-website",
+      "angle": "Landing per program/jurusan + portal pendaftaran online + payment gateway + integrasi LMS atau sistem admisi."
+    },
+    {
+      "id": "suhu-seo",
+      "angle": "Long-tail keyword: 'jurusan {topic}', 'kampus {kota}', 'bimbel {target ujian}', 'kursus {skill}'. Organic = student gratis."
+    },
+    {
+      "id": "suhu-ads",
+      "angle": "Meta + Google Ads dengan persona-targeted creative (parent vs student). Funnel paralel dengan attribution per persona."
+    },
+    {
+      "id": "suhu-socmed",
+      "angle": "Daily tips belajar, alumni story, sneak peek class, behind-the-scenes pengajar. Brand voice yang relate ke target audience."
+    },
+    {
+      "id": "suhu-digital-marketing",
+      "angle": "Full-funnel strategy untuk institusi multi-program: awareness → consideration → decision → enrollment → retention."
+    }
+  ],
+  "caseStudies": [
+    {
+      "title": "Bimbel UTBK — Multi-cabang",
+      "category": "Bimbel SBMPTN, 8 cabang",
+      "duration": "12 bulan engagement",
+      "services": [
+        "Suhu Website",
+        "Suhu Ads",
+        "Suhu Socmed"
+      ],
+      "metrics": [
+        {
+          "label": "Pendaftar/batch",
+          "value": "+4.8x"
+        },
+        {
+          "label": "CPL",
+          "value": "-55%"
+        },
+        {
+          "label": "Success rate publish",
+          "value": "89%"
+        }
+      ],
+      "summary": "Funnel paralel parent (Meta) + student (TikTok). Alumni success story jadi engine social proof, success rate alumni 89% jadi badge utama di semua creative."
+    },
+    {
+      "title": "Kampus Swasta — Jakarta",
+      "category": "Universitas swasta, 8 fakultas",
+      "duration": "18 bulan engagement",
+      "services": [
+        "Suhu Digital Marketing"
+      ],
+      "metrics": [
+        {
+          "label": "PPDB intake",
+          "value": "+2.3x"
+        },
+        {
+          "label": "Organic traffic",
+          "value": "+540%"
+        },
+        {
+          "label": "Cost per enrollment",
+          "value": "-40%"
+        }
+      ],
+      "summary": "Strategy full-funnel selama 18 bulan: SEO authority + ads campaign + lead nurturing 90 hari + open house digital. Cost per enrollment turun signifikan dengan intake naik 2.3x."
+    },
+    {
+      "title": "Platform Online Course",
+      "category": "EdTech B2C, skill-based",
+      "duration": "10 bulan engagement",
+      "services": [
+        "Suhu Ads",
+        "Suhu Creative"
+      ],
+      "metrics": [
+        {
+          "label": "Active student",
+          "value": "+12K"
+        },
+        {
+          "label": "Completion rate",
+          "value": "64%"
+        },
+        {
+          "label": "MRR",
+          "value": "Rp 1.8M"
+        }
+      ],
+      "summary": "Course launch + acquisition campaign + completion incentive untuk drive testimoni. Completion rate 64% (industry avg 15-20%) karena product + community + push notification sequence."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Bisa handle institusi formal (sekolah/kampus) & non-formal (bimbel/kursus)?",
+      "a": "Iya, dua-duanya. Institusi formal biasanya butuh strategy panjang (12-18 bulan) dengan fokus authority + dual-persona. Non-formal (bimbel/kursus) sales cycle lebih pendek, fokus ke quick win + retention untuk repeat purchase. Strategy disesuaikan."
+    },
+    {
+      "q": "Strategi nge-target parent vs student?",
+      "a": "Creative parent: ROI, career outcome, akreditasi, alumni di perusahaan top, success story konkret. Creative student: lifestyle, peer community, modern learning, gamification. Kedua audience punya funnel & landing terpisah, tracking attribution per persona supaya tau channel mana untuk siapa."
+    },
+    {
+      "q": "Bagaimana sequence campaign untuk PPDB?",
+      "a": "Biasa kita pakai 3-fase: (1) Awareness 6 bulan sebelum PPDB — content authority + brand campaign, (2) Consideration 3 bulan sebelum — open house digital + Q&A + alumni story, (3) Conversion 1-2 bulan sebelum — urgency promo + remarketing prospek warm. Conversion fase paling ROI-rich."
+    },
+    {
+      "q": "Bisa integrasi sama LMS / sistem pendaftaran existing?",
+      "a": "Iya. Kita biasa integrasi dengan Moodle, Google Classroom, atau custom sistem admisi via API/webhook. Kalau lo belum punya, kita rekomen build custom sesuai workflow institusi lo."
+    },
+    {
+      "q": "Cocok untuk EdTech startup atau institusi established?",
+      "a": "Cocok dua-duanya. EdTech startup biasanya butuh growth aggressive + retention focus. Institusi established (kampus 30+ tahun) butuh brand revitalization + modernization marketing. Approach beda, tapi framework sama."
+    },
+    {
+      "q": "Apakah handle juga email marketing & retention?",
+      "a": "Iya, email & WhatsApp marketing adalah bagian crucial untuk niche edukasi (nurturing 60-90 hari, retention alumni). Kita handle dari list segmentation, copy, design, scheduling, sampai performance tracking."
+    }
+  ],
+  "whatsappMessage": "Halo Para Suhu, saya owner/manager institusi edukasi (sekolah/kampus/bimbel/EdTech) — interest sama jasa digital marketing edukasi. Bisa diskusi?"
+}

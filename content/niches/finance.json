@@ -1,0 +1,198 @@
+{
+  "name": "Finance",
+  "icon": "Banknote",
+  "metaTitle": "Jasa Digital Marketing Finance — Fintech, Multifinance, Asuransi | Para Suhu Digital",
+  "metaDescription": "Spesialis digital marketing untuk fintech, multifinance, asuransi, dan financial advisor. Compliant OJK & BI, authority building, content edukasi finansial.",
+  "hero": {
+    "eyebrow": "Industri Finance",
+    "title": "Brand finance lo butuh",
+    "titleHighlight": "trust yang ke-rasa, bukan diragukan.",
+    "subtitle": "Bukan iklan kreatif tapi keliatan scam. Kita bantu fintech, multifinance, asuransi, dan financial advisor bangun authority yang bikin audience confident untuk commit."
+  },
+  "stats": [
+    {
+      "value": "4-6x",
+      "label": "Qualified Lead"
+    },
+    {
+      "value": "-48%",
+      "label": "CAC Reduction"
+    },
+    {
+      "value": "100%",
+      "label": "OJK Compliance"
+    },
+    {
+      "value": "82%",
+      "label": "Customer Retention"
+    }
+  ],
+  "painPoints": [
+    {
+      "title": "Audience skeptis & cautious",
+      "description": "Pengalaman scam, robot trading, fintech bermasalah bikin audience super hati-hati. Tanpa trust signal kuat, calon customer langsung skip iklan finansial."
+    },
+    {
+      "title": "Regulasi OJK & BI ketat",
+      "description": "POJK iklan jasa keuangan banyak rule: disclaimer, risk warning, prohibited claim. Agency umum sering bikin iklan yang sebenernya melanggar — risiko sanksi & take-down."
+    },
+    {
+      "title": "Authority building lambat",
+      "description": "Butuh content edukasi konsisten, track record, dan kredibilitas founder/team. Brand finance baru butuh 6-18 bulan untuk dapet trust audience."
+    },
+    {
+      "title": "Compliance ke advertising standard tinggi",
+      "description": "Tiap creative harus include disclaimer, risk statement, dan license info. Banyak claim yang dianggap normal di niche lain (jaminan, pasti untung) dilarang keras di finance."
+    },
+    {
+      "title": "Sales cycle bervariasi ekstrem",
+      "description": "Produk simple (top-up, transfer) konversi cepat. Produk kompleks (insurance, investment) butuh consultation berbulan-bulan. Funnel & strategy harus dibedakan."
+    },
+    {
+      "title": "Konten finansial sering kering & boring",
+      "description": "Audience scroll past kalau content cuma technical jargon. Padahal di niche ini, content engaging = differentiation utama vs kompetitor yang corporate-style."
+    }
+  ],
+  "approach": [
+    {
+      "title": "Edukasi-led trust",
+      "description": "Tips finansial, simulasi, kalkulator, financial literacy content — value first, sell later. Brand jadi sumber edukasi yang dipercaya, bukan sekadar produk."
+    },
+    {
+      "title": "Compliance-aware creative",
+      "description": "Kita ngerti POJK, peraturan BI, dan SAPK. Tiap creative & landing di-review compliance sebelum publish — campaign jalan aman, brand gak kena sanksi."
+    },
+    {
+      "title": "Authority figure positioning",
+      "description": "Expertise founder/advisor jadi face brand. Personal authority membangun corporate trust — terutama untuk niche wealth management & insurance premium."
+    },
+    {
+      "title": "Funnel kompleks: simple vs complex product",
+      "description": "Simple product (lending, top-up): direct activation funnel. Complex product (insurance, investment): consultation funnel + nurturing 90+ hari. Strategy beda, tracking beda."
+    }
+  ],
+  "relevantServices": [
+    {
+      "id": "suhu-website",
+      "angle": "Landing per produk + simulator (cicilan, asuransi, investment) + risk profiler. Compliance disclaimer terintegrasi rapih."
+    },
+    {
+      "id": "suhu-seo",
+      "angle": "High-intent keyword: 'asuransi {type}', 'pinjaman {tujuan}', 'investasi pemula'. Organic traffic dari audience yang udah di consideration stage."
+    },
+    {
+      "id": "suhu-ads",
+      "angle": "Meta + Google Ads compliance POJK, dengan funnel WhatsApp/form. Audience targeting yang menghindari restricted category."
+    },
+    {
+      "id": "suhu-socmed",
+      "angle": "Edukasi konten harian, financial tips, Q&A audience, founder thought leadership. Brand voice approachable tapi tetep professional."
+    },
+    {
+      "id": "suhu-digital-marketing",
+      "angle": "Full-funnel strategy untuk fintech/multifinance besar yang butuh integrasi acquisition + retention + reactivation."
+    }
+  ],
+  "caseStudies": [
+    {
+      "title": "Fintech Lending P2P — Jakarta",
+      "category": "P2P lending licensed OJK",
+      "duration": "10 bulan engagement",
+      "services": [
+        "Suhu Website",
+        "Suhu Ads",
+        "Suhu SEO"
+      ],
+      "metrics": [
+        {
+          "label": "Borrower acquisition",
+          "value": "+6.1x"
+        },
+        {
+          "label": "CAC",
+          "value": "-48%"
+        },
+        {
+          "label": "Approval rate",
+          "value": "38%"
+        }
+      ],
+      "summary": "Funnel acquisition borrower dengan compliance OJK ketat + risk profiler di landing supaya lead udah pre-qualified. Approval rate jadi 38% (vs industry avg 18-22%)."
+    },
+    {
+      "title": "Insurance Agency Premium",
+      "category": "Insurance brokerage, premium product",
+      "duration": "16 bulan engagement",
+      "services": [
+        "Suhu Socmed",
+        "Suhu Digital Marketing"
+      ],
+      "metrics": [
+        {
+          "label": "Qualified lead",
+          "value": "+4.2x"
+        },
+        {
+          "label": "Premium rate avg",
+          "value": "+35%"
+        },
+        {
+          "label": "Retention",
+          "value": "82%"
+        }
+      ],
+      "summary": "Authority building lewat founder thought leadership di LinkedIn + IG + YouTube + content edukasi insurance. Premium rate per policy naik 35% karena prospect udah teredukasi."
+    },
+    {
+      "title": "Wealth Management Boutique",
+      "category": "HNWI wealth management",
+      "duration": "14 bulan engagement",
+      "services": [
+        "Suhu Website",
+        "Suhu Creative"
+      ],
+      "metrics": [
+        {
+          "label": "AUM grow",
+          "value": "Rp 240M"
+        },
+        {
+          "label": "Client onboarding",
+          "value": "+3.5x"
+        },
+        {
+          "label": "Authority score",
+          "value": "Top-tier HNWI"
+        }
+      ],
+      "summary": "Brand positioning premium di segment HNWI dengan content authority + private event marketing. AUM naik Rp 240M dalam 14 bulan, client onboarding 3.5x dari baseline."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Apakah ngerti regulasi OJK, BI, dan advertising standard finance?",
+      "a": "Iya, ini area kompetensi inti kita untuk vertical finance. Kita familiar sama POJK 1/2013 (perlindungan konsumen), POJK 77 (P2P), POJK 35 (multifinance), Peraturan BI tentang sistem pembayaran, dan SAPK (Standar Advertising Periklanan Keuangan). Setiap creative & landing di-review compliance sebelum publish."
+    },
+    {
+      "q": "Cocok untuk fintech early-stage atau finance brand established?",
+      "a": "Cocok dua-duanya. Fintech early-stage biasanya butuh acquisition aggressive + brand building paralel. Brand established butuh authority maintenance + retention + cross-sell strategy. Approach kita disesuaikan dengan stage & budget."
+    },
+    {
+      "q": "Bagaimana strategi build trust di audience yang skeptis?",
+      "a": "Beberapa layer: (1) Founder authority di-build lewat content thought leadership, (2) Customer testimoni real & detailed (bukan stock template), (3) Transparency soal license, fee, risk, (4) Edukasi-first content sebelum sell, (5) Response time customer service cepat & profesional. Trust di-build over 6-18 bulan konsisten."
+    },
+    {
+      "q": "Bisa handle complex product (insurance, investment) yang butuh consultation?",
+      "a": "Iya. Untuk complex product, funnel-nya consultation-based: lead masuk → schedule call/meeting → consultation → proposal → closing. Kita handle dari acquisition lead, nurturing sequence 60-90 hari, sampai assist closing dengan content sales enablement."
+    },
+    {
+      "q": "Apakah konten finansial bisa di-handle (yang gak boring)?",
+      "a": "Iya, ini specialty kita. Konten finansial bisa engaging dengan: storytelling case study, infografis visual, video edukasi singkat, Q&A format, dan financial humor (yang appropriate). Tim copywriter kita familiar gimana balance compliance dengan engagement."
+    },
+    {
+      "q": "Bagaimana cara measure ROI campaign untuk produk dengan sales cycle panjang?",
+      "a": "Tracking attribution multi-touch: dari ad impression → first form/call → consultation → proposal → closing → first year retention. ROAS dihitung dari customer LTV (bukan first transaction), karena di finance niche, LTV/CAC ratio penting banget untuk profitability."
+    }
+  ],
+  "whatsappMessage": "Halo Para Suhu, saya owner/manager brand finance (fintech/insurance/multifinance) — interest sama jasa digital marketing finance. Bisa diskusi?"
+}

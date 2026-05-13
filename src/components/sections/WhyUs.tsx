@@ -65,7 +65,7 @@ export default function WhyUs() {
           >
             Banyak agency di Indo.
             <br />
-            <span className="italic text-gradient-emerald">
+            <span className="font-bold text-gradient-emerald">
               Tapi gak semua jadi suhu.
             </span>
           </motion.h2>

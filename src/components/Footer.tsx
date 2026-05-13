@@ -12,7 +12,7 @@ export default function Footer() {
         {/* Big tagline */}
         <div className="border-b border-white/10 pb-16 mb-16">
           <h2 className="font-display text-5xl md:text-7xl lg:text-8xl leading-[0.95] text-white">
-            Siap jadi <span className="italic text-gradient-emerald">suhu</span>
+            Siap jadi <span className="font-bold text-gradient-emerald">suhu</span>
             <br />
             di industri lo?
           </h2>
@@ -41,7 +41,7 @@ export default function Footer() {
                 </div>
               </div>
               <div className="flex flex-col leading-none">
-                <span className="font-display italic text-lg text-white">
+                <span className="font-display font-semibold text-lg text-white">
                   Para Suhu
                 </span>
                 <span className="font-mono text-[9px] tracking-[0.2em] text-suhu-emerald uppercase">

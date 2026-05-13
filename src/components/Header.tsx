@@ -51,7 +51,7 @@ export default function Header() {
               </div>
             </div>
             <div className="flex flex-col leading-none">
-              <span className="font-display italic text-lg text-white">
+              <span className="font-display font-semibold text-lg text-white">
                 Para Suhu
               </span>
               <span className="font-mono text-[9px] tracking-[0.2em] text-suhu-emerald uppercase">
@@ -178,7 +178,7 @@ export default function Header() {
           >
             <div className="flex flex-col h-full">
               <div className="flex items-center justify-between px-6 py-5 border-b border-white/5">
-                <span className="font-display italic text-xl">Para Suhu</span>
+                <span className="font-display font-semibold text-xl">Para Suhu</span>
                 <button
                   onClick={() => setIsOpen(false)}
                   className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center"
@@ -206,7 +206,7 @@ export default function Header() {
                       <Link
                         href={link.href}
                         onClick={() => setIsOpen(false)}
-                        className="block py-3 text-2xl font-display italic text-white hover:text-suhu-neon transition-colors"
+                        className="block py-3 text-2xl font-display font-semibold text-white hover:text-suhu-neon transition-colors"
                       >
                         {link.name}
                       </Link>

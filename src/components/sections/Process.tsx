@@ -58,7 +58,7 @@ export default function Process() {
             >
               Proses suhu,
               <br />
-              <span className="italic text-gradient-emerald">
+              <span className="font-bold text-gradient-emerald">
                 tanpa drama.
               </span>
             </motion.h2>

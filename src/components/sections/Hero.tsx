@@ -40,20 +40,20 @@ export default function Hero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="font-display text-[14vw] md:text-[10vw] lg:text-[8.5vw] leading-[0.9] text-white"
+            className="font-display font-semibold text-[14vw] md:text-[10vw] lg:text-[8.5vw] leading-[0.88] text-white tracking-[-0.04em]"
           >
             Suhu-nya
             <br />
-            <span className="italic text-gradient-emerald">
+            <span className="font-bold text-gradient-emerald">
               Digital Marketing
             </span>
             <br />
             <span className="inline-flex items-baseline gap-4">
               Indonesia
               <motion.span
-                initial={{ rotate: -180, opacity: 0 }}
-                animate={{ rotate: 0, opacity: 1 }}
-                transition={{ duration: 1, delay: 0.8 }}
+                initial={{ rotate: -180, opacity: 0, scale: 0 }}
+                animate={{ rotate: 0, opacity: 1, scale: 1 }}
+                transition={{ duration: 1, delay: 0.8, type: "spring", stiffness: 100 }}
                 className="inline-block text-suhu-neon text-[8vw] md:text-[5vw] lg:text-[4vw]"
               >
                 ✦

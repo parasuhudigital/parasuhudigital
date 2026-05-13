@@ -57,7 +57,7 @@ export default function Testimonials() {
           >
             Kata mereka yang
             <br />
-            <span className="italic text-gradient-emerald">
+            <span className="font-bold text-gradient-emerald">
               udah jadi suhu duluan.
             </span>
           </motion.h2>

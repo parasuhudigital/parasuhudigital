@@ -24,7 +24,7 @@ export default function MarqueeStrip() {
         <div className="marquee-track gap-12 items-center">
           {[...MARQUEE_ITEMS, ...MARQUEE_ITEMS].map((item, i) => (
             <div key={i} className="flex items-center gap-12 flex-shrink-0">
-              <span className="font-display italic text-3xl md:text-5xl text-white/80 whitespace-nowrap">
+              <span className="font-display font-semibold text-3xl md:text-5xl text-white/80 whitespace-nowrap">
                 {item}
               </span>
               <span className="text-suhu-neon text-2xl">✦</span>

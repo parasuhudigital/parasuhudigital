@@ -1,24 +1,26 @@
 import type { Metadata } from "next";
-import { Instrument_Serif, Space_Grotesk, JetBrains_Mono } from "next/font/google";
+import { Bricolage_Grotesque, Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 
-const displayFont = Instrument_Serif({
+const displayFont = Bricolage_Grotesque({
   subsets: ["latin"],
-  weight: ["400"],
+  weight: ["300", "400", "500", "600", "700", "800"],
   variable: "--font-display",
-  style: ["normal", "italic"],
+  display: "swap",
 });
 
-const sansFont = Space_Grotesk({
+const sansFont = Inter({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
   variable: "--font-sans",
+  display: "swap",
 });
 
 const monoFont = JetBrains_Mono({
   subsets: ["latin"],
   weight: ["400", "500", "600"],
   variable: "--font-mono",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -65,7 +67,7 @@ export default function RootLayout({
       lang="id"
       className={`${displayFont.variable} ${sansFont.variable} ${monoFont.variable}`}
     >
-      <body className="font-sans bg-suhu-black text-white">{children}</body>
+      <body className="font-sans bg-suhu-black text-white antialiased">{children}</body>
     </html>
   );
 }

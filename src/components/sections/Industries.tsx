@@ -54,7 +54,7 @@ export default function Industries() {
             className="font-display text-5xl md:text-6xl lg:text-7xl leading-[1] text-white max-w-4xl"
           >
             Spesialis di
-            <span className="italic text-gradient-emerald"> 8 industri</span>{" "}
+            <span className="font-bold text-gradient-emerald"> 8 industri</span>{" "}
             yang kita kenal luar dalam.
           </motion.h2>
         </div>

@@ -49,7 +49,7 @@ export default function CTASection() {
               >
                 Bisnis lo butuh
                 <br />
-                <span className="italic text-gradient-emerald">
+                <span className="font-bold text-gradient-emerald">
                   level up digital?
                 </span>
               </motion.h2>

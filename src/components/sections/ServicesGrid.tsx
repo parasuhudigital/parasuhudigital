@@ -50,7 +50,7 @@ export default function ServicesGrid() {
               <h2 className="font-display text-5xl md:text-6xl lg:text-7xl leading-[1] text-white">
                 9 Layanan,
                 <br />
-                <span className="italic text-gradient-emerald">
+                <span className="font-bold text-gradient-emerald">
                   satu rumah suhu.
                 </span>
               </h2>
@@ -115,7 +115,7 @@ export default function ServicesGrid() {
                     </h3>
 
                     {/* Tagline */}
-                    <p className="font-display italic text-base text-suhu-emerald mb-4">
+                    <p className="font-display font-semibold text-base text-suhu-emerald mb-4">
                       {service.tagline}
                     </p>
 

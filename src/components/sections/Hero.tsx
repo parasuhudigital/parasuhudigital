@@ -1,24 +1,21 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Link from "next/link";
+import { useTranslations } from "next-intl";
 import { ArrowUpRight } from "lucide-react";
+import { Link } from "@/i18n/navigation";
 
 export default function Hero() {
+  const t = useTranslations("hero");
+
   return (
     <section className="relative min-h-screen flex items-center pt-32 pb-20 overflow-hidden">
-      {/* Background grid */}
       <div className="absolute inset-0 bg-grid opacity-40" />
-
-      {/* Gradient orbs */}
       <div className="absolute top-1/4 -left-32 w-96 h-96 bg-suhu-emerald/20 rounded-full blur-[120px] pointer-events-none" />
       <div className="absolute bottom-1/4 -right-32 w-[500px] h-[500px] bg-suhu-emerald-dark/40 rounded-full blur-[150px] pointer-events-none" />
-
-      {/* Noise overlay */}
       <div className="absolute inset-0 noise-overlay pointer-events-none" />
 
       <div className="relative max-w-[1400px] mx-auto px-6 lg:px-12 w-full">
-        {/* Tag */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -30,11 +27,10 @@ export default function Hero() {
             <span className="relative inline-flex rounded-full h-2 w-2 bg-suhu-neon" />
           </span>
           <span className="text-xs font-mono uppercase tracking-[0.2em] text-suhu-emerald">
-            Open for new projects · Q4 2026
+            {t("tag")}
           </span>
         </motion.div>
 
-        {/* Heading */}
         <div className="max-w-6xl">
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
@@ -42,18 +38,23 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="font-display font-semibold text-[14vw] md:text-[10vw] lg:text-[8.5vw] leading-[0.88] text-white tracking-[-0.04em]"
           >
-            Suhu-nya
+            {t("heading1")}
             <br />
             <span className="font-bold text-gradient-emerald">
-              Digital Marketing
+              {t("heading2")}
             </span>
             <br />
             <span className="inline-flex items-baseline gap-4">
-              Indonesia
+              {t("heading3")}
               <motion.span
                 initial={{ rotate: -180, opacity: 0, scale: 0 }}
                 animate={{ rotate: 0, opacity: 1, scale: 1 }}
-                transition={{ duration: 1, delay: 0.8, type: "spring", stiffness: 100 }}
+                transition={{
+                  duration: 1,
+                  delay: 0.8,
+                  type: "spring",
+                  stiffness: 100,
+                }}
                 className="inline-block text-suhu-neon text-[8vw] md:text-[5vw] lg:text-[4vw]"
               >
                 ✦
@@ -61,22 +62,23 @@ export default function Hero() {
             </span>
           </motion.h1>
 
-          {/* Subtitle */}
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.5 }}
-            className="mt-8 max-w-2xl text-lg md:text-xl text-white/70 leading-relaxed"
+            className="mt-10 max-w-2xl text-lg md:text-xl text-white/75 leading-relaxed"
+            dangerouslySetInnerHTML={{ __html: t.raw("subtitle") }}
+          />
+
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.55 }}
+            className="mt-5 max-w-2xl text-base text-white/55 leading-relaxed"
           >
-            Dari{" "}
-            <span className="text-white font-medium">SEO sampai AI</span>,
-            dari{" "}
-            <span className="text-white font-medium">website sampai ads</span>{" "}
-            — kita handle semuanya. Bisnis lo tinggal fokus berkembang, urusan
-            digital biar suhu yang ngerjain.
+            {t("supportingLine")}
           </motion.p>
 
-          {/* CTAs */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -87,7 +89,7 @@ export default function Hero() {
               href="/contact"
               className="group inline-flex items-center gap-3 px-7 py-4 bg-suhu-emerald text-suhu-black font-medium rounded-full hover:bg-suhu-neon transition-all"
             >
-              <span>Konsultasi gratis sekarang</span>
+              <span>{t("ctaPrimary")}</span>
               <div className="w-8 h-8 rounded-full bg-suhu-black flex items-center justify-center group-hover:rotate-45 transition-transform">
                 <ArrowUpRight className="w-4 h-4 text-suhu-neon" />
               </div>
@@ -97,12 +99,20 @@ export default function Hero() {
               href="/services"
               className="inline-flex items-center gap-2 px-7 py-4 border border-white/15 text-white rounded-full hover:border-suhu-emerald hover:bg-white/5 transition-all"
             >
-              <span>Lihat semua layanan</span>
+              <span>{t("ctaSecondary")}</span>
             </Link>
           </motion.div>
+
+          <motion.p
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.6, delay: 0.85 }}
+            className="mt-6 text-xs font-mono uppercase tracking-[0.15em] text-white/40"
+          >
+            {t("trustBadge")}
+          </motion.p>
         </div>
 
-        {/* Bottom indicators */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -110,10 +120,10 @@ export default function Hero() {
           className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl"
         >
           {[
-            { label: "Projects sejak 2018", value: "50+" },
-            { label: "Layanan Suhu", value: "9" },
-            { label: "Industri spesialisasi", value: "8" },
-            { label: "Lokal Indonesia", value: "100%" },
+            { label: t("stats.clients"), value: "50+" },
+            { label: t("stats.services"), value: "9" },
+            { label: t("stats.industries"), value: "8" },
+            { label: t("stats.local"), value: "100%" },
           ].map((stat, i) => (
             <motion.div
               key={i}
@@ -133,7 +143,6 @@ export default function Hero() {
         </motion.div>
       </div>
 
-      {/* Scroll indicator */}
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -141,7 +150,7 @@ export default function Hero() {
         className="absolute bottom-8 left-1/2 -translate-x-1/2 hidden md:flex flex-col items-center gap-2"
       >
         <span className="text-[10px] font-mono uppercase tracking-[0.3em] text-white/40">
-          Scroll
+          {t("scroll")}
         </span>
         <div className="w-px h-12 bg-gradient-to-b from-suhu-emerald to-transparent" />
       </motion.div>

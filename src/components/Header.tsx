@@ -1,13 +1,16 @@
 "use client";
 
-import Link from "next/link";
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { useTranslations } from "next-intl";
 import { Menu, X, ArrowUpRight } from "lucide-react";
+import { Link } from "@/i18n/navigation";
 import { SERVICES } from "@/lib/constants";
 import { cn } from "@/lib/utils";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 export default function Header() {
+  const t = useTranslations("nav");
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
@@ -40,7 +43,6 @@ export default function Header() {
         )}
       >
         <div className="max-w-[1400px] mx-auto px-6 lg:px-12 py-5 flex items-center justify-between">
-          {/* Logo */}
           <Link href="/" className="group flex items-center gap-2.5">
             <div className="relative w-9 h-9">
               <div className="absolute inset-0 rounded-lg bg-gradient-to-br from-suhu-neon to-suhu-emerald-dark group-hover:scale-110 transition-transform duration-500" />
@@ -60,16 +62,14 @@ export default function Header() {
             </div>
           </Link>
 
-          {/* Desktop Nav */}
           <nav className="hidden lg:flex items-center gap-1">
             <Link
               href="/"
               className="px-4 py-2 text-sm text-white/80 hover:text-white transition-colors"
             >
-              Home
+              {t("home")}
             </Link>
 
-            {/* Services with dropdown */}
             <div
               className="relative"
               onMouseEnter={() => setServicesOpen(true)}
@@ -79,7 +79,7 @@ export default function Header() {
                 href="/services"
                 className="px-4 py-2 text-sm text-white/80 hover:text-white transition-colors flex items-center gap-1"
               >
-                Services
+                {t("services")}
                 <span
                   className={cn(
                     "text-[10px] transition-transform",
@@ -129,33 +129,35 @@ export default function Header() {
               href="/portfolio"
               className="px-4 py-2 text-sm text-white/80 hover:text-white transition-colors"
             >
-              Portfolio
+              {t("portfolio")}
             </Link>
             <Link
               href="/about"
               className="px-4 py-2 text-sm text-white/80 hover:text-white transition-colors"
             >
-              About
+              {t("about")}
             </Link>
             <Link
               href="/blog"
               className="px-4 py-2 text-sm text-white/80 hover:text-white transition-colors"
             >
-              Blog
+              {t("blog")}
             </Link>
           </nav>
 
-          {/* CTA */}
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-2.5">
+            <div className="hidden md:block">
+              <LanguageSwitcher variant="desktop" />
+            </div>
+
             <Link
               href="/contact"
               className="hidden md:inline-flex items-center gap-1.5 px-5 py-2.5 bg-suhu-emerald text-suhu-black font-medium text-sm rounded-full hover:bg-suhu-neon transition-all hover:gap-2.5 group"
             >
-              Konsultasi Gratis
+              {t("ctaConsult")}
               <ArrowUpRight className="w-4 h-4 transition-transform group-hover:rotate-45" />
             </Link>
 
-            {/* Mobile menu button */}
             <button
               onClick={() => setIsOpen(true)}
               className="lg:hidden w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:border-suhu-emerald transition-colors"
@@ -167,7 +169,6 @@ export default function Header() {
         </div>
       </motion.header>
 
-      {/* Mobile Menu */}
       <AnimatePresence>
         {isOpen && (
           <motion.div
@@ -191,14 +192,14 @@ export default function Header() {
               <nav className="flex-1 overflow-y-auto px-6 py-8">
                 <div className="space-y-2">
                   {[
-                    { name: "Home", href: "/" },
-                    { name: "Portfolio", href: "/portfolio" },
-                    { name: "About", href: "/about" },
-                    { name: "Blog", href: "/blog" },
-                    { name: "Contact", href: "/contact" },
+                    { name: t("home"), href: "/" },
+                    { name: t("portfolio"), href: "/portfolio" },
+                    { name: t("about"), href: "/about" },
+                    { name: t("blog"), href: "/blog" },
+                    { name: t("contact"), href: "/contact" },
                   ].map((link, i) => (
                     <motion.div
-                      key={link.name}
+                      key={link.href}
                       initial={{ opacity: 0, x: -20 }}
                       animate={{ opacity: 1, x: 0 }}
                       transition={{ delay: i * 0.05 }}
@@ -216,7 +217,7 @@ export default function Header() {
 
                 <div className="mt-8 pt-8 border-t border-white/5">
                   <div className="text-xs font-mono uppercase tracking-widest text-white/40 mb-4">
-                    Services
+                    {t("services")}
                   </div>
                   <div className="space-y-1">
                     {SERVICES.map((s, i) => (
@@ -237,6 +238,13 @@ export default function Header() {
                     ))}
                   </div>
                 </div>
+
+                <div className="mt-8 pt-8 border-t border-white/5">
+                  <div className="text-xs font-mono uppercase tracking-widest text-white/40 mb-4">
+                    Language / Bahasa
+                  </div>
+                  <LanguageSwitcher variant="mobile" />
+                </div>
               </nav>
 
               <div className="px-6 py-6 border-t border-white/5">
@@ -245,7 +253,7 @@ export default function Header() {
                   onClick={() => setIsOpen(false)}
                   className="flex items-center justify-center gap-2 w-full py-4 bg-suhu-emerald text-suhu-black font-medium rounded-full"
                 >
-                  Konsultasi Gratis
+                  {t("ctaConsult")}
                   <ArrowUpRight className="w-5 h-5" />
                 </Link>
               </div>

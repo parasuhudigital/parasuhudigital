@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Link from "next/link";
+import { useTranslations } from "next-intl";
 import {
   Building2,
   Stethoscope,
@@ -13,6 +13,7 @@ import {
   UtensilsCrossed,
   ArrowUpRight,
 } from "lucide-react";
+import { Link } from "@/i18n/navigation";
 import { NICHES } from "@/lib/constants";
 
 const iconMap = {
@@ -27,12 +28,14 @@ const iconMap = {
 };
 
 export default function Industries() {
+  const t = useTranslations("industries");
+
   return (
-    <section className="relative py-32 bg-suhu-black-card/30 overflow-hidden">
+    <section className="relative py-24 lg:py-32 bg-suhu-black-card/30 overflow-hidden">
       <div className="absolute inset-0 bg-grid opacity-30" />
 
-      <div className="max-w-[1400px] mx-auto px-6 lg:px-12 relative">
-        <div className="mb-16">
+      <div className="relative max-w-[1400px] mx-auto px-6 lg:px-12">
+        <div className="mb-12 lg:mb-16">
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -42,7 +45,7 @@ export default function Industries() {
           >
             <span className="w-8 h-px bg-suhu-emerald" />
             <span className="text-xs font-mono uppercase tracking-[0.2em] text-suhu-emerald">
-              Industries We Serve
+              {t("eyebrow")}
             </span>
           </motion.div>
 
@@ -51,12 +54,24 @@ export default function Industries() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="font-display text-5xl md:text-6xl lg:text-7xl leading-[1] text-white max-w-4xl"
+            className="font-display font-semibold text-5xl md:text-6xl lg:text-7xl leading-[1] tracking-[-0.03em] text-white max-w-4xl"
           >
-            Spesialis di
-            <span className="font-bold text-gradient-emerald"> 8 industri</span>{" "}
-            yang kita kenal luar dalam.
+            {t("title")}{" "}
+            <span className="font-bold text-gradient-emerald">
+              {t("titleHighlightInline")}
+            </span>{" "}
+            {t("titleAfter")}
           </motion.h2>
+
+          <motion.p
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="mt-8 text-lg md:text-xl text-white/65 leading-relaxed max-w-3xl"
+          >
+            {t("intro")}
+          </motion.p>
         </div>
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 lg:gap-6">
@@ -86,7 +101,7 @@ export default function Industries() {
                         {niche.name}
                       </h3>
                       <div className="mt-4 inline-flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-white/40 group-hover:text-suhu-emerald transition-colors">
-                        <span>Lihat detail</span>
+                        <span>{t("viewDetail")}</span>
                         <ArrowUpRight className="w-3 h-3 transition-transform group-hover:rotate-45" />
                       </div>
                     </div>
@@ -96,6 +111,16 @@ export default function Industries() {
             );
           })}
         </div>
+
+        <motion.p
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+          className="mt-12 text-center text-sm text-white/50 max-w-2xl mx-auto"
+        >
+          {t("moreSoon")}
+        </motion.p>
       </div>
     </section>
   );

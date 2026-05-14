@@ -1,0 +1,290 @@
+{
+  "meta": {
+    "home": {
+      "title": "Para Suhu Digital — AI-Powered Digital Marketing Agency in Indonesia",
+      "description": "Indonesia's leading digital marketing agency. SEO, websites, mobile apps, custom software, Meta & Google Ads, social media, and AI automation — 9 services under one roof. Free strategy session for your business.",
+      "keywords": "digital marketing agency indonesia, SEO services jakarta, website development indonesia, mobile app development, custom software development, meta ads agency, google ads agency, social media agency jakarta, AI automation agency, digital agency BSD, southeast asia digital agency"
+    }
+  },
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "portfolio": "Portfolio",
+    "about": "About",
+    "blog": "Blog",
+    "contact": "Contact",
+    "ctaConsult": "Free Consultation"
+  },
+  "hero": {
+    "tag": "Limited slots · New projects Q4 2026",
+    "heading1": "The Masters of",
+    "heading2": "Digital Marketing",
+    "heading3": "in Indonesia",
+    "subtitle": "From <strong>SEO to AI</strong>, from <strong>websites to performance ads</strong> — we deliver 9 end-to-end digital services under one roof. Focus on growing your business while the masters handle your digital.",
+    "supportingLine": "Trusted by 50+ clients across 8 industries since 2018. AI-leveraged workflows deliver 3x faster than conventional agencies — with the same premium Jakarta tier quality.",
+    "ctaPrimary": "Start free consultation",
+    "ctaSecondary": "Explore all services",
+    "trustBadge": "No minimum contracts · No hidden costs · Free 60-minute strategy session",
+    "stats": {
+      "clients": "Active clients since 2018",
+      "services": "Digital services",
+      "industries": "Industry specialties",
+      "local": "Local Indonesian team"
+    },
+    "scroll": "Scroll to explore"
+  },
+  "manifesto": {
+    "eyebrow": "Why we exist",
+    "title": "An agency that gets business,",
+    "titleHighlight": "not just one that sells services.",
+    "p1": "Para Suhu Digital was born from a simple observation: too many agencies in Indonesia make sweet promises upfront, only to fumble the delivery. Projects drag on, communication disappears, results fall short of expectations — and the client always pays the price.",
+    "p2": "We believe digital marketing isn't about momentary tricks or growth hacks. It's about consistent systems, disciplined execution, and strategy that genuinely connects with business goals. That's what sets us apart.",
+    "p3": "By combining <strong>senior-level strategy</strong> with <strong>modern AI workflows</strong>, we deliver the quality of tier-1 Jakarta agencies at speeds and prices that still make sense — whether you're a bootstrapped startup or a corporation in scaling mode.",
+    "highlight": "9 services. 1 house. 0 drama."
+  },
+  "servicesGrid": {
+    "eyebrow": "Our Services",
+    "title": "9 Master Services,",
+    "titleHighlight": "one complete house.",
+    "intro": "Need a website that converts? Done. Ads with proven ROAS? Done. A mobile app that sticks on users' phones? Done. Need to clean up your brand's reputation on Google? Absolutely. Pick what you need — or take everything and let us become your strategic digital partner.",
+    "highlights": [
+      { "title": "End-to-end coverage", "desc": "Strategy, design, development, marketing, and maintenance — one point of coordination." },
+      { "title": "Senior-led delivery", "desc": "Every project is supervised by a founder or senior strategist — not a trial-and-error junior." },
+      { "title": "Transparent pricing", "desc": "Clear tiers, detailed scope, no hidden costs. Flexible contracts starting from 1 month." }
+    ],
+    "ctaText": "Not sure which one fits your business?",
+    "ctaHighlight": "Let's discuss first — free, no commitment.",
+    "ctaButton": "Start consultation"
+  },
+  "whyUs": {
+    "eyebrow": "Why Para Suhu",
+    "title": "Many agencies in Indonesia.",
+    "titleHighlight": "But not all are masters.",
+    "subtitle": "We don't take on every project that walks through the door. We choose clients we can genuinely impact, and we deliver to a standard we refuse to compromise. These four principles back our results guarantee.",
+    "reasons": [
+      {
+        "number": "01",
+        "title": "Fast without quality compromise",
+        "description": "Projects that typically take 3 months, we finish in 3 weeks. Not because we rush — but because our internal workflows are automated with premium AI tools. Quality control stays manual, owned by senior strategists."
+      },
+      {
+        "number": "02",
+        "title": "AI-leveraged, master-driven",
+        "description": "We use AI for execution (research, content production, automation), but strategy and critical decisions stay with humans. The result: working like a team of 10x with senior-level output."
+      },
+      {
+        "number": "03",
+        "title": "Founders hands-on, not just sales talk",
+        "description": "You talk directly to the people doing the work — not an account manager who has to 'check with the technical team'. Direct communication, fast decisions, no telephone-game scope creep."
+      },
+      {
+        "number": "04",
+        "title": "Pay for results, not promises",
+        "description": "We're transparent about targets and deliverables. If we miss a milestone, there's real accountability — not lengthy excuses. Performance-based contracts available for Suhu Ads and SEO clients."
+      }
+    ],
+    "footnote": "Want to first check if your project fits our way of working? Initial 30-60 minute discussion, free."
+  },
+  "industries": {
+    "eyebrow": "Industries We Serve",
+    "title": "Specialists in",
+    "titleHighlightInline": "8 industries",
+    "titleAfter": "we know inside and out.",
+    "intro": "Each industry has different consumer behavior, regulations, and marketing playbooks. Rather than being a shallow generalist, we've chosen to go deep in these 8 industries — with concrete portfolios, case studies, and battle-tested keyword research.",
+    "viewDetail": "View details",
+    "moreSoon": "Your industry isn't here? We can still work together — we're used to onboarding new industries with deep upfront research."
+  },
+  "process": {
+    "eyebrow": "How We Work",
+    "title": "Master process,",
+    "titleHighlight": "no drama, full transparency.",
+    "subtitle": "We don't like projects that drag, communication that gets tangled, or results that aren't clear. These four stages keep clients calm from kickoff to launch — and beyond.",
+    "steps": [
+      {
+        "num": "01",
+        "title": "Discovery & Discussion",
+        "desc": "We talk about your business, targets, current state, and competitors. Free 30-60 minutes via Zoom or in person at our BSD/Bintaro office. No obligation, no hard selling.",
+        "duration": "1-2 days"
+      },
+      {
+        "num": "02",
+        "title": "Proposal & Roadmap",
+        "desc": "You get a complete proposal: detailed scope, weekly timeline, deliverables per milestone, transparent pricing. Including assumptions, risks, and exit clauses — everything in black and white.",
+        "duration": "2-3 days"
+      },
+      {
+        "num": "03",
+        "title": "Execution in Master Mode",
+        "desc": "We work with AI-leveraged workflows. Weekly progress updates via Notion + WhatsApp group, access to staging environments, and weekly sync calls. You'll never feel left in the dark.",
+        "duration": "2-12 weeks"
+      },
+      {
+        "num": "04",
+        "title": "Launch & Optimize",
+        "desc": "After launch, we don't disappear. 30-day bug-fix warranty, optional maintenance retainer, and scaling options for the next phase. We invest long-term with serious clients.",
+        "duration": "Ongoing"
+      }
+    ]
+  },
+  "approach": {
+    "eyebrow": "Our Methodology",
+    "title": "Not AI replacing humans.",
+    "titleHighlight": "Humans leveraging AI.",
+    "intro": "Since 2024, we've been seriously exploring how AI can transform the way agencies work. The result: it doesn't reduce quality — it multiplies capacity. This is the methodology that sets us apart.",
+    "pillars": [
+      {
+        "title": "10x faster research",
+        "desc": "Keyword research, competitor analysis, audience mapping — what used to take a week now takes a day. We use a premium AI stack (Claude, GPT-5, Perplexity Pro, custom scrapers) to dig deeper than average agencies."
+      },
+      {
+        "title": "Production at scale",
+        "desc": "A 30-day social media content batch, 10 landing page variants for A/B testing, or 50 creative versions for Meta Ads — ready in days, not months. Always with manual editorial review."
+      },
+      {
+        "title": "Humans still decide",
+        "desc": "Strategy, brand voice, pricing, and critical decisions — always held by senior strategists. AI is a tool, not a replacement. That's why our output is consistent — not generic AI-slop."
+      },
+      {
+        "title": "Automation that helps clients",
+        "desc": "We also implement AI on the client side: context-aware CS chatbots, operational workflow automation, self-explanatory analytics dashboards. Your business becomes efficient — not just well-branded."
+      }
+    ]
+  },
+  "stats": {
+    "eyebrow": "By the Numbers",
+    "title": "Numbers that",
+    "titleHighlight": "speak for themselves.",
+    "items": [
+      { "value": "50+", "label": "Clients since 2018", "desc": "From early-stage startups to tier-1 corporations" },
+      { "value": "9", "label": "Digital services", "desc": "End-to-end coverage under one roof" },
+      { "value": "8", "label": "Industry specialties", "desc": "Battle-tested playbooks per niche" },
+      { "value": "3x", "label": "Faster delivery", "desc": "AI-leveraged workflows vs conventional agencies" },
+      { "value": "95+", "label": "PageSpeed score", "desc": "Our website performance standard" },
+      { "value": "100%", "label": "Local Indonesian team", "desc": "We understand the market, culture, and language" }
+    ]
+  },
+  "testimonials": {
+    "eyebrow": "Client Testimonials",
+    "title": "Words from those",
+    "titleHighlight": "already at master level.",
+    "subtitle": "Identities anonymized at client request. Complete case studies with numbers, dashboard screenshots, and reference contacts available after signing an NDA.",
+    "items": [
+      {
+        "quote": "The Para Suhu team handled our website end-to-end. Live in 3 weeks, blazing fast (PageSpeed 98), and within 2 months our main SEO keywords were in the top 5. Worth every rupiah.",
+        "author": "Anonymous",
+        "role": "Founder, Property Developer",
+        "location": "Jakarta"
+      },
+      {
+        "quote": "What I love is they don't waste time. Initial discussions are straight to the point, the proposal is clear, execution is on time. Perfect for marketing directors who don't have time to babysit a difficult agency.",
+        "author": "Anonymous",
+        "role": "Marketing Director, Beauty Clinic",
+        "location": "Surabaya"
+      },
+      {
+        "quote": "Their Suhu Ads team really understands funnels. ROAS jumped from 1.8x to 4.2x in 2 months with the same ad spend. They don't just optimize campaigns — they share insights for our product team too.",
+        "author": "Anonymous",
+        "role": "Owner, F&B Brand",
+        "location": "Bandung"
+      },
+      {
+        "quote": "We tried 3 agencies before for our custom CRM — all failed mid-project. Para Suhu delivered in 6 weeks, on scope, and support is still going strong. Recommended for any company that needs custom software.",
+        "author": "Anonymous",
+        "role": "COO, B2B Logistics",
+        "location": "Jakarta"
+      },
+      {
+        "quote": "Our Instagram was stuck at 8k followers for 2 years. After handing it over to Suhu Socmed, we hit 35k in 4 months with healthy engagement rates. Relevant content, consistent branding.",
+        "author": "Anonymous",
+        "role": "Founder, Edu-tech",
+        "location": "Jakarta"
+      },
+      {
+        "quote": "Our AI chatbot implementation finished in 3 weeks. Now 70% of customer inquiries are auto-handled with high accuracy. The CS team can focus on cases that truly need humans. Game-changer.",
+        "author": "Anonymous",
+        "role": "Head of Operations, Travel Agency",
+        "location": "Bali"
+      }
+    ]
+  },
+  "faq": {
+    "eyebrow": "Frequently Asked",
+    "title": "Questions clients",
+    "titleHighlight": "ask us most.",
+    "subtitle": "Before consultation, clients usually have these questions. We answer them openly here — so you can assess whether we fit your needs.",
+    "items": [
+      {
+        "q": "How long does a project typically take at Para Suhu?",
+        "a": "Depends on scope: landing pages 2-3 weeks, company profiles 3-4 weeks, e-commerce 4-8 weeks, custom software/apps 8-16 weeks, ad campaigns can launch within 7 days, SEO results start showing 3-6 months. Detailed timelines are broken down per milestone in our proposals."
+      },
+      {
+        "q": "Does Para Suhu work with clients outside Jakarta?",
+        "a": "Yes, 100%. Our team is Jakarta-based (HQ at IDX Tower, with plans for BSD office and Bintaro home office by 2027), but 60% of our clients are from outside Jakarta — Surabaya, Bandung, Bali, Medan, even Singapore. Our workflow is remote-first with proven tooling."
+      },
+      {
+        "q": "How does payment work?",
+        "a": "Depends on the project type. One-time projects (website, app, software): 50% deposit, 30% mid-project, 20% before launch. Retainer projects (SEO, Ads, Socmed): monthly with a 3-month minimum contract. All via corporate bank transfer with formal invoices and NPWP. Custom payment terms available for corporate clients."
+      },
+      {
+        "q": "Are NDAs and confidentiality guaranteed?",
+        "a": "Of course. We regularly work with tier-1 corporate clients who have strict legal requirements. Mutual NDAs are available before in-depth discussions. Client source code, data, and strategies are never shared with third parties — including being used as case studies without written consent."
+      },
+      {
+        "q": "What if we're not satisfied with the results?",
+        "a": "Every project has milestone reviews. If concerns arise mid-project, we revisit scope and adjust. For development projects, there's a free 30-day post-launch bug-fix warranty. For Ads & SEO, contracts are flexible monthly — you can stop anytime with 30 days notice, no penalty."
+      },
+      {
+        "q": "How big is the Para Suhu team?",
+        "a": "Currently, we're a lean senior team with extensive AI workflows. Every project is led by a founder or senior strategist who's hands-on. For larger executions, we partner with a network of pre-vetted specialist freelancers. You'll never get handed off to a 'fresh-out-of-college junior account executive'."
+      },
+      {
+        "q": "Do you work with sensitive industries (like online gaming, finance)?",
+        "a": "Yes. We have specialized playbooks for industries with strict regulatory or platform policy constraints — online gaming (Meta/Google policy), finance (OJK), clinics (BPOM, medical licensing), education (Ministry of Education). Our team understands compliance, not just growth-at-all-cost."
+      },
+      {
+        "q": "Can all deliverables be in English?",
+        "a": "Yes. Websites, applications, documentation, and reporting are available in 2 languages (ID/EN) by default. For clients with international stakeholders, we regularly deliver bilingual or English-only output with native-level copywriters."
+      }
+    ],
+    "footer": "Have another question? Just send us a WhatsApp or email — we usually respond within 2 working hours."
+  },
+  "cta": {
+    "tag": "Limited new project slots per month",
+    "title": "Does your business need",
+    "titleHighlight": "a digital level-up?",
+    "subtitle": "Initial discussions are always free. We assess your needs, recommend solutions, and give investment estimates — all before you commit to anything. No hard selling, no pressure.",
+    "primary": "Free Consultation",
+    "secondary": "WhatsApp Us",
+    "supportingLine": "Or email <strong>info@parasuhudigital.com</strong> · Response within 2 working hours"
+  },
+  "footer": {
+    "bigTagline1": "Ready to become",
+    "bigTaglineHighlight": "the master",
+    "bigTagline2": "of your industry?",
+    "ctaStart": "Start a discussion now",
+    "tagline": "The Masters of Digital Marketing in Indonesia. A digital agency that handles all your business needs — from websites to ads, from SEO to AI automation. Based in Jakarta, serving all of Indonesia.",
+    "headings": {
+      "services": "Services",
+      "company": "Company",
+      "legal": "Legal & Office"
+    },
+    "links": {
+      "about": "About Us",
+      "portfolio": "Portfolio",
+      "blog": "Blog",
+      "contact": "Contact",
+      "career": "Career",
+      "privacy": "Privacy Policy",
+      "terms": "Terms & Conditions"
+    },
+    "headOffice": "Head Office",
+    "copyright": "All rights reserved.",
+    "madeIn": "Made with",
+    "inJakarta": "in Jakarta"
+  },
+  "language": {
+    "switcher": "Language",
+    "id": "Indonesia",
+    "en": "English"
+  }
+}

@@ -1,39 +1,26 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 import { Quote } from "lucide-react";
 
-const TESTIMONIALS = [
-  {
-    quote:
-      "Tim Para Suhu nge-handle website kita end-to-end. 3 minggu udah live, performa kenceng, dan SEO langsung naik. Worth every rupiah.",
-    author: "Anonim",
-    role: "Founder, Property Developer",
-    location: "Jakarta",
-  },
-  {
-    quote:
-      "Yang gua suka, mereka gak basa-basi. Diskusi cepat, eksekusi cepat, hasilnya jelas. Cocok buat yang gak mau ribet sama agency.",
-    author: "Anonim",
-    role: "Marketing Director, Klinik Kecantikan",
-    location: "Surabaya",
-  },
-  {
-    quote:
-      "Suhu Ads-nya beneran ngerti funnel. ROAS naik dari 1.8x jadi 4.2x dalam 2 bulan. Gak nyangka secepet itu.",
-    author: "Anonim",
-    role: "Owner, F&B Brand",
-    location: "Bandung",
-  },
-];
+type Testimonial = {
+  quote: string;
+  author: string;
+  role: string;
+  location: string;
+};
 
 export default function Testimonials() {
+  const t = useTranslations("testimonials");
+  const items = t.raw("items") as Testimonial[];
+
   return (
-    <section className="relative py-32 overflow-hidden">
+    <section className="relative py-24 lg:py-32 overflow-hidden">
       <div className="absolute inset-0 bg-gradient-radial-emerald opacity-40 pointer-events-none" />
 
-      <div className="max-w-[1400px] mx-auto px-6 lg:px-12 relative">
-        <div className="text-center mb-20">
+      <div className="relative max-w-[1400px] mx-auto px-6 lg:px-12">
+        <div className="text-center mb-16 lg:mb-20">
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -43,7 +30,7 @@ export default function Testimonials() {
           >
             <span className="w-8 h-px bg-suhu-emerald" />
             <span className="text-xs font-mono uppercase tracking-[0.2em] text-suhu-emerald">
-              Testimoni
+              {t("eyebrow")}
             </span>
             <span className="w-8 h-px bg-suhu-emerald" />
           </motion.div>
@@ -53,55 +40,54 @@ export default function Testimonials() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="font-display text-5xl md:text-6xl lg:text-7xl leading-[1] text-white max-w-4xl mx-auto"
+            className="font-display font-semibold text-5xl md:text-6xl lg:text-7xl leading-[1] tracking-[-0.03em] text-white max-w-4xl mx-auto"
           >
-            Kata mereka yang
+            {t("title")}
             <br />
             <span className="font-bold text-gradient-emerald">
-              udah jadi suhu duluan.
+              {t("titleHighlight")}
             </span>
           </motion.h2>
+
+          <motion.p
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="mt-8 text-base md:text-lg text-white/55 leading-relaxed max-w-2xl mx-auto"
+          >
+            {t("subtitle")}
+          </motion.p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {TESTIMONIALS.map((t, i) => (
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {items.map((item, i) => (
             <motion.div
               key={i}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: i * 0.1 }}
+              transition={{ duration: 0.5, delay: (i % 3) * 0.1 }}
               className="group relative p-8 rounded-3xl border border-white/10 bg-suhu-black-card/50 backdrop-blur-sm hover:border-suhu-emerald/40 transition-all duration-500"
             >
               <Quote className="w-8 h-8 text-suhu-emerald/40 mb-6" />
 
-              <p className="text-white/80 leading-relaxed mb-8 text-lg">
-                &ldquo;{t.quote}&rdquo;
+              <p className="text-white/80 leading-relaxed mb-8 text-base lg:text-lg">
+                &ldquo;{item.quote}&rdquo;
               </p>
 
               <div className="pt-6 border-t border-white/5">
-                <div className="font-display text-xl text-white">
-                  {t.author}
+                <div className="font-display font-semibold text-lg text-white tracking-[-0.01em]">
+                  {item.author}
                 </div>
-                <div className="text-sm text-white/50 mt-1">{t.role}</div>
+                <div className="text-sm text-white/50 mt-1">{item.role}</div>
                 <div className="text-xs font-mono uppercase tracking-wider text-suhu-emerald/70 mt-1">
-                  {t.location}
+                  {item.location}
                 </div>
               </div>
             </motion.div>
           ))}
         </div>
-
-        <motion.p
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.3 }}
-          className="mt-16 text-center text-sm text-white/40 max-w-xl mx-auto"
-        >
-          *Testimoni dianonimkan untuk privasi klien. Identitas asli & case
-          study lengkap tersedia by request setelah NDA.
-        </motion.p>
       </div>
     </section>
   );

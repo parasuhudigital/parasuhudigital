@@ -1,35 +1,39 @@
-import Link from "next/link";
+"use client";
+
+import { useTranslations } from "next-intl";
 import { ArrowUpRight, Mail, Phone, MapPin } from "lucide-react";
+import { Link } from "@/i18n/navigation";
 import { SERVICES, COMPANY } from "@/lib/constants";
 
 export default function Footer() {
+  const t = useTranslations("footer");
+
   return (
     <footer className="relative bg-suhu-black border-t border-white/5 overflow-hidden">
-      {/* Decorative gradient */}
       <div className="absolute inset-0 bg-gradient-radial-emerald opacity-30 pointer-events-none" />
 
       <div className="relative max-w-[1400px] mx-auto px-6 lg:px-12 py-20">
-        {/* Big tagline */}
         <div className="border-b border-white/10 pb-16 mb-16">
-          <h2 className="font-display text-5xl md:text-7xl lg:text-8xl leading-[0.95] text-white">
-            Siap jadi <span className="font-bold text-gradient-emerald">suhu</span>
+          <h2 className="font-display font-semibold text-5xl md:text-7xl lg:text-8xl leading-[0.95] tracking-[-0.03em] text-white">
+            {t("bigTagline1")}{" "}
+            <span className="font-bold text-gradient-emerald">
+              {t("bigTaglineHighlight")}
+            </span>
             <br />
-            di industri lo?
+            {t("bigTagline2")}
           </h2>
           <Link
             href="/contact"
             className="mt-10 inline-flex items-center gap-3 px-7 py-4 bg-suhu-emerald text-suhu-black font-medium rounded-full hover:bg-suhu-neon transition-all group"
           >
-            <span>Mulai diskusi sekarang</span>
+            <span>{t("ctaStart")}</span>
             <div className="w-8 h-8 rounded-full bg-suhu-black flex items-center justify-center group-hover:rotate-45 transition-transform">
               <ArrowUpRight className="w-4 h-4 text-suhu-neon" />
             </div>
           </Link>
         </div>
 
-        {/* Footer columns */}
         <div className="grid grid-cols-1 md:grid-cols-12 gap-10">
-          {/* Brand */}
           <div className="md:col-span-4">
             <div className="flex items-center gap-2.5 mb-4">
               <div className="relative w-9 h-9">
@@ -50,11 +54,9 @@ export default function Footer() {
               </div>
             </div>
             <p className="text-sm text-white/60 leading-relaxed max-w-sm">
-              {COMPANY.tagline}. Agency digital yang nge-handle semua kebutuhan
-              bisnis lo — dari website sampe ads, dari SEO sampe AI.
+              {t("tagline")}
             </p>
 
-            {/* Contact */}
             <div className="mt-6 space-y-3">
               <a
                 href={`mailto:${COMPANY.email}`}
@@ -77,10 +79,9 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Services */}
           <div className="md:col-span-3">
             <h4 className="font-mono text-xs uppercase tracking-[0.2em] text-suhu-emerald mb-5">
-              Services
+              {t("headings.services")}
             </h4>
             <ul className="space-y-2.5">
               {SERVICES.map((s) => (
@@ -96,35 +97,54 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Company */}
           <div className="md:col-span-2">
             <h4 className="font-mono text-xs uppercase tracking-[0.2em] text-suhu-emerald mb-5">
-              Company
+              {t("headings.company")}
             </h4>
             <ul className="space-y-2.5">
-              {[
-                { name: "About", href: "/about" },
-                { name: "Portfolio", href: "/portfolio" },
-                { name: "Blog", href: "/blog" },
-                { name: "Contact", href: "/contact" },
-                { name: "Career", href: "#" },
-              ].map((l) => (
-                <li key={l.name}>
-                  <Link
-                    href={l.href}
-                    className="text-sm text-white/70 hover:text-white transition-colors"
-                  >
-                    {l.name}
-                  </Link>
-                </li>
-              ))}
+              <li>
+                <Link
+                  href="/about"
+                  className="text-sm text-white/70 hover:text-white transition-colors"
+                >
+                  {t("links.about")}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/portfolio"
+                  className="text-sm text-white/70 hover:text-white transition-colors"
+                >
+                  {t("links.portfolio")}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/blog"
+                  className="text-sm text-white/70 hover:text-white transition-colors"
+                >
+                  {t("links.blog")}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/contact"
+                  className="text-sm text-white/70 hover:text-white transition-colors"
+                >
+                  {t("links.contact")}
+                </Link>
+              </li>
+              <li>
+                <span className="text-sm text-white/40">
+                  {t("links.career")}
+                </span>
+              </li>
             </ul>
           </div>
 
-          {/* Legal */}
           <div className="md:col-span-3">
             <h4 className="font-mono text-xs uppercase tracking-[0.2em] text-suhu-emerald mb-5">
-              Legal & Office
+              {t("headings.legal")}
             </h4>
             <ul className="space-y-2.5 mb-6">
               <li>
@@ -132,7 +152,7 @@ export default function Footer() {
                   href="/privacy-policy"
                   className="text-sm text-white/70 hover:text-white transition-colors"
                 >
-                  Privacy Policy
+                  {t("links.privacy")}
                 </Link>
               </li>
               <li>
@@ -140,24 +160,26 @@ export default function Footer() {
                   href="/terms-conditions"
                   className="text-sm text-white/70 hover:text-white transition-colors"
                 >
-                  Terms & Conditions
+                  {t("links.terms")}
                 </Link>
               </li>
             </ul>
             <div className="text-xs text-white/40 leading-relaxed">
-              <div className="font-medium text-white/60 mb-1">Head Office</div>
+              <div className="font-medium text-white/60 mb-1">
+                {t("headOffice")}
+              </div>
               {COMPANY.address}
             </div>
           </div>
         </div>
 
-        {/* Bottom bar */}
         <div className="mt-16 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
           <p className="text-xs text-white/40 font-mono">
-            © {new Date().getFullYear()} {COMPANY.name}. All rights reserved.
+            © {new Date().getFullYear()} {COMPANY.name}. {t("copyright")}
           </p>
           <p className="text-xs text-white/40 font-mono">
-            Made with <span className="text-suhu-emerald">∞</span> in Jakarta
+            {t("madeIn")} <span className="text-suhu-emerald">∞</span>{" "}
+            {t("inJakarta")}
           </p>
         </div>
       </div>

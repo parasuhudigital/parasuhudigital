@@ -1,0 +1,290 @@
+{
+  "meta": {
+    "home": {
+      "title": "Para Suhu Digital — Agency Digital Marketing Indonesia Berbasis AI",
+      "description": "Agency digital marketing Indonesia spesialis SEO, website, aplikasi mobile, software custom, Meta & Google Ads, social media, dan AI automation. 9 layanan suhu dalam satu rumah. Konsultasi gratis untuk bisnis Anda.",
+      "keywords": "agency digital marketing indonesia, jasa SEO indonesia, jasa pembuatan website jakarta, jasa aplikasi mobile, jasa software custom, jasa meta ads, jasa google ads, social media agency, AI automation agency, digital marketing jakarta, agency digital BSD, agency digital bintaro"
+    }
+  },
+  "nav": {
+    "home": "Beranda",
+    "services": "Layanan",
+    "portfolio": "Portfolio",
+    "about": "Tentang",
+    "blog": "Blog",
+    "contact": "Kontak",
+    "ctaConsult": "Konsultasi Gratis"
+  },
+  "hero": {
+    "tag": "Slot terbatas · Buka project baru Q4 2026",
+    "heading1": "Suhu-nya",
+    "heading2": "Digital Marketing",
+    "heading3": "Indonesia",
+    "subtitle": "Dari <strong>SEO sampai AI</strong>, dari <strong>website sampai performance ads</strong> — kami handle 9 layanan digital end-to-end dalam satu rumah. Bisnis Anda fokus berkembang, urusan digital biar suhu yang kerjakan.",
+    "supportingLine": "Sudah dipercaya 50+ klien dari 8 industri sejak 2018. Workflow AI-leveraged, delivery 3x lebih cepat dari agency konvensional, kualitas tetap premium tier Jakarta.",
+    "ctaPrimary": "Konsultasi gratis sekarang",
+    "ctaSecondary": "Lihat semua layanan",
+    "trustBadge": "Tanpa minimum kontrak · Tanpa hidden cost · Free strategy session 60 menit",
+    "stats": {
+      "clients": "Klien aktif sejak 2018",
+      "services": "Layanan digital suhu",
+      "industries": "Industri spesialisasi",
+      "local": "Tim lokal Indonesia"
+    },
+    "scroll": "Scroll untuk eksplor"
+  },
+  "manifesto": {
+    "eyebrow": "Why we exist",
+    "title": "Agency yang ngerti bisnis,",
+    "titleHighlight": "bukan cuma jualan jasa.",
+    "p1": "Para Suhu Digital lahir dari observasi sederhana: terlalu banyak agency di Indonesia yang janji manis di awal, tapi delivery-nya berantakan. Project molor, komunikasi hilang, hasil gak sesuai ekspektasi — dan klien yang dirugikan.",
+    "p2": "Kami percaya digital marketing bukan soal trick atau hack sesaat. Ini soal sistem yang konsisten, eksekusi yang disiplin, dan strategi yang bener-bener nyambung sama tujuan bisnis. Itu yang bikin kami beda.",
+    "p3": "Dengan kombinasi <strong>strategi senior</strong> dan <strong>workflow AI modern</strong>, kami bisa deliver kualitas agency tier-1 Jakarta dengan kecepatan dan harga yang masih masuk akal — baik buat startup yang lagi bootstrap, maupun korporasi yang lagi scaling.",
+    "highlight": "9 layanan. 1 rumah. 0 drama."
+  },
+  "servicesGrid": {
+    "eyebrow": "Our Services",
+    "title": "9 Layanan Suhu,",
+    "titleHighlight": "satu rumah lengkap.",
+    "intro": "Mau bangun website yang convert? Bisa. Mau iklan yang ROAS-nya jelas? Bisa. Mau aplikasi mobile yang stick di handphone user? Bisa. Mau bersihin nama brand di Google? Bisa banget. Anda tinggal pilih, kami yang eksekusi — atau ambil semua dan biar kami jadi partner digital strategis Anda.",
+    "highlights": [
+      { "title": "End-to-end coverage", "desc": "Strategy, design, development, marketing, hingga maintenance — satu titik koordinasi." },
+      { "title": "Senior-led delivery", "desc": "Setiap project di-supervise founder atau senior strategist, bukan junior yang masih trial-error." },
+      { "title": "Transparent pricing", "desc": "Tiers jelas, scope detail, no hidden cost. Kontrak fleksibel dari mulai 1 bulan." }
+    ],
+    "ctaText": "Belum yakin mana yang cocok buat bisnis Anda?",
+    "ctaHighlight": "Diskusikan dulu — gratis, tanpa commitment.",
+    "ctaButton": "Mulai konsultasi"
+  },
+  "whyUs": {
+    "eyebrow": "Why Para Suhu",
+    "title": "Banyak agency di Indonesia.",
+    "titleHighlight": "Tapi gak semua jadi suhu.",
+    "subtitle": "Kami bukan agency yang asal terima project. Kami pilih klien yang benar-benar bisa kami kasih impact, dan deliver dengan standar yang gak kompromi. Empat prinsip ini yang bikin kami berani jamin hasil.",
+    "reasons": [
+      {
+        "number": "01",
+        "title": "Cepat tanpa kompromi kualitas",
+        "description": "Project yang biasanya 3 bulan, kami selesaikan dalam 3 minggu. Bukan karena buru-buru — tapi karena workflow internal sudah ter-automasi dengan AI tools premium. Quality control tetap manual, dipegang strategist senior."
+      },
+      {
+        "number": "02",
+        "title": "AI-leveraged, suhu-driven",
+        "description": "Kami pakai AI untuk eksekusi (research, content production, automation), tapi strategi dan keputusan kritikal tetap dipikirkan manusia. Hasilnya: kerja kayak punya tim 10x lipat, dengan output kualitas senior."
+      },
+      {
+        "number": "03",
+        "title": "Founder hands-on, bukan sales talk",
+        "description": "Anda ngobrol langsung sama yang ngerjain — bukan account manager yang harus 'forward dulu ke tim teknis'. Komunikasi langsung, decision cepat, gak ada game telepon yang bikin scope creep."
+      },
+      {
+        "number": "04",
+        "title": "Bayar sesuai hasil, bukan sesuai janji",
+        "description": "Kami transparan soal target dan deliverable. Kalau gak tercapai sesuai milestone, ada accountability nyata — bukan excuses panjang lebar. Kontrak performance-based tersedia untuk klien Suhu Ads dan SEO."
+      }
+    ],
+    "footnote": "Mau cek dulu apakah project Anda cocok dengan cara kerja kami? Diskusi awal 30-60 menit, gratis."
+  },
+  "industries": {
+    "eyebrow": "Industries We Serve",
+    "title": "Spesialis di",
+    "titleHighlightInline": "8 industri",
+    "titleAfter": "yang kami kenal luar dalam.",
+    "intro": "Tiap industri punya behavior konsumen, regulasi, dan playbook marketing yang beda. Daripada jadi generalist yang dangkal, kami pilih untuk mendalami 8 industri ini — dengan portfolio konkret, case study, dan keyword research yang sudah teruji.",
+    "viewDetail": "Lihat detail",
+    "moreSoon": "Industri lo gak ada di sini? Tetap bisa kerja sama — kami terbiasa onboarding industri baru dengan research mendalam di awal."
+  },
+  "process": {
+    "eyebrow": "How We Work",
+    "title": "Proses suhu,",
+    "titleHighlight": "tanpa drama, full transparansi.",
+    "subtitle": "Kami gak suka project yang molor, komunikasi yang ribet, atau hasil yang gak jelas. Empat tahapan ini yang bikin klien tetap tenang dari awal sampai launch — dan setelahnya.",
+    "steps": [
+      {
+        "num": "01",
+        "title": "Diskusi & Discovery",
+        "desc": "Kami ngobrol soal bisnis Anda, target, kondisi sekarang, dan kompetitor. Free 30-60 menit via Zoom atau ketemu langsung di kantor BSD/Bintaro. No obligation, no hard selling.",
+        "duration": "1-2 hari"
+      },
+      {
+        "num": "02",
+        "title": "Proposal & Roadmap",
+        "desc": "Anda dapet proposal lengkap: scope detail, timeline mingguan, deliverable per milestone, harga transparan. Termasuk asumsi, risk, dan exit clause — semua hitam putih.",
+        "duration": "2-3 hari"
+      },
+      {
+        "num": "03",
+        "title": "Eksekusi Suhu Mode",
+        "desc": "Kami kerjakan dengan workflow AI-leveraged. Update progress mingguan via Notion + WhatsApp group, akses ke staging environment, dan weekly sync call. Anda gak akan pernah merasa ditinggal.",
+        "duration": "2-12 minggu"
+      },
+      {
+        "num": "04",
+        "title": "Launch & Optimize",
+        "desc": "Setelah launch, kami gak menghilang. Garansi bug-fix 30 hari, optional maintenance retainer, dan opsi scaling untuk fase berikutnya. Kami invest jangka panjang sama klien yang serius.",
+        "duration": "Ongoing"
+      }
+    ]
+  },
+  "approach": {
+    "eyebrow": "Our Methodology",
+    "title": "Bukan AI yang gantiin manusia.",
+    "titleHighlight": "Manusia yang nge-leverage AI.",
+    "intro": "Sejak 2024, kami mulai eksplorasi serius gimana AI bisa mengubah cara agency bekerja. Hasilnya: bukan ngurangin kualitas, tapi multiply kapasitas. Inilah methodology yang bikin kami beda.",
+    "pillars": [
+      {
+        "title": "Research dipercepat 10x",
+        "desc": "Keyword research, competitor analysis, audience mapping — yang dulu butuh seminggu, sekarang 1 hari. Kami pakai stack AI premium (Claude, GPT-5, Perplexity Pro, custom scrapers) untuk dig lebih dalam dari agency biasa."
+      },
+      {
+        "title": "Production scale tinggi",
+        "desc": "Content batch 30 hari sosmed, 10 landing page variant untuk A/B test, atau 50 versi creative untuk Meta Ads — bisa kita siapkan dalam hitungan hari, bukan bulan. Tetap dengan editorial review manual."
+      },
+      {
+        "title": "Decision tetap di manusia",
+        "desc": "Strategi, brand voice, pricing, dan keputusan kritikal — selalu dipegang strategist senior. AI itu tool, bukan replacement. Itu kenapa hasil kami konsisten, bukan generic AI-slop."
+      },
+      {
+        "title": "Automation yang ngebantu klien",
+        "desc": "Kami juga implement AI di sisi klien: chatbot CS yang ngerti context, workflow automation untuk operasional, dashboard analytics yang self-explanatory. Bisnis Anda jadi efisien, bukan cuma branding-nya bagus."
+      }
+    ]
+  },
+  "stats": {
+    "eyebrow": "By the Numbers",
+    "title": "Angka yang",
+    "titleHighlight": "ngomong sendiri.",
+    "items": [
+      { "value": "50+", "label": "Klien sejak 2018", "desc": "Dari startup early-stage hingga korporasi tier-1" },
+      { "value": "9", "label": "Layanan digital", "desc": "End-to-end coverage dalam satu rumah" },
+      { "value": "8", "label": "Industri spesialisasi", "desc": "Playbook teruji per niche" },
+      { "value": "3x", "label": "Lebih cepat", "desc": "Workflow AI-leveraged vs agency konvensional" },
+      { "value": "95+", "label": "PageSpeed score", "desc": "Standar performance website kami" },
+      { "value": "100%", "label": "Tim lokal Indonesia", "desc": "Ngerti pasar, ngerti budaya, ngerti bahasa" }
+    ]
+  },
+  "testimonials": {
+    "eyebrow": "Testimoni Klien",
+    "title": "Kata mereka yang",
+    "titleHighlight": "udah jadi suhu duluan.",
+    "subtitle": "Identitas asli dirahasiakan atas permintaan klien. Case study lengkap dengan angka, screenshot dashboard, dan kontak referensi tersedia setelah penandatanganan NDA.",
+    "items": [
+      {
+        "quote": "Tim Para Suhu nge-handle website kami end-to-end. 3 minggu udah live, performa kenceng (PageSpeed 98), dan dalam 2 bulan ranking SEO untuk keyword utama udah masuk top 5. Worth every rupiah.",
+        "author": "Anonim",
+        "role": "Founder, Property Developer",
+        "location": "Jakarta"
+      },
+      {
+        "quote": "Yang saya suka, mereka gak basa-basi. Diskusi awal langsung to-the-point, proposal jelas, eksekusi tepat waktu. Cocok buat marketing director yang gak punya waktu ngurusin agency rewel.",
+        "author": "Anonim",
+        "role": "Marketing Director, Klinik Kecantikan",
+        "location": "Surabaya"
+      },
+      {
+        "quote": "Suhu Ads-nya beneran ngerti funnel. ROAS naik dari 1.8x jadi 4.2x dalam 2 bulan, dengan ad spend yang sama. Mereka gak cuma optimize kampanye, tapi juga ngasih insight buat product team kami.",
+        "author": "Anonim",
+        "role": "Owner, F&B Brand",
+        "location": "Bandung"
+      },
+      {
+        "quote": "Kami coba 3 agency sebelumnya untuk custom CRM, semua gagal mid-project. Para Suhu deliver dalam 6 minggu, sesuai scope, dan support-nya masih ada sampai sekarang. Recommended buat company yang butuh software custom.",
+        "author": "Anonim",
+        "role": "COO, Logistik B2B",
+        "location": "Jakarta"
+      },
+      {
+        "quote": "Akun Instagram kami stuck di 8k follower selama 2 tahun. Setelah handover ke Suhu Socmed, 4 bulan langsung tembus 35k dengan engagement rate yang sehat. Konten relevan, branding konsisten.",
+        "author": "Anonim",
+        "role": "Founder, Edu-tech",
+        "location": "Jakarta"
+      },
+      {
+        "quote": "Implementasi AI chatbot kami selesai dalam 3 minggu. Sekarang 70% inquiry customer di-handle otomatis dengan akurasi tinggi. Tim CS bisa fokus ke kasus yang benar-benar butuh manusia. Game-changer.",
+        "author": "Anonim",
+        "role": "Head of Operations, Travel Agency",
+        "location": "Bali"
+      }
+    ]
+  },
+  "faq": {
+    "eyebrow": "Pertanyaan Umum",
+    "title": "Pertanyaan yang sering",
+    "titleHighlight": "ditanyain klien.",
+    "subtitle": "Sebelum konsultasi, biasanya klien punya pertanyaan-pertanyaan ini. Sengaja kami jawab terbuka — supaya Anda bisa assess apakah kami fit dengan kebutuhan Anda.",
+    "items": [
+      {
+        "q": "Berapa lama proses pengerjaan project di Para Suhu?",
+        "a": "Tergantung scope: landing page 2-3 minggu, company profile 3-4 minggu, e-commerce 4-8 minggu, custom software/aplikasi 8-16 minggu, kampanye iklan bisa launch dalam 7 hari, SEO mulai keliatan hasil 3-6 bulan. Detail timeline kami breakdown per milestone di proposal."
+      },
+      {
+        "q": "Apakah Para Suhu kerja dengan klien luar Jakarta?",
+        "a": "Iya, 100% bisa. Tim kami berbasis di Jakarta (head office IDX Tower, target buka kantor BSD & home office Bintaro 2027), tapi 60% klien kami dari luar Jakarta — Surabaya, Bandung, Bali, Medan, bahkan Singapura. Workflow kami remote-first dengan tooling yang udah teruji."
+      },
+      {
+        "q": "Bagaimana sistem pembayarannya?",
+        "a": "Tergantung jenis project. Project one-time (website, app, software): 50% DP, 30% mid-project, 20% sebelum launch. Project retainer (SEO, Ads, Socmed): bulanan dengan kontrak minimum 3 bulan. Semua via transfer bank perusahaan dengan invoice resmi & NPWP. Tersedia opsi termin custom untuk korporasi."
+      },
+      {
+        "q": "Apakah ada NDA dan jaminan kerahasiaan?",
+        "a": "Tentu. Kami biasa kerja dengan klien tier korporasi yang punya requirement legal ketat. NDA dua arah tersedia sebelum diskusi mendalam. Source code, data, dan strategi klien gak pernah kami share ke pihak lain — termasuk dipakai sebagai case study tanpa izin tertulis."
+      },
+      {
+        "q": "Kalau gak puas sama hasilnya gimana?",
+        "a": "Setiap project ada milestone review. Kalau di mid-project ada concern, kami revisit scope dan adjust. Untuk project development, ada garansi bug-fix 30 hari post-launch gratis. Untuk Ads & SEO, kontrak fleksibel bulanan — bisa berhenti kapan aja dengan notice 30 hari, tanpa penalty."
+      },
+      {
+        "q": "Tim Para Suhu berapa orang?",
+        "a": "Saat ini kami lean team senior + ekstensif AI workflow. Setiap project di-lead oleh founder atau senior strategist yang hands-on. Untuk eksekusi skala besar, kami juga kerja sama dengan jaringan freelancer specialist yang udah ter-vetted. Anda gak akan pernah diserahin ke 'junior account executive baru lulus kuliah'."
+      },
+      {
+        "q": "Apakah Para Suhu kerja dengan industri sensitif (seperti game online, finance)?",
+        "a": "Iya. Kami punya playbook khusus untuk industri yang punya constraint regulasi atau platform policy ketat — game online (Meta/Google policy), finance (OJK), klinik (BPOM, izin medis), edukasi (Diknas). Tim kami memahami compliance, bukan cuma growth-at-all-cost."
+      },
+      {
+        "q": "Bisa request bahasa Inggris untuk semua deliverable?",
+        "a": "Bisa. Website, aplikasi, dokumentasi, dan reporting tersedia dalam 2 bahasa (ID/EN) by default. Untuk klien dengan stakeholder internasional, kami biasa deliver bilingual atau English-only dengan tim copywriter native-level."
+      }
+    ],
+    "footer": "Punya pertanyaan lain? Kirim aja via WhatsApp atau email, kami biasanya respon dalam 2 jam jam kerja."
+  },
+  "cta": {
+    "tag": "Slot project baru terbatas tiap bulan",
+    "title": "Bisnis Anda butuh",
+    "titleHighlight": "level-up digital?",
+    "subtitle": "Diskusi awal selalu gratis. Kami assess kebutuhan Anda, kasih rekomendasi solusi, dan estimasi investasi — semua sebelum Anda commit apapun. No hard selling, no pressure.",
+    "primary": "Konsultasi Gratis",
+    "secondary": "WhatsApp Langsung",
+    "supportingLine": "Atau email ke <strong>info@parasuhudigital.com</strong> · Respon dalam 2 jam jam kerja"
+  },
+  "footer": {
+    "bigTagline1": "Siap jadi",
+    "bigTaglineHighlight": "suhu",
+    "bigTagline2": "di industri Anda?",
+    "ctaStart": "Mulai diskusi sekarang",
+    "tagline": "Suhu-nya Digital Marketing Indonesia. Agency digital yang nge-handle semua kebutuhan bisnis Anda — dari website sampai ads, dari SEO sampai AI automation. Berbasis Jakarta, melayani seluruh Indonesia.",
+    "headings": {
+      "services": "Layanan",
+      "company": "Perusahaan",
+      "legal": "Legal & Kantor"
+    },
+    "links": {
+      "about": "Tentang Kami",
+      "portfolio": "Portfolio",
+      "blog": "Blog",
+      "contact": "Kontak",
+      "career": "Karier",
+      "privacy": "Kebijakan Privasi",
+      "terms": "Syarat & Ketentuan"
+    },
+    "headOffice": "Kantor Pusat",
+    "copyright": "Hak cipta dilindungi.",
+    "madeIn": "Made with",
+    "inJakarta": "di Jakarta"
+  },
+  "language": {
+    "switcher": "Bahasa",
+    "id": "Indonesia",
+    "en": "English"
+  }
+}

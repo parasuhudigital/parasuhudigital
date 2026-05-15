@@ -14,6 +14,8 @@ type FbqArgs =
 declare global {
   interface Window {
     fbq?: (...args: FbqArgs) => void;
+    gtag?: (...args: unknown[]) => void;
+    dataLayer?: unknown[];
   }
 }
 
@@ -35,4 +37,17 @@ export function trackEvent(
 ) {
   if (typeof window === "undefined" || typeof window.fbq !== "function") return;
   window.fbq("track", event, params ?? {});
+}
+
+/**
+ * Fire a Google Ads conversion (gtag event).
+ * Pass `sendTo` as 'AW-XXXX/CONVERSION_LABEL'. Use when you have a
+ * specific conversion action created in Google Ads.
+ */
+export function trackGoogleAdsConversion(
+  sendTo: string,
+  params?: Record<string, unknown>
+) {
+  if (typeof window === "undefined" || typeof window.gtag !== "function") return;
+  window.gtag("event", "conversion", { send_to: sendTo, ...(params ?? {}) });
 }

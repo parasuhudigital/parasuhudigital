@@ -385,7 +385,8 @@ export const COMPANY = {
   },
   email: "info@parasuhudigital.com",
   phone: "(021) 5890 50020",
-  whatsapp: "+6285890500020",
+  whatsapp: "+628214982408",
+  whatsappDisplay: "+62 821-4982-408",
   address: {
     id: "Infiniti Office, Indonesia Stock Exchange Tower 1 Level 3, Unit 304, Jl. Jendral Sudirman Kav 52-53, RT 05/RW 03, Senayan, Kebayoran Baru, Jakarta Selatan 12190",
     en: "Infiniti Office, Indonesia Stock Exchange Tower 1 Level 3, Unit 304, Jl. Jendral Sudirman Kav 52-53, RT 05/RW 03, Senayan, Kebayoran Baru, South Jakarta 12190",

@@ -37,9 +37,38 @@ export default function ContactPage() {
       content_name: "contact_form_submit",
       content_category: "form_submit",
     });
-    // Untuk sementara, redirect ke WhatsApp dengan pre-filled message
+
+    const isEn = locale === "en";
+    const lines = isEn
+      ? [
+          "Hi Para Suhu Digital!",
+          "",
+          `Name: ${formData.name}`,
+          `Email: ${formData.email}`,
+          `WhatsApp: ${formData.phone}`,
+          formData.company ? `Company: ${formData.company}` : null,
+          formData.service ? `Service: ${formData.service}` : null,
+          formData.budget ? `Budget: ${formData.budget}` : null,
+          "",
+          "Project details:",
+          formData.message,
+        ]
+      : [
+          "Halo Para Suhu Digital!",
+          "",
+          `Nama: ${formData.name}`,
+          `Email: ${formData.email}`,
+          `WhatsApp: ${formData.phone}`,
+          formData.company ? `Nama Bisnis: ${formData.company}` : null,
+          formData.service ? `Layanan: ${formData.service}` : null,
+          formData.budget ? `Budget: ${formData.budget}` : null,
+          "",
+          "Ceritain project:",
+          formData.message,
+        ];
+
     const waMessage = encodeURIComponent(
-      `Halo Para Suhu Digital!\n\nNama: ${formData.name}\nEmail: ${formData.email}\nPhone: ${formData.phone}\nCompany: ${formData.company}\nService: ${formData.service}\nBudget: ${formData.budget}\n\nPesan:\n${formData.message}`
+      lines.filter(Boolean).join("\n")
     );
     const waUrl = `https://wa.me/${COMPANY.whatsapp.replace(/\D/g, "")}?text=${waMessage}`;
     window.open(waUrl, "_blank");
@@ -277,7 +306,7 @@ export default function ContactPage() {
                           target="_blank"
                           rel="noopener noreferrer"
                         >
-                          {COMPANY.phone}
+                          {COMPANY.whatsappDisplay}
                         </a>
                         {t("success.bodyPost")}
                       </p>
@@ -328,7 +357,7 @@ export default function ContactPage() {
                         {t("sidebar.waLabel")}
                       </div>
                       <div className="font-display font-semibold text-xl text-white">
-                        {COMPANY.phone}
+                        {COMPANY.whatsappDisplay}
                       </div>
                       <div className="text-sm text-white/60 mt-1">
                         {t("sidebar.waHours")}

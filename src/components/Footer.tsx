@@ -176,11 +176,10 @@ export default function Footer() {
 
         <div className="mt-16 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
           <p className="text-xs text-white/40 font-mono">
-            © {new Date().getFullYear()} {COMPANY.name}. {t("copyright")}
+            © 2026. Para Suhu Digital (PT. Suhu Digital Agency).
           </p>
           <p className="text-xs text-white/40 font-mono">
-            {t("madeIn")} <span className="text-suhu-emerald">∞</span>{" "}
-            {t("inJakarta")}
+            {t("copyright")}
           </p>
         </div>
       </div>

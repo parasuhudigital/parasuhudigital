@@ -7,8 +7,9 @@ import { ArrowUpRight, MapPin, Calendar, TrendingUp } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import CTASection from "@/components/sections/CTASection";
-import { SERVICES } from "@/lib/constants";
-import { CASE_STUDIES, PORTFOLIO_STATS, type ServiceId } from "@/lib/portfolio";
+import { useLocale, useTranslations } from "next-intl";
+import { SERVICES, t as bi, type Locale } from "@/lib/constants";
+import { CASE_STUDIES, PORTFOLIO_STATS, localizeCaseStudy, type ServiceId } from "@/lib/portfolio";
 import { cn } from "@/lib/utils";
 
 const ACCENT_MAP = {
@@ -30,23 +31,26 @@ const ACCENT_TEXT = {
 } as const;
 
 export default function PortfolioPage() {
+  const locale = useLocale() as Locale;
+  const t = useTranslations("portfolioPage");
   const [activeFilter, setActiveFilter] = useState<ServiceId | "all">("all");
 
   const filteredCases = useMemo(() => {
-    if (activeFilter === "all") return CASE_STUDIES;
-    return CASE_STUDIES.filter((c) => c.service === activeFilter);
-  }, [activeFilter]);
+    const all = CASE_STUDIES.map((c) => localizeCaseStudy(c, locale));
+    if (activeFilter === "all") return all;
+    return all.filter((c) => c.service === activeFilter);
+  }, [activeFilter, locale]);
 
   const filters = useMemo(
     () => [
-      { id: "all" as const, name: "Semua", count: CASE_STUDIES.length },
+      { id: "all" as const, name: t("filterAll"), count: CASE_STUDIES.length },
       ...SERVICES.map((s) => ({
         id: s.id,
         name: s.name,
         count: CASE_STUDIES.filter((c) => c.service === s.id).length,
       })),
     ],
-    []
+    [t]
   );
 
   return (
@@ -67,7 +71,7 @@ export default function PortfolioPage() {
               className="inline-flex items-center gap-2 px-4 py-2 border border-suhu-emerald/30 bg-suhu-emerald/5 rounded-full mb-8"
             >
               <span className="text-xs font-mono uppercase tracking-[0.2em] text-suhu-emerald">
-                Portfolio · {CASE_STUDIES.length} case studies
+                {t("tag", { count: CASE_STUDIES.length })}
               </span>
             </motion.div>
 
@@ -77,10 +81,10 @@ export default function PortfolioPage() {
               transition={{ duration: 0.8, delay: 0.1 }}
               className="font-display font-semibold text-[12vw] md:text-[7vw] lg:text-[6vw] leading-[0.95] text-white tracking-[-0.04em] max-w-6xl"
             >
-              Bukan janji manis.
+              {t("title")}
               <br />
               <span className="font-bold text-gradient-emerald">
-                Hasil yang ke-measure.
+                {t("titleHighlight")}
               </span>
             </motion.h1>
 
@@ -90,10 +94,10 @@ export default function PortfolioPage() {
               transition={{ duration: 0.6, delay: 0.3 }}
               className="mt-8 max-w-3xl text-lg md:text-xl text-white/70 leading-relaxed"
             >
-              <strong className="text-white">{PORTFOLIO_STATS.totalClients} klien di seluruh Indonesia</strong>{" "}
-              sejak 2018. {CASE_STUDIES.length} case studies dari 9 layanan suhu,
-              di 8 industri spesialisasi. Ini sebagian kerjaan kami — yang
-              metrik-nya beneran ke-track, bukan klaim doang.
+              <strong className="text-white">
+                {PORTFOLIO_STATS.totalClients} {t("intro1")}
+              </strong>{" "}
+              {t("intro2", { count: CASE_STUDIES.length })}
             </motion.p>
 
             {/* Stats bar */}
@@ -104,10 +108,10 @@ export default function PortfolioPage() {
               className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl"
             >
               {[
-                { value: PORTFOLIO_STATS.totalClients, label: "Klien aktif" },
-                { value: `${CASE_STUDIES.length}+`, label: "Case studies" },
-                { value: "8", label: "Industri" },
-                { value: PORTFOLIO_STATS.totalCities, label: "Coverage" },
+                { value: PORTFOLIO_STATS.totalClients, label: t("statClients") },
+                { value: `${CASE_STUDIES.length}+`, label: t("statCases") },
+                { value: "8", label: t("statIndustries") },
+                { value: bi(PORTFOLIO_STATS.totalCities, locale), label: t("statCoverage") },
               ].map((stat, i) => (
                 <div key={i} className="border-l border-white/10 pl-5">
                   <div className="font-display text-3xl md:text-4xl font-semibold text-suhu-neon">
@@ -221,7 +225,7 @@ export default function PortfolioPage() {
                           <div className="flex items-center gap-2 mb-2">
                             <TrendingUp className={cn("w-3 h-3", accentText)} />
                             <span className="text-[10px] font-mono uppercase tracking-widest text-white/40">
-                              Hero metric
+                              {t("heroMetric")}
                             </span>
                           </div>
                           <div className="flex items-baseline gap-2">
@@ -241,7 +245,7 @@ export default function PortfolioPage() {
 
                         {/* Read more arrow */}
                         <div className="mt-5 flex items-center gap-1.5 text-xs text-white/40 group-hover:text-suhu-neon transition-colors">
-                          <span>Baca case study</span>
+                          <span>{t("readMore")}</span>
                           <ArrowUpRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
                         </div>
                       </article>
@@ -253,7 +257,7 @@ export default function PortfolioPage() {
 
             {filteredCases.length === 0 && (
               <div className="text-center py-20 text-white/50">
-                Belum ada case study di kategori ini.
+                {t("empty")}
               </div>
             )}
           </div>

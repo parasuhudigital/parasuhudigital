@@ -1,28 +1,46 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import { ArrowUpRight, Calendar, User } from "lucide-react";
+import { getTranslations } from "next-intl/server";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { getAllBlogPosts, CATEGORY_LABELS, type BlogPost } from "@/lib/blog";
+import type { Locale } from "@/lib/constants";
 
-export const metadata: Metadata = {
-  title: "Blog — Insights Digital Marketing | Para Suhu Digital",
-  description:
-    "Insights, tips, dan case study seputar SEO, Ads, Website, Social Media, dan AI untuk bisnis Indonesia. Update mingguan dari Para Suhu Digital.",
-  alternates: {
-    canonical: "https://parasuhudigital.com/blog",
-  },
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: { locale: Locale };
+}): Promise<Metadata> {
+  const t = await getTranslations({ locale: params.locale, namespace: "blogPage" });
+  return {
+    title: t("metaTitle"),
+    description: t("metaDesc"),
+    alternates: {
+      canonical: "https://parasuhudigital.com/blog",
+    },
+  };
+}
 
-function formatDate(iso: string) {
-  return new Date(iso).toLocaleDateString("id-ID", {
+function formatDate(iso: string, locale: Locale) {
+  return new Date(iso).toLocaleDateString(locale === "en" ? "en-US" : "id-ID", {
     day: "numeric",
     month: "long",
     year: "numeric",
   });
 }
 
-function PostCard({ post, featured }: { post: BlogPost; featured?: boolean }) {
+function PostCard({
+  post,
+  featured,
+  locale,
+  readMore,
+}: {
+  post: BlogPost;
+  featured?: boolean;
+  locale: Locale;
+  readMore: string;
+}) {
   const { slug, frontmatter } = post;
   const category = frontmatter.category
     ? CATEGORY_LABELS[frontmatter.category] ?? frontmatter.category
@@ -61,7 +79,7 @@ function PostCard({ post, featured }: { post: BlogPost; featured?: boolean }) {
             <span className="w-1 h-1 rounded-full bg-white/30" />
           )}
           <span className="text-xs text-white/40 font-mono">
-            {formatDate(frontmatter.date)}
+            {formatDate(frontmatter.date, locale)}
           </span>
         </div>
 
@@ -89,7 +107,7 @@ function PostCard({ post, featured }: { post: BlogPost; featured?: boolean }) {
             <span>{frontmatter.author}</span>
           </div>
           <div className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-white/40 group-hover:text-suhu-emerald transition-colors">
-            <span>Baca</span>
+            <span>{readMore}</span>
             <ArrowUpRight className="w-3 h-3 transition-transform group-hover:rotate-45" />
           </div>
         </div>
@@ -98,12 +116,19 @@ function PostCard({ post, featured }: { post: BlogPost; featured?: boolean }) {
   );
 }
 
-export default function BlogPage() {
+export default async function BlogPage({
+  params,
+}: {
+  params: { locale: Locale };
+}) {
   const allPosts = getAllBlogPosts();
   const featured = allPosts.find((p) => p.frontmatter.featured);
   const others = featured
     ? allPosts.filter((p) => p.slug !== featured.slug)
     : allPosts;
+  const locale = params.locale;
+  const t = await getTranslations({ locale, namespace: "blogPage" });
+  const readMore = t("readMore");
 
   return (
     <>
@@ -117,21 +142,20 @@ export default function BlogPage() {
           <div className="relative max-w-[1400px] mx-auto px-6 lg:px-12">
             <div className="inline-flex items-center gap-2 px-4 py-2 border border-suhu-emerald/30 bg-suhu-emerald/5 rounded-full mb-8">
               <span className="text-xs font-mono uppercase tracking-[0.2em] text-suhu-emerald">
-                Blog & Insights
+                {t("tag")}
               </span>
             </div>
 
             <h1 className="font-display font-semibold text-[10vw] md:text-[7vw] lg:text-[6vw] leading-[0.9] text-white tracking-[-0.04em]">
-              Insight, tips,
+              {t("title")}
               <br />
               <span className="font-bold text-gradient-emerald">
-                & case study.
+                {t("titleHighlight")}
               </span>
             </h1>
 
             <p className="mt-8 max-w-2xl text-lg md:text-xl text-white/70 leading-relaxed">
-              Artikel actionable seputar SEO, Ads, Website, Socmed, dan AI
-              untuk bisnis Indonesia. Update reguler.
+              {t("intro")}
             </p>
           </div>
         </section>
@@ -142,14 +166,21 @@ export default function BlogPage() {
             {allPosts.length === 0 ? (
               <div className="text-center py-24 border border-dashed border-white/10 rounded-3xl">
                 <p className="text-white/40 font-mono text-sm uppercase tracking-[0.2em]">
-                  Belum ada artikel. Stay tuned.
+                  {t("empty")}
                 </p>
               </div>
             ) : (
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {featured && <PostCard post={featured} featured />}
+                {featured && (
+                  <PostCard post={featured} featured locale={locale} readMore={readMore} />
+                )}
                 {others.map((post) => (
-                  <PostCard key={post.slug} post={post} />
+                  <PostCard
+                    key={post.slug}
+                    post={post}
+                    locale={locale}
+                    readMore={readMore}
+                  />
                 ))}
               </div>
             )}

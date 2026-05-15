@@ -11,11 +11,14 @@ import {
   Send,
   CheckCircle2,
 } from "lucide-react";
+import { useLocale, useTranslations } from "next-intl";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { COMPANY, SERVICES } from "@/lib/constants";
+import { COMPANY, SERVICES, t as bi, type Locale } from "@/lib/constants";
 
 export default function ContactPage() {
+  const locale = useLocale() as Locale;
+  const t = useTranslations("contactPage");
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -65,7 +68,7 @@ export default function ContactPage() {
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-suhu-neon" />
               </span>
               <span className="text-xs font-mono uppercase tracking-[0.2em] text-suhu-emerald">
-                Free Consultation
+                {t("tag")}
               </span>
             </motion.div>
 
@@ -75,10 +78,10 @@ export default function ContactPage() {
               transition={{ duration: 0.8, delay: 0.1 }}
               className="font-display font-semibold text-[12vw] md:text-[8vw] lg:text-[7vw] leading-[0.9] text-white tracking-[-0.04em] max-w-5xl"
             >
-              Mau diskusi?
+              {t("title")}
               <br />
               <span className="font-bold text-gradient-emerald">
-                Yuk, kita ngobrol.
+                {t("titleHighlight")}
               </span>
             </motion.h1>
 
@@ -88,9 +91,7 @@ export default function ContactPage() {
               transition={{ duration: 0.6, delay: 0.3 }}
               className="mt-10 max-w-2xl text-lg md:text-xl text-white/70 leading-relaxed"
             >
-              Konsultasi awal gratis 30-60 menit. Kita assess kebutuhan lo dan
-              kasih rekomendasi solusi yang fit dengan budget & target — tanpa
-              tekanan untuk langsung sign deal.
+              {t("subtitle")}
             </motion.p>
           </div>
         </section>
@@ -111,18 +112,17 @@ export default function ContactPage() {
                   {!submitted ? (
                     <>
                       <h2 className="font-display font-semibold text-3xl text-white mb-2 tracking-[-0.02em]">
-                        Kirim brief lo
+                        {t("form.heading")}
                       </h2>
                       <p className="text-sm text-white/50 mb-8">
-                        Form ini bakal kirim message langsung ke WhatsApp kita.
-                        Response time: max 12 jam (jam kerja).
+                        {t("form.subheading")}
                       </p>
 
                       <form onSubmit={handleSubmit} className="space-y-5">
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                           <div>
                             <label className="block text-xs font-mono uppercase tracking-wider text-white/40 mb-2">
-                              Nama Lengkap *
+                              {t("form.name")}
                             </label>
                             <input
                               type="text"
@@ -131,12 +131,12 @@ export default function ContactPage() {
                               value={formData.name}
                               onChange={handleChange}
                               className="w-full px-4 py-3.5 bg-suhu-black border border-white/10 rounded-xl text-white placeholder:text-white/30 focus:border-suhu-emerald focus:outline-none transition-colors"
-                              placeholder="Andi Saputra"
+                              placeholder={t("form.namePlaceholder")}
                             />
                           </div>
                           <div>
                             <label className="block text-xs font-mono uppercase tracking-wider text-white/40 mb-2">
-                              Email *
+                              {t("form.email")}
                             </label>
                             <input
                               type="email"
@@ -145,7 +145,7 @@ export default function ContactPage() {
                               value={formData.email}
                               onChange={handleChange}
                               className="w-full px-4 py-3.5 bg-suhu-black border border-white/10 rounded-xl text-white placeholder:text-white/30 focus:border-suhu-emerald focus:outline-none transition-colors"
-                              placeholder="andi@bisnis.com"
+                              placeholder={t("form.emailPlaceholder")}
                             />
                           </div>
                         </div>
@@ -153,7 +153,7 @@ export default function ContactPage() {
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                           <div>
                             <label className="block text-xs font-mono uppercase tracking-wider text-white/40 mb-2">
-                              WhatsApp *
+                              {t("form.phone")}
                             </label>
                             <input
                               type="tel"
@@ -162,12 +162,12 @@ export default function ContactPage() {
                               value={formData.phone}
                               onChange={handleChange}
                               className="w-full px-4 py-3.5 bg-suhu-black border border-white/10 rounded-xl text-white placeholder:text-white/30 focus:border-suhu-emerald focus:outline-none transition-colors"
-                              placeholder="0812-3456-7890"
+                              placeholder={t("form.phonePlaceholder")}
                             />
                           </div>
                           <div>
                             <label className="block text-xs font-mono uppercase tracking-wider text-white/40 mb-2">
-                              Nama Bisnis
+                              {t("form.company")}
                             </label>
                             <input
                               type="text"
@@ -175,7 +175,7 @@ export default function ContactPage() {
                               value={formData.company}
                               onChange={handleChange}
                               className="w-full px-4 py-3.5 bg-suhu-black border border-white/10 rounded-xl text-white placeholder:text-white/30 focus:border-suhu-emerald focus:outline-none transition-colors"
-                              placeholder="PT Maju Sukses"
+                              placeholder={t("form.companyPlaceholder")}
                             />
                           </div>
                         </div>
@@ -183,7 +183,7 @@ export default function ContactPage() {
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                           <div>
                             <label className="block text-xs font-mono uppercase tracking-wider text-white/40 mb-2">
-                              Layanan yang Diminati
+                              {t("form.service")}
                             </label>
                             <select
                               name="service"
@@ -191,20 +191,20 @@ export default function ContactPage() {
                               onChange={handleChange}
                               className="w-full px-4 py-3.5 bg-suhu-black border border-white/10 rounded-xl text-white focus:border-suhu-emerald focus:outline-none transition-colors"
                             >
-                              <option value="">Pilih layanan...</option>
+                              <option value="">{t("form.servicePlaceholder")}</option>
                               {SERVICES.map((s) => (
                                 <option key={s.id} value={s.name}>
                                   {s.name}
                                 </option>
                               ))}
-                              <option value="Belum tau, mau diskusi dulu">
-                                Belum tau, mau diskusi dulu
+                              <option value={t("form.serviceOther")}>
+                                {t("form.serviceOther")}
                               </option>
                             </select>
                           </div>
                           <div>
                             <label className="block text-xs font-mono uppercase tracking-wider text-white/40 mb-2">
-                              Estimasi Budget
+                              {t("form.budget")}
                             </label>
                             <select
                               name="budget"
@@ -212,14 +212,14 @@ export default function ContactPage() {
                               onChange={handleChange}
                               className="w-full px-4 py-3.5 bg-suhu-black border border-white/10 rounded-xl text-white focus:border-suhu-emerald focus:outline-none transition-colors"
                             >
-                              <option value="">Pilih range...</option>
+                              <option value="">{t("form.budgetPlaceholder")}</option>
                               <option value="< Rp 25jt">{`< Rp 25 juta`}</option>
                               <option value="Rp 25-50jt">Rp 25-50 juta</option>
                               <option value="Rp 50-100jt">Rp 50-100 juta</option>
                               <option value="Rp 100-250jt">Rp 100-250 juta</option>
                               <option value="Rp 250jt+">Rp 250 juta+</option>
-                              <option value="Belum ada estimasi">
-                                Belum ada estimasi
+                              <option value={t("form.budgetNone")}>
+                                {t("form.budgetNone")}
                               </option>
                             </select>
                           </div>
@@ -227,7 +227,7 @@ export default function ContactPage() {
 
                         <div>
                           <label className="block text-xs font-mono uppercase tracking-wider text-white/40 mb-2">
-                            Ceritain Project Lo *
+                            {t("form.message")}
                           </label>
                           <textarea
                             name="message"
@@ -236,7 +236,7 @@ export default function ContactPage() {
                             value={formData.message}
                             onChange={handleChange}
                             className="w-full px-4 py-3.5 bg-suhu-black border border-white/10 rounded-xl text-white placeholder:text-white/30 focus:border-suhu-emerald focus:outline-none transition-colors resize-none"
-                            placeholder="Ceritain bisnis lo, target, dan apa yang mau dicapai dari project ini..."
+                            placeholder={t("form.messagePlaceholder")}
                           />
                         </div>
 
@@ -245,14 +245,12 @@ export default function ContactPage() {
                           className="group inline-flex items-center gap-3 px-7 py-4 bg-suhu-emerald text-suhu-black font-medium rounded-full hover:bg-suhu-neon transition-all w-full md:w-auto justify-center"
                         >
                           <Send className="w-4 h-4" />
-                          <span>Kirim via WhatsApp</span>
+                          <span>{t("form.submit")}</span>
                           <ArrowUpRight className="w-4 h-4 transition-transform group-hover:rotate-45" />
                         </button>
 
                         <p className="text-xs text-white/40 leading-relaxed">
-                          Dengan submit form ini, lo setuju kalo data lo bakal
-                          dipake buat respond inquiry & follow-up. Kita gak
-                          spam, gak jual data lo.
+                          {t("form.consent")}
                         </p>
                       </form>
                     </>
@@ -264,11 +262,10 @@ export default function ContactPage() {
                     >
                       <CheckCircle2 className="w-20 h-20 text-suhu-emerald mx-auto mb-6" />
                       <h2 className="font-display font-semibold text-3xl text-white mb-4 tracking-[-0.02em]">
-                        Message terkirim!
+                        {t("success.heading")}
                       </h2>
                       <p className="text-white/60 leading-relaxed max-w-md mx-auto">
-                        WhatsApp lo akan kebuka otomatis. Kalo gak kebuka, lo
-                        bisa langsung WA ke{" "}
+                        {t("success.bodyPre")}{" "}
                         <a
                           href={`https://wa.me/${COMPANY.whatsapp.replace(/\D/g, "")}`}
                           className="text-suhu-emerald underline"
@@ -277,7 +274,7 @@ export default function ContactPage() {
                         >
                           {COMPANY.phone}
                         </a>
-                        . Response time max 12 jam (jam kerja).
+                        {t("success.bodyPost")}
                       </p>
                     </motion.div>
                   )}
@@ -293,10 +290,10 @@ export default function ContactPage() {
                   transition={{ duration: 0.5, delay: 0.1 }}
                 >
                   <h3 className="font-display font-semibold text-2xl text-white mb-2 tracking-[-0.02em]">
-                    Atau langsung kontak.
+                    {t("sidebar.heading")}
                   </h3>
                   <p className="text-sm text-white/50 mb-6">
-                    Kalo lo prefer ngobrol langsung, ini jalur cepatnya.
+                    {t("sidebar.subheading")}
                   </p>
                 </motion.div>
 
@@ -317,13 +314,13 @@ export default function ContactPage() {
                     </div>
                     <div className="flex-1">
                       <div className="text-xs font-mono uppercase tracking-wider text-suhu-emerald mb-1">
-                        Whatsapp · Fastest
+                        {t("sidebar.waLabel")}
                       </div>
                       <div className="font-display font-semibold text-xl text-white">
                         {COMPANY.phone}
                       </div>
                       <div className="text-sm text-white/60 mt-1">
-                        Senin-Jumat, 09:00-18:00 WIB
+                        {t("sidebar.waHours")}
                       </div>
                     </div>
                     <ArrowUpRight className="w-5 h-5 text-suhu-emerald transition-transform group-hover:rotate-45" />
@@ -345,13 +342,13 @@ export default function ContactPage() {
                     </div>
                     <div className="flex-1">
                       <div className="text-xs font-mono uppercase tracking-wider text-white/40 mb-1">
-                        Email
+                        {t("sidebar.emailLabel")}
                       </div>
                       <div className="font-display font-semibold text-lg text-white break-all">
                         {COMPANY.email}
                       </div>
                       <div className="text-sm text-white/60 mt-1">
-                        Buat brief detail / RFP
+                        {t("sidebar.emailDesc")}
                       </div>
                     </div>
                   </div>
@@ -371,16 +368,16 @@ export default function ContactPage() {
                     </div>
                     <div className="flex-1">
                       <div className="text-xs font-mono uppercase tracking-wider text-white/40 mb-1">
-                        Head Office
+                        {t("sidebar.officeLabel")}
                       </div>
                       <div className="font-display font-semibold text-base text-white leading-snug">
-                        Infiniti Office, IDX Tower 1
+                        {t("sidebar.officeName")}
                       </div>
                       <div className="text-sm text-white/60 mt-2 leading-relaxed">
-                        {COMPANY.address}
+                        {bi(COMPANY.address, locale)}
                       </div>
                       <div className="text-sm text-white/60 mt-3">
-                        Meeting by appointment only
+                        {t("sidebar.officeNote")}
                       </div>
                     </div>
                   </div>

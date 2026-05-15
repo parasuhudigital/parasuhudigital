@@ -1,12 +1,13 @@
 "use client";
 
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { ArrowUpRight, Mail, Phone, MapPin } from "lucide-react";
 import { Link } from "@/i18n/navigation";
-import { SERVICES, COMPANY } from "@/lib/constants";
+import { SERVICES, COMPANY, t as bi, type Locale } from "@/lib/constants";
 
 export default function Footer() {
   const t = useTranslations("footer");
+  const locale = useLocale() as Locale;
 
   return (
     <footer className="relative bg-suhu-black border-t border-white/5 overflow-hidden">
@@ -74,7 +75,7 @@ export default function Footer() {
               </a>
               <div className="flex items-start gap-3 text-sm text-white/70">
                 <MapPin className="w-4 h-4 flex-shrink-0 mt-0.5" />
-                <span>{COMPANY.shortAddress}</span>
+                <span>{bi(COMPANY.shortAddress, locale)}</span>
               </div>
             </div>
           </div>
@@ -168,7 +169,7 @@ export default function Footer() {
               <div className="font-medium text-white/60 mb-1">
                 {t("headOffice")}
               </div>
-              {COMPANY.address}
+              {bi(COMPANY.address, locale)}
             </div>
           </div>
         </div>

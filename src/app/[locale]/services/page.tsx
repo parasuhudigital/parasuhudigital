@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { useLocale, useTranslations } from "next-intl";
 import {
   Globe,
   Smartphone,
@@ -17,7 +18,7 @@ import {
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import CTASection from "@/components/sections/CTASection";
-import { SERVICES } from "@/lib/constants";
+import { SERVICES, t as bi, type Locale } from "@/lib/constants";
 
 const iconMap = {
   Globe,
@@ -32,6 +33,8 @@ const iconMap = {
 };
 
 export default function ServicesPage() {
+  const t = useTranslations("servicesPage");
+  const locale = useLocale() as Locale;
   return (
     <>
       <Header />
@@ -49,7 +52,7 @@ export default function ServicesPage() {
               className="inline-flex items-center gap-2 px-4 py-2 border border-suhu-emerald/30 bg-suhu-emerald/5 rounded-full mb-8"
             >
               <span className="text-xs font-mono uppercase tracking-[0.2em] text-suhu-emerald">
-                Our Services
+                {t("eyebrow")}
               </span>
             </motion.div>
 
@@ -59,10 +62,10 @@ export default function ServicesPage() {
               transition={{ duration: 0.8, delay: 0.1 }}
               className="font-display font-semibold text-[12vw] md:text-[8vw] lg:text-[7vw] leading-[0.9] text-white tracking-[-0.04em]"
             >
-              9 layanan,
+              {t("title")}
               <br />
               <span className="font-bold text-gradient-emerald">
-                semua tier-up bisnis lo.
+                {t("titleHighlight")}
               </span>
             </motion.h1>
 
@@ -72,9 +75,7 @@ export default function ServicesPage() {
               transition={{ duration: 0.6, delay: 0.3 }}
               className="mt-10 max-w-2xl text-lg md:text-xl text-white/70 leading-relaxed"
             >
-              Dari yang lo butuh hari ini, sampai yang lo butuh 5 tahun lagi
-              — kita siap. Pilih layanan, atau diskusi dulu kalau bingung
-              mana yang fit.
+              {t("intro")}
             </motion.p>
           </div>
         </section>
@@ -120,11 +121,11 @@ export default function ServicesPage() {
                         </h3>
 
                         <p className="font-display font-semibold text-base text-suhu-emerald mb-4">
-                          {service.tagline}
+                          {bi(service.tagline, locale)}
                         </p>
 
                         <p className="text-sm text-white/60 leading-relaxed">
-                          {service.description}
+                          {bi(service.description, locale)}
                         </p>
                       </div>
                     </Link>

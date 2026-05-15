@@ -2,15 +2,16 @@
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { Menu, X, ArrowUpRight } from "lucide-react";
 import { Link } from "@/i18n/navigation";
-import { SERVICES } from "@/lib/constants";
+import { SERVICES, t as bi, type Locale } from "@/lib/constants";
 import { cn } from "@/lib/utils";
 import LanguageSwitcher from "./LanguageSwitcher";
 
 export default function Header() {
   const t = useTranslations("nav");
+  const locale = useLocale() as Locale;
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
@@ -113,7 +114,7 @@ export default function Header() {
                                 {s.name}
                               </div>
                               <div className="text-xs text-white/50 mt-0.5 line-clamp-1">
-                                {s.tagline}
+                                {bi(s.tagline, locale)}
                               </div>
                             </div>
                           </Link>

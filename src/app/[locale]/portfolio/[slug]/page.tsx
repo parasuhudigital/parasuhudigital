@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import { getTranslations } from "next-intl/server";
 import {
   ArrowUpRight,
   ArrowLeft,
@@ -15,11 +16,12 @@ import {
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import CTASection from "@/components/sections/CTASection";
-import { SERVICES, COMPANY } from "@/lib/constants";
+import { SERVICES, COMPANY, type Locale } from "@/lib/constants";
 import {
   CASE_STUDIES,
   getCaseBySlug,
   getRelatedCases,
+  localizeCaseStudy,
 } from "@/lib/portfolio";
 
 const ACCENT_TEXT = {
@@ -53,25 +55,35 @@ export function generateStaticParams() {
   return CASE_STUDIES.map((c) => ({ slug: c.slug }));
 }
 
-export function generateMetadata({ params }: { params: { slug: string } }) {
-  const c = getCaseBySlug(params.slug);
-  if (!c) return {};
+export function generateMetadata({
+  params,
+}: {
+  params: { slug: string; locale: Locale };
+}) {
+  const raw = getCaseBySlug(params.slug);
+  if (!raw) return {};
+  const c = localizeCaseStudy(raw, params.locale);
   return {
     title: `${c.title} — Portfolio Para Suhu Digital`,
     description: c.summary,
   };
 }
 
-export default function CaseStudyDetailPage({
+export default async function CaseStudyDetailPage({
   params,
 }: {
-  params: { slug: string };
+  params: { slug: string; locale: Locale };
 }) {
-  const c = getCaseBySlug(params.slug);
-  if (!c) notFound();
+  const raw = getCaseBySlug(params.slug);
+  if (!raw) notFound();
+  const locale = params.locale;
+  const c = localizeCaseStudy(raw!, locale);
+  const t = await getTranslations({ locale, namespace: "portfolioDetail" });
 
   const service = SERVICES.find((s) => s.id === c.service);
-  const related = getRelatedCases(c.slug, 3);
+  const related = getRelatedCases(c.slug, 3).map((r) =>
+    localizeCaseStudy(r, locale)
+  );
   const accentText = ACCENT_TEXT[c.accent];
   const accentBg = ACCENT_BG[c.accent];
   const accentGradient = ACCENT_GRADIENT[c.accent];
@@ -79,9 +91,7 @@ export default function CaseStudyDetailPage({
   const waLink = `https://wa.me/${COMPANY.whatsapp.replace(
     /\D/g,
     ""
-  )}?text=${encodeURIComponent(
-    `Halo, saya tertarik dengan case study "${c.title}". Bisa share insight lebih dalam buat kasus mirip di bisnis saya?`
-  )}`;
+  )}?text=${encodeURIComponent(t("waMessage", { title: c.title }))}`;
 
   return (
     <>
@@ -101,7 +111,7 @@ export default function CaseStudyDetailPage({
               className="inline-flex items-center gap-2 text-sm text-white/50 hover:text-suhu-emerald transition-colors mb-8 group"
             >
               <ArrowLeft className="w-4 h-4 group-hover:-translate-x-1 transition-transform" />
-              Semua case studies
+              {t("back")}
             </Link>
 
             {/* Service tag */}
@@ -111,7 +121,7 @@ export default function CaseStudyDetailPage({
               <span
                 className={`text-xs font-mono uppercase tracking-[0.2em] ${accentText}`}
               >
-                {service?.name} · Case Study
+                {service?.name} · {t("caseStudy")}
               </span>
             </div>
 
@@ -126,10 +136,10 @@ export default function CaseStudyDetailPage({
             {/* Meta info */}
             <div className="mt-10 grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl">
               {[
-                { icon: Briefcase, label: "Klien", value: c.client },
-                { icon: MapPin, label: "Lokasi", value: c.location },
-                { icon: Calendar, label: "Periode", value: c.year },
-                { icon: Clock, label: "Durasi", value: c.duration },
+                { icon: Briefcase, label: t("metaClient"), value: c.client },
+                { icon: MapPin, label: t("metaLocation"), value: c.location },
+                { icon: Calendar, label: t("metaPeriod"), value: c.year },
+                { icon: Clock, label: t("metaDuration"), value: c.duration },
               ].map((m, i) => (
                 <div
                   key={i}
@@ -152,7 +162,7 @@ export default function CaseStudyDetailPage({
         <section className="py-12 border-y border-white/5 bg-white/[0.02]">
           <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
             <div className="text-xs font-mono uppercase tracking-[0.2em] text-white/40 mb-6">
-              · Hasil yang ke-track
+              {t("resultsEyebrow")}
             </div>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
               {c.results.map((r, i) => (
@@ -187,7 +197,7 @@ export default function CaseStudyDetailPage({
                     <Target className="w-5 h-5 text-rose-400" />
                   </div>
                   <h2 className="font-display text-2xl font-semibold text-white">
-                    Tantangan
+                    {t("challengeHeading")}
                   </h2>
                 </div>
                 <p className="text-white/70 leading-relaxed text-base md:text-lg">
@@ -202,7 +212,7 @@ export default function CaseStudyDetailPage({
                     <Lightbulb className="w-5 h-5 text-suhu-emerald" />
                   </div>
                   <h2 className="font-display text-2xl font-semibold text-white">
-                    Pendekatan kami
+                    {t("approachHeading")}
                   </h2>
                 </div>
                 <p className="text-white/70 leading-relaxed text-base md:text-lg">
@@ -221,7 +231,7 @@ export default function CaseStudyDetailPage({
                 <TrendingUp className="w-5 h-5 text-suhu-neon" />
               </div>
               <h2 className="font-display text-3xl md:text-4xl font-semibold text-white">
-                Hasil detail
+                {t("detailedResults")}
               </h2>
             </div>
 
@@ -267,10 +277,10 @@ export default function CaseStudyDetailPage({
           <div className="max-w-[1400px] mx-auto px-6 lg:px-12 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
             <div>
               <h3 className="font-display text-2xl md:text-3xl font-semibold text-white max-w-2xl">
-                Bisnis lo punya tantangan mirip?
+                {t("ctaStripTitle")}
               </h3>
               <p className="mt-2 text-white/60">
-                Konsultasi 60 menit gratis untuk diskusi strategi.
+                {t("ctaStripSub")}
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-3">
@@ -278,7 +288,7 @@ export default function CaseStudyDetailPage({
                 href="/contact"
                 className="inline-flex items-center gap-2 px-6 py-3.5 bg-suhu-emerald text-suhu-black font-medium rounded-full hover:bg-suhu-neon transition-all group"
               >
-                Konsultasi gratis
+                {t("ctaPrimary")}
                 <ArrowUpRight className="w-4 h-4 group-hover:rotate-45 transition-transform" />
               </Link>
               <a
@@ -288,7 +298,7 @@ export default function CaseStudyDetailPage({
                 className="inline-flex items-center gap-2 px-6 py-3.5 border border-white/20 text-white rounded-full hover:bg-white/5 transition-all"
               >
                 <MessageCircle className="w-4 h-4" />
-                Chat WhatsApp
+                {t("ctaWa")}
               </a>
             </div>
           </div>
@@ -300,13 +310,13 @@ export default function CaseStudyDetailPage({
             <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
               <div className="flex items-center justify-between mb-10">
                 <h2 className="font-display text-3xl md:text-4xl font-semibold text-white">
-                  Case study {service?.name} lainnya
+                  {t("relatedPre")} {service?.name} {t("relatedPost")}
                 </h2>
                 <Link
                   href="/portfolio"
                   className="text-sm text-white/60 hover:text-suhu-emerald transition-colors flex items-center gap-1.5"
                 >
-                  Lihat semua
+                  {t("relatedAll")}
                   <ArrowUpRight className="w-3.5 h-3.5" />
                 </Link>
               </div>

@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import {
   Building2,
   Stethoscope,
@@ -14,7 +14,7 @@ import {
   ArrowUpRight,
 } from "lucide-react";
 import { Link } from "@/i18n/navigation";
-import { NICHES } from "@/lib/constants";
+import { NICHES, t as bi, type Locale } from "@/lib/constants";
 
 const iconMap = {
   Building2,
@@ -29,6 +29,7 @@ const iconMap = {
 
 export default function Industries() {
   const t = useTranslations("industries");
+  const locale = useLocale() as Locale;
 
   return (
     <section className="relative py-24 lg:py-32 bg-suhu-black-card/30 overflow-hidden">
@@ -98,7 +99,7 @@ export default function Industries() {
 
                     <div>
                       <h3 className="font-display text-2xl md:text-3xl text-white group-hover:text-suhu-neon transition-colors leading-tight">
-                        {niche.name}
+                        {bi(niche.name, locale)}
                       </h3>
                       <div className="mt-4 inline-flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-white/40 group-hover:text-suhu-emerald transition-colors">
                         <span>{t("viewDetail")}</span>

@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import {
   Globe,
   Smartphone,
@@ -16,7 +16,7 @@ import {
   CheckCircle2,
 } from "lucide-react";
 import { Link } from "@/i18n/navigation";
-import { SERVICES } from "@/lib/constants";
+import { SERVICES, t as bi, type Locale } from "@/lib/constants";
 
 const iconMap = {
   Globe,
@@ -34,6 +34,7 @@ type Highlight = { title: string; desc: string };
 
 export default function ServicesGrid() {
   const t = useTranslations("servicesGrid");
+  const locale = useLocale() as Locale;
   const highlights = t.raw("highlights") as Highlight[];
 
   return (
@@ -139,11 +140,11 @@ export default function ServicesGrid() {
                     </h3>
 
                     <p className="font-display font-semibold text-base text-suhu-emerald mb-4">
-                      {service.tagline}
+                      {bi(service.tagline, locale)}
                     </p>
 
                     <p className="text-sm text-white/60 leading-relaxed">
-                      {service.description}
+                      {bi(service.description, locale)}
                     </p>
                   </div>
                 </Link>

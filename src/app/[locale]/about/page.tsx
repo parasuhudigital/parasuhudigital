@@ -3,43 +3,22 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { ArrowUpRight, Award, Target, Users, Zap, MapPin, Building2 } from "lucide-react";
+import { useLocale, useTranslations } from "next-intl";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import CTASection from "@/components/sections/CTASection";
-import { COMPANY } from "@/lib/constants";
+import { COMPANY, t as bi, type Locale } from "@/lib/constants";
 
-const VALUES = [
-  {
-    icon: Zap,
-    title: "Speed obsessed",
-    desc: "Project yang biasanya 3 bulan, kita kelarin 3 minggu. AI-leveraged workflow, hasilnya tetep premium.",
-  },
-  {
-    icon: Target,
-    title: "Result oriented",
-    desc: "Setiap project punya target yang jelas — leads, sales, ROAS. Kita track, optimize, dan accountable.",
-  },
-  {
-    icon: Users,
-    title: "Founder hands-on",
-    desc: "Lo ngobrol langsung sama yang ngerjain. Decision cepet, komunikasi clear, no middleman drama.",
-  },
-  {
-    icon: Award,
-    title: "Premium standard",
-    desc: "Bahkan untuk project tier 'starter', standar delivery kita sama dengan agency mahal di Jakarta.",
-  },
-];
+const VALUE_ICONS = [Zap, Target, Users, Award];
 
-const MILESTONES = [
-  { year: "2018", event: "Start sebagai independent digital marketer — handle puluhan klien lokal" },
-  { year: "2020-2023", event: "Scaling ke ratusan klien dari berbagai industri & kota" },
-  { year: "2024", event: "Mulai eksplorasi AI-leveraged workflow" },
-  { year: "2026", event: "PT Suhu Digital Agency officially launched" },
-  { year: "2027", event: "Head office BSD + home office Bintaro (target)" },
-];
+type ValueItem = { title: string; desc: string };
+type Milestone = { year: string; event: string };
 
 export default function AboutPage() {
+  const locale = useLocale() as Locale;
+  const t = useTranslations("aboutPage");
+  const values = t.raw("values") as ValueItem[];
+  const milestones = t.raw("milestones") as Milestone[];
   return (
     <>
       <Header />
@@ -58,7 +37,7 @@ export default function AboutPage() {
               className="inline-flex items-center gap-2 px-4 py-2 border border-suhu-emerald/30 bg-suhu-emerald/5 rounded-full mb-8"
             >
               <span className="text-xs font-mono uppercase tracking-[0.2em] text-suhu-emerald">
-                About Us
+                {t("eyebrow")}
               </span>
             </motion.div>
 
@@ -68,10 +47,10 @@ export default function AboutPage() {
               transition={{ duration: 0.8, delay: 0.1 }}
               className="font-display font-semibold text-[12vw] md:text-[8vw] lg:text-[7vw] leading-[0.9] text-white tracking-[-0.04em] max-w-6xl"
             >
-              Kita bukan agency
+              {t("title")}
               <br />
               <span className="font-bold text-gradient-emerald">
-                yang sok-sokan.
+                {t("titleHighlight")}
               </span>
             </motion.h1>
 
@@ -81,9 +60,7 @@ export default function AboutPage() {
               transition={{ duration: 0.6, delay: 0.3 }}
               className="mt-10 max-w-2xl text-lg md:text-xl text-white/70 leading-relaxed"
             >
-              Para Suhu Digital lahir dari satu observasi sederhana: terlalu
-              banyak agency di Indonesia yang janji manis tapi delivery
-              berantakan. Kita di sini buat fix itu.
+              {t("hero")}
             </motion.p>
           </div>
         </section>
@@ -103,15 +80,15 @@ export default function AboutPage() {
                   <div className="inline-flex items-center gap-2 mb-6">
                     <span className="w-8 h-px bg-suhu-emerald" />
                     <span className="text-xs font-mono uppercase tracking-[0.2em] text-suhu-emerald">
-                      Our Story
+                      {t("storyEyebrow")}
                     </span>
                   </div>
 
                   <h2 className="font-display font-semibold text-5xl md:text-6xl leading-[0.95] tracking-[-0.03em] text-white">
-                    Mulai dari satu orang,
+                    {t("storyTitle")}
                     <br />
                     <span className="font-bold text-gradient-emerald">
-                      jadi satu rumah suhu.
+                      {t("storyHighlight")}
                     </span>
                   </h2>
                 </motion.div>
@@ -124,11 +101,9 @@ export default function AboutPage() {
                   viewport={{ once: true }}
                   transition={{ duration: 0.5 }}
                 >
-                  Dari 2018, founder Para Suhu udah ngerjain lebih dari{" "}
-                  <span className="text-white font-medium">50 klien</span>{" "}
-                  sebagai independent digital marketer. Properti, klinik,
-                  restoran, edukasi — banyak industri udah dijajaki. Banyak
-                  pelajaran udah dipelajari.
+                  {t("p1Pre")}{" "}
+                  <span className="text-white font-medium">{t("p1Highlight")}</span>{" "}
+                  {t("p1Post")}
                 </motion.p>
 
                 <motion.p
@@ -137,9 +112,7 @@ export default function AboutPage() {
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: 0.1 }}
                 >
-                  Tahun 2024, ketika AI mulai mature, kita liat opportunity:
-                  bisa nge-deliver kualitas agency mahal, tapi dengan speed
-                  dan margin yang masuk akal — buat klien dan buat kita.
+                  {t("p2")}
                 </motion.p>
 
                 <motion.p
@@ -148,13 +121,9 @@ export default function AboutPage() {
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: 0.2 }}
                 >
-                  Tahun 2026, PT Suhu Digital Agency resmi berdiri. Kita
-                  positioning bukan sebagai "agency murah" — tapi sebagai{" "}
-                  <span className="text-white font-medium">
-                    agency yang ngerti cara leverage tool modern
-                  </span>
-                  , supaya bisnis lo dapet hasil maksimal dari budget yang
-                  reasonable.
+                  {t("p3Pre")}{" "}
+                  <span className="text-white font-medium">{t("p3Highlight")}</span>
+                  {t("p3Post")}
                 </motion.p>
 
                 <motion.p
@@ -163,12 +132,9 @@ export default function AboutPage() {
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: 0.3 }}
                 >
-                  Nama "Suhu" sengaja kita pilih. Bukan karena sok-sokan,
-                  tapi karena di kultur Indonesia,{" "}
-                  <span className="text-white font-medium">
-                    "suhu" itu master yang udah lama latihan
-                  </span>{" "}
-                  — bukan pemula yang asal jual jasa.
+                  {t("p4Pre")}{" "}
+                  <span className="text-white font-medium">{t("p4Highlight")}</span>{" "}
+                  {t("p4Post")}
                 </motion.p>
               </div>
             </div>
@@ -190,7 +156,7 @@ export default function AboutPage() {
               >
                 <span className="w-8 h-px bg-suhu-emerald" />
                 <span className="text-xs font-mono uppercase tracking-[0.2em] text-suhu-emerald">
-                  Our Values
+                  {t("valuesEyebrow")}
                 </span>
               </motion.div>
 
@@ -201,17 +167,17 @@ export default function AboutPage() {
                 transition={{ duration: 0.6, delay: 0.1 }}
                 className="font-display font-semibold text-5xl md:text-6xl lg:text-7xl leading-[0.95] tracking-[-0.03em] text-white"
               >
-                4 prinsip yang
+                {t("valuesTitle")}
                 <br />
                 <span className="font-bold text-gradient-emerald">
-                  gak pernah kita kompromi.
+                  {t("valuesHighlight")}
                 </span>
               </motion.h2>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {VALUES.map((v, i) => {
-                const Icon = v.icon;
+              {values.map((v, i) => {
+                const Icon = VALUE_ICONS[i] ?? Zap;
                 return (
                   <motion.div
                     key={i}
@@ -255,14 +221,14 @@ export default function AboutPage() {
                   <div className="inline-flex items-center gap-2 mb-6">
                     <span className="w-8 h-px bg-suhu-emerald" />
                     <span className="text-xs font-mono uppercase tracking-[0.2em] text-suhu-emerald">
-                      Journey
+                      {t("timelineEyebrow")}
                     </span>
                   </div>
                   <h2 className="font-display font-semibold text-5xl md:text-6xl leading-[0.95] tracking-[-0.03em] text-white">
-                    Roadmap kita,
+                    {t("timelineTitle")}
                     <br />
                     <span className="font-bold text-gradient-emerald">
-                      bukan rahasia.
+                      {t("timelineHighlight")}
                     </span>
                   </h2>
                 </motion.div>
@@ -270,7 +236,7 @@ export default function AboutPage() {
 
               <div className="lg:col-span-7">
                 <div className="space-y-px">
-                  {MILESTONES.map((m, i) => (
+                  {milestones.map((m, i) => (
                     <motion.div
                       key={i}
                       initial={{ opacity: 0, x: 30 }}
@@ -306,16 +272,16 @@ export default function AboutPage() {
               <div className="inline-flex items-center gap-2 mb-6">
                 <span className="w-8 h-px bg-suhu-emerald" />
                 <span className="text-xs font-mono uppercase tracking-[0.2em] text-suhu-emerald">
-                  Where We Work
+                  {t("officeEyebrow")}
                 </span>
                 <span className="w-8 h-px bg-suhu-emerald" />
               </div>
               <h2 className="font-display font-semibold text-5xl md:text-6xl lg:text-7xl leading-[0.95] tracking-[-0.03em] text-white">
                 <span className="font-bold text-gradient-emerald">
-                  Jakarta-based,
+                  {t("officeTitle")}
                 </span>
                 <br />
-                serving Indonesia.
+                {t("officeAfter")}
               </h2>
             </motion.div>
 
@@ -326,13 +292,13 @@ export default function AboutPage() {
                 </div>
                 <div>
                   <div className="text-xs font-mono uppercase tracking-[0.2em] text-suhu-emerald mb-2">
-                    Head Office
+                    {t("officeHeading")}
                   </div>
                   <h3 className="font-display font-semibold text-2xl text-white mb-3 tracking-[-0.02em]">
                     Infiniti Office, IDX Tower 1
                   </h3>
                   <p className="text-white/60 leading-relaxed">
-                    {COMPANY.address}
+                    {bi(COMPANY.address, locale)}
                   </p>
                   <div className="mt-6 flex flex-wrap gap-3">
                     <a

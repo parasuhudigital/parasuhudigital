@@ -2235,8 +2235,8 @@ export const PORTFOLIO_STATS = {
   totalCases: CASE_STUDIES.length,
   totalClients: "1.000+",
   totalIndustries: 8,
-  totalCities: "34 provinsi",
-  yearsRunning: "Sejak 2018",
+  totalCities: { id: "34 provinsi", en: "34 provinces" },
+  yearsRunning: { id: "Sejak 2018", en: "Since 2018" },
 };
 
 export function getCasesByService(serviceId: ServiceId): CaseStudy[] {
@@ -2258,4 +2258,34 @@ export function getRelatedCases(slug: string, limit: number = 3): CaseStudy[] {
   return CASE_STUDIES.filter(
     (c) => c.slug !== slug && c.service === current.service
   ).slice(0, limit);
+}
+
+/**
+ * Merge a case study with its EN overlay for a given locale.
+ * If locale is "en" and EN overlay exists for a field, use it; otherwise fall back to ID.
+ */
+import { CASE_STUDIES_EN } from "./portfolio-en";
+import type { Locale } from "./constants";
+
+export function localizeCaseStudy(c: CaseStudy, locale: Locale): CaseStudy {
+  if (locale !== "en") return c;
+  const en = CASE_STUDIES_EN[c.slug];
+  if (!en) return c;
+  return {
+    ...c,
+    title: en.title ?? c.title,
+    client: en.client ?? c.client,
+    industry: en.industry ?? c.industry,
+    location: en.location ?? c.location,
+    duration: en.duration ?? c.duration,
+    summary: en.summary ?? c.summary,
+    challenge: en.challenge ?? c.challenge,
+    approach: en.approach ?? c.approach,
+    tags: en.tags ?? c.tags,
+    results: c.results.map((r, i) => ({
+      ...r,
+      metric: en.results?.[i]?.metric ?? r.metric,
+      note: en.results?.[i]?.note ?? r.note,
+    })),
+  };
 }

@@ -135,6 +135,15 @@ body {
 }
 
 /* Marquee fix for seamless loop */
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
 .marquee-track {
   display: flex;
   width: max-content;

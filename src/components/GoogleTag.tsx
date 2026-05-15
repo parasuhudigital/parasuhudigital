@@ -1,6 +1,7 @@
 import Script from "next/script";
+import { GOOGLE_ADS_ID } from "@/lib/analytics";
 
-export const GOOGLE_ADS_ID = "AW-18166006377";
+export { GOOGLE_ADS_ID };
 
 /**
  * Google Tag (gtag.js) for Google Ads conversion tracking.

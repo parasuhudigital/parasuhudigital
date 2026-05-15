@@ -6,6 +6,7 @@ import { notFound } from "next/navigation";
 import { routing, type Locale } from "@/i18n/routing";
 import { COMPANY, t as bi } from "@/lib/constants";
 import MetaPixel from "@/components/MetaPixel";
+import WhatsAppFAB from "@/components/WhatsAppFAB";
 import "../globals.css";
 
 const displayFont = Bricolage_Grotesque({
@@ -194,7 +195,10 @@ export default async function LocaleLayout({
         <MetaPixel />
       </head>
       <body className="font-sans bg-suhu-black text-white antialiased">
-        <NextIntlClientProvider>{children}</NextIntlClientProvider>
+        <NextIntlClientProvider>
+          {children}
+          <WhatsAppFAB />
+        </NextIntlClientProvider>
       </body>
     </html>
   );

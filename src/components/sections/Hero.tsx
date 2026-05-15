@@ -120,7 +120,7 @@ export default function Hero() {
           className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl"
         >
           {[
-            { label: t("stats.clients"), value: "50+" },
+            { label: t("stats.clients"), value: "1.000+" },
             { label: t("stats.services"), value: "9" },
             { label: t("stats.industries"), value: "8" },
             { label: t("stats.local"), value: "100%" },

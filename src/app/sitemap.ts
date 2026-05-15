@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { SERVICES, NICHES } from "@/lib/constants";
+import { CASE_STUDIES } from "@/lib/portfolio";
 import { routing } from "@/i18n/routing";
 
 const SITE_URL = "https://parasuhudigital.com";
@@ -68,6 +69,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
         lastModified,
         changeFrequency: "monthly",
         priority: 0.8,
+        alternates: { languages: buildAlternates(path) },
+      });
+    }
+  }
+
+  for (const study of CASE_STUDIES) {
+    const path = `/portfolio/${study.slug}`;
+    for (const locale of routing.locales) {
+      entries.push({
+        url: buildLocalizedUrl(path, locale),
+        lastModified,
+        changeFrequency: "monthly",
+        priority: 0.7,
         alternates: { languages: buildAlternates(path) },
       });
     }

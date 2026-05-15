@@ -32,7 +32,8 @@ const VALUES = [
 ];
 
 const MILESTONES = [
-  { year: "2018", event: "First 50+ klien sebagai independent digital marketer" },
+  { year: "2018", event: "Start sebagai independent digital marketer — handle puluhan klien lokal" },
+  { year: "2020-2023", event: "Scaling ke ratusan klien dari berbagai industri & kota" },
   { year: "2024", event: "Mulai eksplorasi AI-leveraged workflow" },
   { year: "2026", event: "PT Suhu Digital Agency officially launched" },
   { year: "2027", event: "Head office BSD + home office Bintaro (target)" },

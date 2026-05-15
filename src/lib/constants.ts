@@ -283,7 +283,7 @@ export const NICHES = [
 ] as const;
 
 export const STATS = [
-  { value: "50+", label: "Klien Sejak 2018" },
+  { value: "1.000+", label: "Klien di Seluruh Indonesia" },
   { value: "9", label: "Layanan Suhu" },
   { value: "8", label: "Industri Spesialisasi" },
   { value: "100%", label: "Lokal Indonesia" },

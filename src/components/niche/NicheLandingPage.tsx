@@ -34,6 +34,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import CTASection from "@/components/sections/CTASection";
 import { SERVICES, COMPANY } from "@/lib/constants";
+import { trackLead } from "@/lib/analytics";
 import type { NicheData } from "@/lib/niches";
 
 const nicheIconMap: Record<string, LucideIcon> = {
@@ -157,6 +158,12 @@ function HeroSection({
                 href={waLink}
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() =>
+                  trackLead({
+                    content_name: `niche_${niche.slug}_wa`,
+                    content_category: "whatsapp_click",
+                  })
+                }
                 className="inline-flex items-center gap-2 px-7 py-4 border border-white/15 text-white rounded-full hover:border-suhu-emerald hover:bg-white/5 transition-all"
               >
                 <MessageCircle className="w-4 h-4" />

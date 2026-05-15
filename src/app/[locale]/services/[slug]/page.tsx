@@ -18,6 +18,7 @@ import {
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import CTASection from "@/components/sections/CTASection";
+import WhatsAppLink from "@/components/WhatsAppLink";
 import { SERVICES, COMPANY, t as bi, type Locale } from "@/lib/constants";
 
 const iconMap = {
@@ -122,15 +123,14 @@ export default async function ServicePage({
                     </div>
                   </Link>
 
-                  <a
+                  <WhatsAppLink
                     href={`https://wa.me/${COMPANY.whatsapp.replace(/\D/g, "")}?text=${encodeURIComponent(`${t("waMessage")} ${service.name}`)}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    leadSource={`service_detail_${service.id}`}
                     className="inline-flex items-center gap-2 px-7 py-4 border border-white/15 text-white rounded-full hover:border-suhu-emerald hover:bg-white/5 transition-all"
                   >
                     <MessageCircle className="w-4 h-4" />
                     <span>{t("ctaWa")}</span>
-                  </a>
+                  </WhatsAppLink>
                 </div>
               </div>
             </div>

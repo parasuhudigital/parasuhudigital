@@ -15,6 +15,7 @@ import { useLocale, useTranslations } from "next-intl";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { COMPANY, SERVICES, t as bi, type Locale } from "@/lib/constants";
+import { trackLead } from "@/lib/analytics";
 
 export default function ContactPage() {
   const locale = useLocale() as Locale;
@@ -32,6 +33,10 @@ export default function ContactPage() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    trackLead({
+      content_name: "contact_form_submit",
+      content_category: "form_submit",
+    });
     // Untuk sementara, redirect ke WhatsApp dengan pre-filled message
     const waMessage = encodeURIComponent(
       `Halo Para Suhu Digital!\n\nNama: ${formData.name}\nEmail: ${formData.email}\nPhone: ${formData.phone}\nCompany: ${formData.company}\nService: ${formData.service}\nBudget: ${formData.budget}\n\nPesan:\n${formData.message}`
@@ -306,6 +311,12 @@ export default function ContactPage() {
                   href={`https://wa.me/${COMPANY.whatsapp.replace(/\D/g, "")}`}
                   target="_blank"
                   rel="noopener noreferrer"
+                  onClick={() =>
+                    trackLead({
+                      content_name: "contact_page_sidebar_wa",
+                      content_category: "whatsapp_click",
+                    })
+                  }
                   className="group block p-6 border border-suhu-emerald/30 rounded-2xl bg-suhu-emerald/5 hover:bg-suhu-emerald/10 transition-all"
                 >
                   <div className="flex items-start gap-4">

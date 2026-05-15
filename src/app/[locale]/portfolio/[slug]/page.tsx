@@ -16,6 +16,7 @@ import {
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import CTASection from "@/components/sections/CTASection";
+import WhatsAppLink from "@/components/WhatsAppLink";
 import { SERVICES, COMPANY, type Locale } from "@/lib/constants";
 import {
   CASE_STUDIES,
@@ -291,15 +292,14 @@ export default async function CaseStudyDetailPage({
                 {t("ctaPrimary")}
                 <ArrowUpRight className="w-4 h-4 group-hover:rotate-45 transition-transform" />
               </Link>
-              <a
+              <WhatsAppLink
                 href={waLink}
-                target="_blank"
-                rel="noopener noreferrer"
+                leadSource={`portfolio_detail_${c.slug}`}
                 className="inline-flex items-center gap-2 px-6 py-3.5 border border-white/20 text-white rounded-full hover:bg-white/5 transition-all"
               >
                 <MessageCircle className="w-4 h-4" />
                 {t("ctaWa")}
-              </a>
+              </WhatsAppLink>
             </div>
           </div>
         </section>

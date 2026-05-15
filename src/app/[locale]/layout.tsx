@@ -4,7 +4,8 @@ import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { routing, type Locale } from "@/i18n/routing";
-import { COMPANY } from "@/lib/constants";
+import { COMPANY, t as bi } from "@/lib/constants";
+import MetaPixel from "@/components/MetaPixel";
 import "../globals.css";
 
 const displayFont = Bricolage_Grotesque({
@@ -130,7 +131,7 @@ export default async function LocaleLayout({
         alternateName: COMPANY.brand,
         url: SITE_URL,
         logo: `${SITE_URL}/favicon.svg`,
-        description: COMPANY.tagline,
+        description: bi(COMPANY.tagline, locale),
         email: COMPANY.email,
         telephone: COMPANY.phone,
         address: {
@@ -190,6 +191,7 @@ export default async function LocaleLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
+        <MetaPixel />
       </head>
       <body className="font-sans bg-suhu-black text-white antialiased">
         <NextIntlClientProvider>{children}</NextIntlClientProvider>

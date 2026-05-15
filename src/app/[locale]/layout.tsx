@@ -91,7 +91,11 @@ export async function generateMetadata({
       images: ["/og-image.jpg"],
     },
     icons: {
-      icon: "/favicon.svg",
+      icon: [
+        { url: "/favicon.png", type: "image/png", sizes: "any" },
+      ],
+      shortcut: "/favicon.png",
+      apple: "/favicon.png",
     },
     robots: {
       index: true,
@@ -131,7 +135,7 @@ export default async function LocaleLayout({
         name: COMPANY.name,
         alternateName: COMPANY.brand,
         url: SITE_URL,
-        logo: `${SITE_URL}/favicon.svg`,
+        logo: `${SITE_URL}/favicon.png`,
         description: bi(COMPANY.tagline, locale),
         email: COMPANY.email,
         telephone: COMPANY.phone,
@@ -160,7 +164,7 @@ export default async function LocaleLayout({
         "@type": "LocalBusiness",
         "@id": `${SITE_URL}/#localbusiness`,
         name: COMPANY.name,
-        image: `${SITE_URL}/favicon.svg`,
+        image: `${SITE_URL}/favicon.png`,
         url: SITE_URL,
         telephone: COMPANY.phone,
         priceRange: "$$-$$$",

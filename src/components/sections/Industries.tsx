@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { useLocale, useTranslations } from "next-intl";
 import {
@@ -88,20 +89,33 @@ export default function Industries() {
               >
                 <Link
                   href={`/jasa-digital-marketing-${niche.slug}`}
-                  className="group block aspect-[4/5] p-6 rounded-2xl border border-white/10 bg-suhu-black hover:bg-gradient-to-br hover:from-suhu-emerald-dark hover:to-suhu-black transition-all duration-500 hover:border-suhu-emerald/40 relative overflow-hidden"
+                  className="group block aspect-[4/5] rounded-2xl border border-white/10 hover:border-suhu-emerald/40 transition-all duration-500 relative overflow-hidden"
                 >
-                  <div className="flex flex-col h-full justify-between">
-                    <div className="w-12 h-12 rounded-xl bg-suhu-black-card border border-white/5 group-hover:border-suhu-emerald/40 flex items-center justify-center transition-all">
+                  {/* Background image */}
+                  <Image
+                    src={`/niches/${niche.slug}.png`}
+                    alt={bi(niche.name, locale)}
+                    fill
+                    sizes="(max-width: 768px) 50vw, 25vw"
+                    className="object-cover transition-transform duration-700 group-hover:scale-110"
+                  />
+
+                  {/* Dark gradient overlay for legibility */}
+                  <div className="absolute inset-0 bg-gradient-to-b from-suhu-black/40 via-suhu-black/55 to-suhu-black/90 group-hover:from-suhu-black/30 group-hover:via-suhu-black/50 group-hover:to-suhu-black/85 transition-colors duration-500" />
+
+                  {/* Content */}
+                  <div className="relative h-full p-6 flex flex-col justify-between">
+                    <div className="w-12 h-12 rounded-xl bg-suhu-black/70 backdrop-blur-sm border border-white/10 group-hover:border-suhu-emerald/40 flex items-center justify-center transition-all">
                       {Icon && (
                         <Icon className="w-5 h-5 text-suhu-emerald group-hover:text-suhu-neon transition-colors" />
                       )}
                     </div>
 
                     <div>
-                      <h3 className="font-display text-2xl md:text-3xl text-white group-hover:text-suhu-neon transition-colors leading-tight">
+                      <h3 className="font-display text-2xl md:text-3xl text-white group-hover:text-suhu-neon transition-colors leading-tight drop-shadow-lg">
                         {bi(niche.name, locale)}
                       </h3>
-                      <div className="mt-4 inline-flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-white/40 group-hover:text-suhu-emerald transition-colors">
+                      <div className="mt-4 inline-flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-white/60 group-hover:text-suhu-emerald transition-colors">
                         <span>{t("viewDetail")}</span>
                         <ArrowUpRight className="w-3 h-3 transition-transform group-hover:rotate-45" />
                       </div>

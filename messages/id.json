@@ -128,25 +128,25 @@
   },
   "approach": {
     "eyebrow": "Our Methodology",
-    "title": "Bukan AI yang gantiin manusia.",
-    "titleHighlight": "Manusia yang nge-leverage AI.",
-    "intro": "Sejak 2024, kami mulai eksplorasi serius gimana AI bisa mengubah cara agency bekerja. Hasilnya: bukan ngurangin kualitas, tapi multiply kapasitas. Inilah methodology yang bikin kami beda.",
+    "title": "Bukan AI yang ngerjain.",
+    "titleHighlight": "Tapi pakar di bidangnya.",
+    "intro": "Para Suhu Digital adalah kumpulan orang yang memang pakar di service yang ditawarkan. Bukan ngandelin AI — tapi praktisi yang emang udah lama di bidangnya masing-masing, dikumpulin di satu tempat: Para Suhu Digital.",
     "pillars": [
       {
-        "title": "Research dipercepat 10x",
-        "desc": "Keyword research, competitor analysis, audience mapping — yang dulu butuh seminggu, sekarang 1 hari. Kami pakai stack AI premium (Claude, GPT-5, Perplexity Pro, custom scrapers) untuk dig lebih dalam dari agency biasa."
+        "title": "Senior di setiap disiplin",
+        "desc": "Setiap layanan dipegang langsung oleh praktisi yang udah belasan tahun terjun di bidangnya. Bukan junior yang nebak-nebak, tapi suhu beneran yang udah nyelesain ratusan project di industri masing-masing."
       },
       {
-        "title": "Production scale tinggi",
-        "desc": "Content batch 30 hari sosmed, 10 landing page variant untuk A/B test, atau 50 versi creative untuk Meta Ads — bisa kita siapkan dalam hitungan hari, bukan bulan. Tetap dengan editorial review manual."
+        "title": "9 layanan, 1 tim",
+        "desc": "Web, app, software, SEO, ads, sosmed, digital marketing, creative, sampai AI consulting — masing-masing dipegang spesialisnya sendiri. Lo gak perlu lompat-lompat agency buat dapet capacity full-stack."
       },
       {
-        "title": "Decision tetap di manusia",
-        "desc": "Strategi, brand voice, pricing, dan keputusan kritikal — selalu dipegang strategist senior. AI itu tool, bukan replacement. Itu kenapa hasil kami konsisten, bukan generic AI-slop."
+        "title": "Hasil dari jam terbang",
+        "desc": "Setiap strategi, design, dan keputusan teknis lahir dari pengalaman langsung di lapangan — bukan output generic atau template ulangan. Itu kenapa kerjaan kami punya konteks yang dalam dan nyambung sama bisnis lo."
       },
       {
-        "title": "Automation yang ngebantu klien",
-        "desc": "Kami juga implement AI di sisi klien: chatbot CS yang ngerti context, workflow automation untuk operasional, dashboard analytics yang self-explanatory. Bisnis Anda jadi efisien, bukan cuma branding-nya bagus."
+        "title": "Eksekusi cepet, kualitas konsisten",
+        "desc": "Pakar tau jalan pintas yang aman. Yang biasanya makan minggu, kami selesaikan dalam hitungan hari — tanpa kompromi kualitas, karena best practice udah ada di kepala tim, bukan harus googling dulu."
       }
     ]
   },

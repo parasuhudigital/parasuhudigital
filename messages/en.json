@@ -128,25 +128,25 @@
   },
   "approach": {
     "eyebrow": "Our Methodology",
-    "title": "Not AI replacing humans.",
-    "titleHighlight": "Humans leveraging AI.",
-    "intro": "Since 2024, we've been seriously exploring how AI can transform the way agencies work. The result: it doesn't reduce quality — it multiplies capacity. This is the methodology that sets us apart.",
+    "title": "Not AI doing the work.",
+    "titleHighlight": "Real experts in each field.",
+    "intro": "Para Suhu Digital is a collective of people who are genuinely expert in the services we offer. Not relying on AI — real practitioners who've been deep in their respective fields for years, gathered under one roof: Para Suhu Digital.",
     "pillars": [
       {
-        "title": "10x faster research",
-        "desc": "Keyword research, competitor analysis, audience mapping — what used to take a week now takes a day. We use a premium AI stack (Claude, GPT-5, Perplexity Pro, custom scrapers) to dig deeper than average agencies."
+        "title": "Senior in every discipline",
+        "desc": "Every service is owned directly by a practitioner with over a decade in the field. Not juniors guessing their way through, but real masters who've delivered hundreds of projects across industries."
       },
       {
-        "title": "Production at scale",
-        "desc": "A 30-day social media content batch, 10 landing page variants for A/B testing, or 50 creative versions for Meta Ads — ready in days, not months. Always with manual editorial review."
+        "title": "9 services, 1 team",
+        "desc": "Web, apps, software, SEO, ads, social media, digital marketing, creative, AI consulting — each owned by its own specialist. No need to juggle multiple agencies for full-stack capacity."
       },
       {
-        "title": "Humans still decide",
-        "desc": "Strategy, brand voice, pricing, and critical decisions — always held by senior strategists. AI is a tool, not a replacement. That's why our output is consistent — not generic AI-slop."
+        "title": "Output born of experience",
+        "desc": "Every strategy, design, and technical decision is grounded in real-world hours in the field — not generic output or recycled templates. That's why our work has depth and actually fits your business context."
       },
       {
-        "title": "Automation that helps clients",
-        "desc": "We also implement AI on the client side: context-aware CS chatbots, operational workflow automation, self-explanatory analytics dashboards. Your business becomes efficient — not just well-branded."
+        "title": "Fast execution, consistent quality",
+        "desc": "Experts know the safe shortcuts. What usually takes weeks, we ship in days — without compromising quality, because best practices live in the team's heads, not in a Google search."
       }
     ]
   },

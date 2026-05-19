@@ -12,7 +12,7 @@ type Props = {
 };
 
 /**
- * Wrap a WhatsApp deep link so a click fires a Meta Pixel "Lead" event.
+ * Wrap a WhatsApp deep link so a click fires a Meta Pixel "Contact" event.
  * Drop-in replacement for plain <a target="_blank"> WhatsApp links.
  */
 export default function WhatsAppLink({

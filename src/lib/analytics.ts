@@ -22,7 +22,7 @@ declare global {
 }
 
 /**
- * Fire a lead-intent event to Meta Pixel (Lead), Google Ads (conversion),
+ * Fire a lead-intent event to Meta Pixel (Contact), Google Ads (conversion),
  * and GA4 (generate_lead — standard recommended event).
  * Safe to call on the server (no-op).
  */
@@ -34,7 +34,7 @@ export function trackLead(params?: {
 }) {
   if (typeof window === "undefined") return;
   if (typeof window.fbq === "function") {
-    window.fbq("track", "Lead", params ?? {});
+    window.fbq("track", "Contact", params ?? {});
   }
   if (typeof window.gtag === "function") {
     window.gtag("event", "conversion", {

@@ -14,12 +14,17 @@ import {
   ArrowUpRight,
   Check,
   MessageCircle,
+  ChevronDown,
+  Award,
+  ClipboardList,
+  Layers,
 } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import CTASection from "@/components/sections/CTASection";
 import WhatsAppLink from "@/components/WhatsAppLink";
 import { SERVICES, COMPANY, t as bi, type Locale } from "@/lib/constants";
+import { CASE_STUDIES } from "@/lib/portfolio";
 
 const iconMap = {
   Globe,
@@ -64,6 +69,7 @@ export default async function ServicePage({
 
   const Icon = iconMap[service.icon as keyof typeof iconMap];
   const otherServices = SERVICES.filter((s) => s.id !== service.id).slice(0, 3);
+  const recentWork = CASE_STUDIES.filter((c) => c.service === service.id).slice(0, 3);
 
   return (
     <>
@@ -137,6 +143,26 @@ export default async function ServicePage({
           </div>
         </section>
 
+        {/* Stats Strip */}
+        {service.stats && service.stats.length > 0 && (
+          <section className="relative py-12 border-y border-white/5 bg-suhu-black-card/40">
+            <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-4">
+                {service.stats.map((s, i) => (
+                  <div key={i} className="text-center md:text-left">
+                    <div className="font-display font-bold text-4xl md:text-5xl text-gradient-emerald mb-2">
+                      {s.value}
+                    </div>
+                    <div className="text-xs md:text-sm font-mono uppercase tracking-wider text-white/50">
+                      {bi(s.label, locale)}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
+
         {/* Features */}
         <section className="py-24 lg:py-32">
           <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
@@ -182,6 +208,231 @@ export default async function ServicePage({
             </div>
           </div>
         </section>
+
+        {/* Deliverables — detailed what's included */}
+        {service.deliverables && service.deliverables.length > 0 && (
+          <section className="py-24 lg:py-32 bg-suhu-black-card/30 border-y border-white/5">
+            <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
+              <div className="max-w-3xl mb-16">
+                <div className="inline-flex items-center gap-2 mb-6">
+                  <Layers className="w-4 h-4 text-suhu-emerald" />
+                  <span className="text-xs font-mono uppercase tracking-[0.2em] text-suhu-emerald">
+                    {t("deliverablesEyebrow")}
+                  </span>
+                </div>
+                <h2 className="font-display font-semibold text-5xl md:text-6xl leading-[0.95] tracking-[-0.03em] text-white">
+                  {t("deliverablesTitle")}{" "}
+                  <span className="font-bold text-gradient-emerald">
+                    {t("deliverablesHighlight")}
+                  </span>
+                </h2>
+                <p className="mt-8 text-lg text-white/60 leading-relaxed">
+                  {t("deliverablesIntro")}
+                </p>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                {service.deliverables.map((group, i) => (
+                  <div
+                    key={i}
+                    className="p-8 rounded-3xl border border-white/10 bg-suhu-black/60 hover:border-suhu-emerald/40 transition-all"
+                  >
+                    <div className="flex items-center gap-3 mb-6">
+                      <span className="font-mono text-sm text-suhu-emerald/60">
+                        /0{i + 1}
+                      </span>
+                      <h3 className="font-display font-semibold text-2xl text-white tracking-[-0.02em]">
+                        {bi(group.title, locale)}
+                      </h3>
+                    </div>
+                    <ul className="space-y-3">
+                      {group.items.map((item, j) => (
+                        <li key={j} className="flex items-start gap-3">
+                          <div className="w-5 h-5 rounded-full bg-suhu-emerald/15 border border-suhu-emerald/30 flex items-center justify-center flex-shrink-0 mt-0.5">
+                            <Check className="w-3 h-3 text-suhu-emerald" />
+                          </div>
+                          <span className="text-sm text-white/75 leading-relaxed">
+                            {bi(item, locale)}
+                          </span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
+
+        {/* Why Us — differentiators */}
+        {service.whyUs && service.whyUs.length > 0 && (
+          <section className="py-24 lg:py-32">
+            <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
+              <div className="max-w-3xl mb-16">
+                <div className="inline-flex items-center gap-2 mb-6">
+                  <Award className="w-4 h-4 text-suhu-emerald" />
+                  <span className="text-xs font-mono uppercase tracking-[0.2em] text-suhu-emerald">
+                    {t("whyEyebrow")}
+                  </span>
+                </div>
+                <h2 className="font-display font-semibold text-5xl md:text-6xl leading-[0.95] tracking-[-0.03em] text-white">
+                  {t("whyTitle")}{" "}
+                  <span className="font-bold text-gradient-emerald">
+                    {t("whyHighlight")}
+                  </span>
+                </h2>
+                <p className="mt-8 text-lg text-white/60 leading-relaxed">
+                  {t("whyIntro")}
+                </p>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                {service.whyUs.map((w, i) => (
+                  <div
+                    key={i}
+                    className="group relative p-8 lg:p-10 rounded-3xl border border-white/10 bg-suhu-black-card/60 hover:border-suhu-emerald/40 transition-all"
+                  >
+                    <div className="flex items-start justify-between mb-6">
+                      <span className="font-mono text-sm text-white/30">
+                        /0{i + 1}
+                      </span>
+                      {w.stat && (
+                        <span className="font-mono text-xs uppercase tracking-wider px-3 py-1 rounded-full bg-suhu-emerald/10 border border-suhu-emerald/30 text-suhu-neon">
+                          {w.stat}
+                        </span>
+                      )}
+                    </div>
+                    <h3 className="font-display font-semibold text-2xl md:text-3xl text-white tracking-[-0.02em] mb-4">
+                      {bi(w.title, locale)}
+                    </h3>
+                    <p className="text-white/65 leading-relaxed">
+                      {bi(w.desc, locale)}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
+
+        {/* Process — how it works */}
+        {service.process && service.process.length > 0 && (
+          <section className="py-24 lg:py-32 bg-suhu-black-card/30 border-y border-white/5">
+            <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
+              <div className="max-w-3xl mb-16">
+                <div className="inline-flex items-center gap-2 mb-6">
+                  <ClipboardList className="w-4 h-4 text-suhu-emerald" />
+                  <span className="text-xs font-mono uppercase tracking-[0.2em] text-suhu-emerald">
+                    {t("processEyebrow")}
+                  </span>
+                </div>
+                <h2 className="font-display font-semibold text-5xl md:text-6xl leading-[0.95] tracking-[-0.03em] text-white">
+                  {t("processTitle")}{" "}
+                  <span className="font-bold text-gradient-emerald">
+                    {t("processHighlight")}
+                  </span>
+                </h2>
+                <p className="mt-8 text-lg text-white/60 leading-relaxed">
+                  {t("processIntro")}
+                </p>
+              </div>
+
+              <div className="space-y-px">
+                {service.process.map((p, i) => (
+                  <div
+                    key={i}
+                    className="group py-8 border-t border-white/10 first:border-t-0 hover:pl-4 transition-all duration-500 grid grid-cols-12 gap-6 items-start"
+                  >
+                    <div className="col-span-12 md:col-span-1">
+                      <span className="font-display font-bold text-3xl md:text-4xl text-suhu-emerald/40 group-hover:text-suhu-neon transition-colors">
+                        {p.step}
+                      </span>
+                    </div>
+                    <div className="col-span-12 md:col-span-7">
+                      <h3 className="font-display font-semibold text-2xl md:text-3xl text-white tracking-[-0.02em] mb-3">
+                        {bi(p.title, locale)}
+                      </h3>
+                      <p className="text-white/65 leading-relaxed">
+                        {bi(p.desc, locale)}
+                      </p>
+                    </div>
+                    <div className="col-span-12 md:col-span-4 md:text-right">
+                      {p.duration && (
+                        <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/10 bg-suhu-black font-mono text-xs uppercase tracking-wider text-white/60">
+                          {bi(p.duration, locale)}
+                        </span>
+                      )}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
+
+        {/* Recent Work — case studies for this service */}
+        {recentWork.length > 0 && (
+          <section className="py-24 lg:py-32">
+            <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
+              <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-12">
+                <div className="max-w-2xl">
+                  <div className="inline-flex items-center gap-2 mb-6">
+                    <Sparkles className="w-4 h-4 text-suhu-emerald" />
+                    <span className="text-xs font-mono uppercase tracking-[0.2em] text-suhu-emerald">
+                      {t("recentWorkEyebrow")}
+                    </span>
+                  </div>
+                  <h2 className="font-display font-semibold text-5xl md:text-6xl leading-[0.95] tracking-[-0.03em] text-white">
+                    {t("recentWorkTitle")}{" "}
+                    <span className="font-bold text-gradient-emerald">
+                      {t("recentWorkHighlight")}
+                    </span>
+                  </h2>
+                </div>
+                <Link
+                  href="/portfolio"
+                  className="inline-flex items-center gap-2 px-5 py-3 border border-white/15 rounded-full text-sm text-white hover:border-suhu-emerald hover:bg-suhu-emerald/10 transition-all self-start"
+                >
+                  <span>{t("recentWorkViewAll")}</span>
+                  <ArrowUpRight className="w-4 h-4" />
+                </Link>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                {recentWork.map((c) => (
+                  <Link
+                    key={c.slug}
+                    href={`/portfolio/${c.slug}`}
+                    className="group block p-8 rounded-3xl border border-white/10 bg-suhu-black-card/50 hover:border-suhu-emerald/40 transition-all"
+                  >
+                    <div className="flex items-center justify-between mb-6">
+                      <span className="text-xs font-mono uppercase tracking-[0.2em] text-suhu-emerald">
+                        {c.industry}
+                      </span>
+                      <ArrowUpRight className="w-5 h-5 text-white/30 group-hover:text-suhu-emerald group-hover:rotate-45 transition-all" />
+                    </div>
+                    <h3 className="font-display font-semibold text-xl text-white mb-4 tracking-[-0.02em] group-hover:text-suhu-neon transition-colors line-clamp-2">
+                      {c.title}
+                    </h3>
+                    <p className="text-sm text-white/60 leading-relaxed line-clamp-3 mb-6">
+                      {c.summary}
+                    </p>
+                    {c.results[0] && (
+                      <div className="pt-5 border-t border-white/5 flex items-baseline gap-3">
+                        <span className="font-display font-bold text-2xl text-gradient-emerald">
+                          {c.results[0].value}
+                        </span>
+                        <span className="text-xs text-white/50 font-mono uppercase tracking-wider">
+                          {c.results[0].metric}
+                        </span>
+                      </div>
+                    )}
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
 
         {/* Pricing Tiers */}
         <section className="py-24 lg:py-32 bg-suhu-black-card/30">
@@ -257,6 +508,65 @@ export default async function ServicePage({
             </p>
           </div>
         </section>
+
+        {/* FAQ */}
+        {service.faqs && service.faqs.length > 0 && (
+          <section className="py-24 lg:py-32">
+            <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
+              <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                <div className="lg:col-span-5">
+                  <div className="lg:sticky lg:top-32">
+                    <div className="inline-flex items-center gap-2 mb-6">
+                      <span className="w-8 h-px bg-suhu-emerald" />
+                      <span className="text-xs font-mono uppercase tracking-[0.2em] text-suhu-emerald">
+                        {t("faqEyebrow")}
+                      </span>
+                    </div>
+                    <h2 className="font-display font-semibold text-5xl md:text-6xl leading-[0.95] tracking-[-0.03em] text-white">
+                      {t("faqTitle")}
+                      <br />
+                      <span className="font-bold text-gradient-emerald">
+                        {t("faqHighlight")}
+                      </span>
+                    </h2>
+                    <p className="mt-8 text-base text-white/60 leading-relaxed">
+                      {t("faqIntro")}
+                    </p>
+                    <WhatsAppLink
+                      href={`https://wa.me/${COMPANY.whatsapp.replace(/\D/g, "")}?text=${encodeURIComponent(`${t("waMessage")} ${service.name}`)}`}
+                      leadSource={`service_detail_faq_${service.id}`}
+                      className="mt-8 inline-flex items-center gap-2 px-5 py-3 border border-white/15 rounded-full text-sm text-white hover:border-suhu-emerald hover:bg-suhu-emerald/10 transition-all"
+                    >
+                      <MessageCircle className="w-4 h-4" />
+                      <span>{t("ctaWa")}</span>
+                    </WhatsAppLink>
+                  </div>
+                </div>
+
+                <div className="lg:col-span-7">
+                  <div className="space-y-3">
+                    {service.faqs.map((faq, i) => (
+                      <details
+                        key={i}
+                        className="group rounded-2xl border border-white/10 bg-suhu-black-card/50 hover:border-suhu-emerald/30 transition-all open:border-suhu-emerald/40 open:bg-suhu-black-card/80"
+                      >
+                        <summary className="flex items-center justify-between gap-4 p-6 cursor-pointer list-none">
+                          <span className="font-display font-medium text-base md:text-lg text-white leading-snug pr-4">
+                            {bi(faq.q, locale)}
+                          </span>
+                          <ChevronDown className="w-5 h-5 text-suhu-emerald flex-shrink-0 transition-transform group-open:rotate-180" />
+                        </summary>
+                        <div className="px-6 pb-6 text-sm md:text-base text-white/70 leading-relaxed">
+                          {bi(faq.a, locale)}
+                        </div>
+                      </details>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        )}
 
         {/* Other Services */}
         <section className="py-24 lg:py-32">

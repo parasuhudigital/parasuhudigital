@@ -3,11 +3,34 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useLocale, useTranslations } from "next-intl";
-import { Menu, X, ArrowUpRight } from "lucide-react";
+import {
+  Menu,
+  X,
+  ArrowUpRight,
+  Building2,
+  Stethoscope,
+  Plane,
+  Car,
+  Gamepad2,
+  GraduationCap,
+  Banknote,
+  UtensilsCrossed,
+} from "lucide-react";
 import { Link } from "@/i18n/navigation";
-import { SERVICES, t as bi, type Locale } from "@/lib/constants";
+import { SERVICES, NICHES, t as bi, type Locale } from "@/lib/constants";
 import { cn } from "@/lib/utils";
 import LanguageSwitcher from "./LanguageSwitcher";
+
+const nicheIconMap: Record<string, React.ComponentType<{ className?: string }>> = {
+  Building2,
+  Stethoscope,
+  Plane,
+  Car,
+  Gamepad2,
+  GraduationCap,
+  Banknote,
+  UtensilsCrossed,
+};
 
 export default function Header() {
   const t = useTranslations("nav");
@@ -15,6 +38,7 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
+  const [industriesOpen, setIndustriesOpen] = useState(false);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20);
@@ -119,6 +143,70 @@ export default function Header() {
                             </div>
                           </Link>
                         ))}
+                      </div>
+                    </div>
+                  </motion.div>
+                )}
+              </AnimatePresence>
+            </div>
+
+            <div
+              className="relative"
+              onMouseEnter={() => setIndustriesOpen(true)}
+              onMouseLeave={() => setIndustriesOpen(false)}
+            >
+              <button
+                type="button"
+                className="px-4 py-2 text-sm text-white/80 hover:text-white transition-colors flex items-center gap-1"
+              >
+                {t("industries")}
+                <span
+                  className={cn(
+                    "text-[10px] transition-transform",
+                    industriesOpen && "rotate-180"
+                  )}
+                >
+                  ▼
+                </span>
+              </button>
+
+              <AnimatePresence>
+                {industriesOpen && (
+                  <motion.div
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: 10 }}
+                    transition={{ duration: 0.2 }}
+                    className="absolute top-full left-0 pt-3 w-[480px]"
+                  >
+                    <div className="bg-suhu-black-card border border-white/10 rounded-2xl p-3 shadow-2xl">
+                      <div className="px-3 pt-2 pb-3 mb-1 border-b border-white/5">
+                        <div className="text-[10px] font-mono uppercase tracking-[0.2em] text-suhu-emerald">
+                          8 Industri Spesialisasi
+                        </div>
+                      </div>
+                      <div className="grid grid-cols-2 gap-1">
+                        {NICHES.map((n) => {
+                          const Icon = nicheIconMap[n.icon];
+                          return (
+                            <a
+                              key={n.slug}
+                              href={`/jasa-digital-marketing-${n.slug}`}
+                              className="group flex items-center gap-3 p-3 rounded-xl hover:bg-white/5 transition-colors"
+                            >
+                              <div className="w-9 h-9 rounded-lg bg-suhu-emerald/10 border border-suhu-emerald/30 flex items-center justify-center flex-shrink-0 group-hover:bg-suhu-emerald group-hover:border-suhu-emerald transition-all">
+                                {Icon && (
+                                  <Icon className="w-4 h-4 text-suhu-emerald group-hover:text-suhu-black transition-colors" />
+                                )}
+                              </div>
+                              <div className="min-w-0">
+                                <div className="text-sm font-medium text-white group-hover:text-suhu-neon transition-colors truncate">
+                                  {bi(n.name, locale)}
+                                </div>
+                              </div>
+                            </a>
+                          );
+                        })}
                       </div>
                     </div>
                   </motion.div>
@@ -244,6 +332,35 @@ export default function Header() {
                         </Link>
                       </motion.div>
                     ))}
+                  </div>
+                </div>
+
+                <div className="mt-8 pt-8 border-t border-white/5">
+                  <div className="text-xs font-mono uppercase tracking-widest text-white/40 mb-4">
+                    {t("industries")}
+                  </div>
+                  <div className="grid grid-cols-2 gap-2">
+                    {NICHES.map((n, i) => {
+                      const Icon = nicheIconMap[n.icon];
+                      return (
+                        <motion.a
+                          key={n.slug}
+                          href={`/jasa-digital-marketing-${n.slug}`}
+                          onClick={() => setIsOpen(false)}
+                          initial={{ opacity: 0 }}
+                          animate={{ opacity: 1 }}
+                          transition={{ delay: 0.4 + i * 0.03 }}
+                          className="flex items-center gap-2.5 py-2.5 px-3 rounded-xl border border-white/10 bg-suhu-black-card/40 hover:border-suhu-emerald/40 transition-colors"
+                        >
+                          {Icon && (
+                            <Icon className="w-4 h-4 text-suhu-emerald flex-shrink-0" />
+                          )}
+                          <span className="text-sm text-white/80 truncate">
+                            {bi(n.name, locale)}
+                          </span>
+                        </motion.a>
+                      );
+                    })}
                   </div>
                 </div>
 

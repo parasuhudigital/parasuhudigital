@@ -1,16 +1,16 @@
-import { notFound } from "next/navigation";
 import type { Metadata } from "next";
-import NicheLandingPage from "@/components/niche/NicheLandingPage";
-import { NICHE_DATA } from "@/lib/niches";
-
-const niche = NICHE_DATA.properti;
+import PropertiLandingClient from "./PropertiLandingClient";
 
 export const metadata: Metadata = {
-  title: niche.metaTitle,
-  description: niche.metaDescription,
+  title:
+    "Jasa Digital Marketing Properti — Developer, Agen, Cluster | Para Suhu Digital",
+  description:
+    "Spesialis digital marketing untuk industri properti. Website per cluster, SEO local, Meta & Google Ads dengan funnel WhatsApp, dashboard real-time — untuk 150+ developer dan agen properti di Indonesia. ROAS 4-8x, sales cycle 40-60% lebih pendek.",
   openGraph: {
-    title: niche.metaTitle,
-    description: niche.metaDescription,
+    title:
+      "Jasa Digital Marketing Properti — Buyer Siap Akad | Para Suhu Digital",
+    description:
+      "Spesialis digital marketing untuk industri properti. 150+ developer dan agen properti dipercayakan, ROAS rata-rata 4-8x.",
     url: "https://parasuhudigital.com/jasa-digital-marketing-properti",
     siteName: "Para Suhu Digital",
     locale: "id_ID",
@@ -22,6 +22,5 @@ export const metadata: Metadata = {
 };
 
 export default function PropertiLandingPage() {
-  if (!niche) return notFound();
-  return <NicheLandingPage niche={niche} />;
+  return <PropertiLandingClient />;
 }

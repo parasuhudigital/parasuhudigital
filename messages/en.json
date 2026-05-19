@@ -3,7 +3,7 @@
     "home": {
       "title": "Para Suhu Digital — AI-Powered Digital Marketing Agency in Indonesia",
       "description": "Indonesia's leading digital marketing agency. SEO, websites, mobile apps, custom software, Meta & Google Ads, social media, and AI automation — 9 services under one roof. Free strategy session for your business.",
-      "keywords": "digital marketing agency indonesia, SEO services jakarta, website development indonesia, mobile app development, custom software development, meta ads agency, google ads agency, social media agency jakarta, AI automation agency, digital agency BSD, southeast asia digital agency"
+      "keywords": "digital marketing agency indonesia, SEO services jakarta, website development indonesia, mobile app development, custom software development, meta ads agency, google ads agency, social media agency jakarta, AI automation agency, digital agency SCBD, digital agency south jakarta, southeast asia digital agency"
     }
   },
   "nav": {
@@ -49,9 +49,18 @@
     "titleHighlight": "one complete house.",
     "intro": "Need a website that converts? Done. Ads with proven ROAS? Done. A mobile app that sticks on users' phones? Done. Need to clean up your brand's reputation on Google? Absolutely. Pick what you need — or take everything and let us become your strategic digital partner.",
     "highlights": [
-      { "title": "End-to-end coverage", "desc": "Strategy, design, development, marketing, and maintenance — one point of coordination." },
-      { "title": "Senior-led delivery", "desc": "Every project is supervised by a founder or senior strategist — not a trial-and-error junior." },
-      { "title": "Transparent pricing", "desc": "Clear tiers, detailed scope, no hidden costs. Flexible contracts starting from 1 month." }
+      {
+        "title": "End-to-end coverage",
+        "desc": "Strategy, design, development, marketing, and maintenance — one point of coordination."
+      },
+      {
+        "title": "Senior-led delivery",
+        "desc": "Every project is supervised by a founder or senior strategist — not a trial-and-error junior."
+      },
+      {
+        "title": "Transparent pricing",
+        "desc": "Clear tiers, detailed scope, no hidden costs. Flexible contracts starting from 1 month."
+      }
     ],
     "ctaText": "Not sure which one fits your business?",
     "ctaHighlight": "Let's discuss first — free, no commitment.",
@@ -104,7 +113,7 @@
       {
         "num": "01",
         "title": "Discovery & Discussion",
-        "desc": "We talk about your business, targets, current state, and competitors. Free 30-60 minutes via Zoom or in person at our BSD/Bintaro office. No obligation, no hard selling.",
+        "desc": "We talk about your business, targets, current state, and competitors. Free 30-60 minutes via Zoom or in person at our SCBD office (IDX Tower 1). No obligation, no hard selling.",
         "duration": "1-2 days"
       },
       {
@@ -156,12 +165,36 @@
     "title": "Numbers that",
     "titleHighlight": "speak for themselves.",
     "items": [
-      { "value": "1,000+", "label": "Clients across Indonesia", "desc": "From early-stage startups to tier-1 corporations across 34 provinces" },
-      { "value": "9", "label": "Digital services", "desc": "End-to-end coverage under one roof" },
-      { "value": "8", "label": "Industry specialties", "desc": "Battle-tested playbooks per niche" },
-      { "value": "3x", "label": "Faster delivery", "desc": "AI-leveraged workflows vs conventional agencies" },
-      { "value": "95+", "label": "PageSpeed score", "desc": "Our website performance standard" },
-      { "value": "100%", "label": "Local Indonesian team", "desc": "We understand the market, culture, and language" }
+      {
+        "value": "1,000+",
+        "label": "Clients across Indonesia",
+        "desc": "From early-stage startups to tier-1 corporations across 34 provinces"
+      },
+      {
+        "value": "9",
+        "label": "Digital services",
+        "desc": "End-to-end coverage under one roof"
+      },
+      {
+        "value": "8",
+        "label": "Industry specialties",
+        "desc": "Battle-tested playbooks per niche"
+      },
+      {
+        "value": "3x",
+        "label": "Faster delivery",
+        "desc": "AI-leveraged workflows vs conventional agencies"
+      },
+      {
+        "value": "95+",
+        "label": "PageSpeed score",
+        "desc": "Our website performance standard"
+      },
+      {
+        "value": "100%",
+        "label": "Local Indonesian team",
+        "desc": "We understand the market, culture, and language"
+      }
     ]
   },
   "testimonials": {
@@ -220,7 +253,7 @@
       },
       {
         "q": "Does Para Suhu work with clients outside Jakarta?",
-        "a": "Yes, 100%. Our team is Jakarta-based (HQ at IDX Tower, with plans for BSD office and Bintaro home office by 2027), but 60% of our clients are from outside Jakarta — Surabaya, Bandung, Bali, Medan, even Singapore. Our workflow is remote-first with proven tooling."
+        "a": "Yes, 100%. Our team is Jakarta-based (HQ at IDX Tower 1, SCBD), but 60% of our clients are from outside Jakarta — Surabaya, Bandung, Bali, Medan, even Singapore. Our workflow is remote-first with proven tooling."
       },
       {
         "q": "How does payment work?",
@@ -310,20 +343,44 @@
     "valuesTitle": "4 principles we",
     "valuesHighlight": "never compromise.",
     "values": [
-      { "title": "Speed obsessed", "desc": "Projects that usually take 3 months, we finish in 3 weeks. AI-leveraged workflow, premium output." },
-      { "title": "Result oriented", "desc": "Every project has clear targets — leads, sales, ROAS. We track, optimize, and stay accountable." },
-      { "title": "Founder hands-on", "desc": "You talk directly to the people doing the work. Fast decisions, clear communication, no middleman drama." },
-      { "title": "Premium standard", "desc": "Even for 'starter' tier projects, our delivery standard matches expensive Jakarta agencies." }
+      {
+        "title": "Speed obsessed",
+        "desc": "Projects that usually take 3 months, we finish in 3 weeks. AI-leveraged workflow, premium output."
+      },
+      {
+        "title": "Result oriented",
+        "desc": "Every project has clear targets — leads, sales, ROAS. We track, optimize, and stay accountable."
+      },
+      {
+        "title": "Founder hands-on",
+        "desc": "You talk directly to the people doing the work. Fast decisions, clear communication, no middleman drama."
+      },
+      {
+        "title": "Premium standard",
+        "desc": "Even for 'starter' tier projects, our delivery standard matches expensive Jakarta agencies."
+      }
     ],
     "timelineEyebrow": "Journey",
     "timelineTitle": "Our roadmap,",
     "timelineHighlight": "out in the open.",
     "milestones": [
-      { "year": "2018", "event": "Started as independent digital marketer — handled dozens of local clients" },
-      { "year": "2020-2023", "event": "Scaled to hundreds of clients across industries & cities" },
-      { "year": "2024", "event": "Started serious exploration of AI-leveraged workflows" },
+      {
+        "year": "2018",
+        "event": "Started as independent digital marketer — handled dozens of local clients"
+      },
+      {
+        "year": "2020-2023",
+        "event": "Scaled to hundreds of clients across industries & cities"
+      },
+      {
+        "year": "2024",
+        "event": "Started serious exploration of AI-leveraged workflows"
+      },
       { "year": "2026", "event": "PT Suhu Digital Agency officially launched" },
-      { "year": "2027", "event": "Head office BSD + home office Bintaro (target)" }
+      {
+        "year": "2027",
+        "event": "Engineering & creative team expansion at SCBD office (target)"
+      }
     ],
     "officeEyebrow": "Where We Work",
     "officeTitle": "Jakarta-based,",
@@ -525,22 +582,64 @@
     "whyHighlight": "Where you become a master.",
     "whyIntro": "What makes Para Suhu different isn't just the projects — it's how we build the people behind them.",
     "pillars": [
-      { "title": "Learn from masters", "desc": "Every team is led directly by senior practitioners with 10+ years in their craft. You'll be mentored hands-on — not onboarded with a Notion tutorial." },
-      { "title": "Real projects, real clients", "desc": "From early-stage startups to corporate brands — you'll ship work that actually launches, gets measured, and becomes a case study you can put on your CV." },
-      { "title": "9 disciplines, 1 roof", "desc": "Web, apps, software, SEO, ads, social, digital marketing, creative, AI. There's room to cross-skill into other disciplines — not stuck in a single silo forever." },
-      { "title": "Output > politics", "desc": "No political layers, no marathon meetings that go nowhere. What we care about: the quality of your work and the impact on clients." }
+      {
+        "title": "Learn from masters",
+        "desc": "Every team is led directly by senior practitioners with 10+ years in their craft. You'll be mentored hands-on — not onboarded with a Notion tutorial."
+      },
+      {
+        "title": "Real projects, real clients",
+        "desc": "From early-stage startups to corporate brands — you'll ship work that actually launches, gets measured, and becomes a case study you can put on your CV."
+      },
+      {
+        "title": "9 disciplines, 1 roof",
+        "desc": "Web, apps, software, SEO, ads, social, digital marketing, creative, AI. There's room to cross-skill into other disciplines — not stuck in a single silo forever."
+      },
+      {
+        "title": "Output > politics",
+        "desc": "No political layers, no marathon meetings that go nowhere. What we care about: the quality of your work and the impact on clients."
+      }
     ],
     "openingsEyebrow": "Open Positions",
     "openingsTitle": "Roles we're",
     "openingsHighlight": "hiring for.",
     "openingsIntro": "Don't see a role that fits but believe you can add value? Apply anyway — we're always open to talented people.",
     "openings": [
-      { "title": "Senior Web Developer", "department": "Suhu Website", "type": "Full-time", "location": "Jakarta / Hybrid" },
-      { "title": "UI/UX Designer", "department": "Suhu Creative", "type": "Full-time", "location": "Jakarta / Hybrid" },
-      { "title": "SEO Specialist", "department": "Suhu SEO", "type": "Full-time", "location": "Jakarta / Remote" },
-      { "title": "Performance Marketing Manager", "department": "Suhu Ads", "type": "Full-time", "location": "Jakarta / Hybrid" },
-      { "title": "Content Strategist", "department": "Suhu Socmed", "type": "Full-time", "location": "Jakarta / Remote" },
-      { "title": "Account Manager", "department": "Client Success", "type": "Full-time", "location": "Jakarta" }
+      {
+        "title": "Senior Web Developer",
+        "department": "Suhu Website",
+        "type": "Full-time",
+        "location": "Jakarta / Hybrid"
+      },
+      {
+        "title": "UI/UX Designer",
+        "department": "Suhu Creative",
+        "type": "Full-time",
+        "location": "Jakarta / Hybrid"
+      },
+      {
+        "title": "SEO Specialist",
+        "department": "Suhu SEO",
+        "type": "Full-time",
+        "location": "Jakarta / Remote"
+      },
+      {
+        "title": "Performance Marketing Manager",
+        "department": "Suhu Ads",
+        "type": "Full-time",
+        "location": "Jakarta / Hybrid"
+      },
+      {
+        "title": "Content Strategist",
+        "department": "Suhu Socmed",
+        "type": "Full-time",
+        "location": "Jakarta / Remote"
+      },
+      {
+        "title": "Account Manager",
+        "department": "Client Success",
+        "type": "Full-time",
+        "location": "Jakarta"
+      }
     ],
     "applyEyebrow": "How to Apply",
     "applyTitle": "How to",

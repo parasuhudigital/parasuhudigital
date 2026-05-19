@@ -144,6 +144,12 @@ export default function Header() {
             >
               {t("blog")}
             </Link>
+            <Link
+              href="/careers"
+              className="px-4 py-2 text-sm text-white/80 hover:text-white transition-colors"
+            >
+              {t("careers")}
+            </Link>
           </nav>
 
           <div className="flex items-center gap-2.5">
@@ -197,6 +203,7 @@ export default function Header() {
                     { name: t("portfolio"), href: "/portfolio" },
                     { name: t("about"), href: "/about" },
                     { name: t("blog"), href: "/blog" },
+                    { name: t("careers"), href: "/careers" },
                     { name: t("contact"), href: "/contact" },
                   ].map((link, i) => (
                     <motion.div

@@ -136,9 +136,12 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <span className="text-sm text-white/40">
+                <Link
+                  href="/careers"
+                  className="text-sm text-white/70 hover:text-white transition-colors"
+                >
                   {t("links.career")}
-                </span>
+                </Link>
               </li>
             </ul>
           </div>

@@ -12,6 +12,7 @@
     "portfolio": "Portfolio",
     "about": "About",
     "blog": "Blog",
+    "careers": "Careers",
     "contact": "Contact",
     "ctaConsult": "Free Consultation"
   },
@@ -492,5 +493,40 @@
       "section10Title": "10. Contact",
       "section10": "Questions about these terms can be directed to:"
     }
+  },
+  "careersPage": {
+    "eyebrow": "Careers",
+    "title": "Become a",
+    "titleHighlight": "real master.",
+    "hero": "We're looking for people who genuinely want to become experts in their craft — not job-hoppers, not paycheck-chasers. At Para Suhu Digital, you'll work alongside senior practitioners, ship real projects for real clients, and have room to grow — across 9 disciplines if you're curious enough.",
+    "whyEyebrow": "Why Para Suhu",
+    "whyTitle": "Not your average job.",
+    "whyHighlight": "Where you become a master.",
+    "whyIntro": "What makes Para Suhu different isn't just the projects — it's how we build the people behind them.",
+    "pillars": [
+      { "title": "Learn from masters", "desc": "Every team is led directly by senior practitioners with 10+ years in their craft. You'll be mentored hands-on — not onboarded with a Notion tutorial." },
+      { "title": "Real projects, real clients", "desc": "From early-stage startups to corporate brands — you'll ship work that actually launches, gets measured, and becomes a case study you can put on your CV." },
+      { "title": "9 disciplines, 1 roof", "desc": "Web, apps, software, SEO, ads, social, digital marketing, creative, AI. There's room to cross-skill into other disciplines — not stuck in a single silo forever." },
+      { "title": "Output > politics", "desc": "No political layers, no marathon meetings that go nowhere. What we care about: the quality of your work and the impact on clients." }
+    ],
+    "openingsEyebrow": "Open Positions",
+    "openingsTitle": "Roles we're",
+    "openingsHighlight": "hiring for.",
+    "openingsIntro": "Don't see a role that fits but believe you can add value? Apply anyway — we're always open to talented people.",
+    "openings": [
+      { "title": "Senior Web Developer", "department": "Suhu Website", "type": "Full-time", "location": "Jakarta / Hybrid" },
+      { "title": "UI/UX Designer", "department": "Suhu Creative", "type": "Full-time", "location": "Jakarta / Hybrid" },
+      { "title": "SEO Specialist", "department": "Suhu SEO", "type": "Full-time", "location": "Jakarta / Remote" },
+      { "title": "Performance Marketing Manager", "department": "Suhu Ads", "type": "Full-time", "location": "Jakarta / Hybrid" },
+      { "title": "Content Strategist", "department": "Suhu Socmed", "type": "Full-time", "location": "Jakarta / Remote" },
+      { "title": "Account Manager", "department": "Client Success", "type": "Full-time", "location": "Jakarta" }
+    ],
+    "applyEyebrow": "How to Apply",
+    "applyTitle": "How to",
+    "applyHighlight": "submit your application.",
+    "applyIntro": "Keep it simple: send your CV + portfolio + a short cover note (why you'd fit at Para Suhu) to the email or WhatsApp below. Include the role you're applying for in the subject. We reply within 5 business days.",
+    "applyEmail": "Apply via Email",
+    "applyWa": "Apply via WhatsApp",
+    "waMessage": "Hi Para Suhu, I'd like to apply for the position:"
   }
 }

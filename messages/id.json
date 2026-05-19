@@ -12,6 +12,7 @@
     "portfolio": "Portfolio",
     "about": "Tentang",
     "blog": "Blog",
+    "careers": "Karier",
     "contact": "Kontak",
     "ctaConsult": "Konsultasi Gratis"
   },
@@ -492,5 +493,40 @@
       "section10Title": "10. Kontak",
       "section10": "Pertanyaan tentang terms ini dapat diarahkan ke:"
     }
+  },
+  "careersPage": {
+    "eyebrow": "Karier",
+    "title": "Gabung jadi",
+    "titleHighlight": "suhu beneran.",
+    "hero": "Lagi nyari orang yang serius pengen jadi pakar di bidangnya. Bukan job-hopper, bukan yang cuma cari gaji. Di Para Suhu Digital, lo bakal kerja bareng praktisi senior, ngerjain project untuk klien beneran, dan punya ruang buat tumbuh — di 9 disiplin sekaligus kalau lo memang penasaran.",
+    "whyEyebrow": "Why Para Suhu",
+    "whyTitle": "Bukan kerja biasa.",
+    "whyHighlight": "Tempat lo jadi suhu.",
+    "whyIntro": "Yang bikin Para Suhu beda bukan cuma project-nya — tapi cara kami bangun orang-orang di dalamnya.",
+    "pillars": [
+      { "title": "Belajar dari suhu", "desc": "Setiap tim dipegang langsung sama praktisi senior yang udah 10+ tahun di bidangnya. Lo bakal di-mentor langsung — bukan di-onboarding sama tutorial Notion doang." },
+      { "title": "Project nyata, klien beneran", "desc": "Dari startup early-stage sampai brand korporasi — lo bakal ngerjain stuff yang launch beneran, di-track metrik-nya, dan jadi case study yang bisa lo banggain di CV." },
+      { "title": "9 disiplin di satu atap", "desc": "Web, app, software, SEO, ads, sosmed, digital marketing, creative, sampai AI. Lo punya ruang buat cross-skill ke disiplin lain — bukan stuck di satu silo selamanya." },
+      { "title": "Output > politik", "desc": "Gak ada layer politik, gak ada meeting marathon yang gak perlu. Yang kami care: kualitas kerjaan lo dan impact buat klien." }
+    ],
+    "openingsEyebrow": "Open Positions",
+    "openingsTitle": "Posisi yang",
+    "openingsHighlight": "lagi dicari.",
+    "openingsIntro": "Kalau gak nemu posisi yang pas tapi lo yakin bisa kasih value, tetep apply aja — kami selalu open ke talented people.",
+    "openings": [
+      { "title": "Senior Web Developer", "department": "Suhu Website", "type": "Full-time", "location": "Jakarta / Hybrid" },
+      { "title": "UI/UX Designer", "department": "Suhu Creative", "type": "Full-time", "location": "Jakarta / Hybrid" },
+      { "title": "SEO Specialist", "department": "Suhu SEO", "type": "Full-time", "location": "Jakarta / Remote" },
+      { "title": "Performance Marketing Manager", "department": "Suhu Ads", "type": "Full-time", "location": "Jakarta / Hybrid" },
+      { "title": "Content Strategist", "department": "Suhu Socmed", "type": "Full-time", "location": "Jakarta / Remote" },
+      { "title": "Account Manager", "department": "Client Success", "type": "Full-time", "location": "Jakarta" }
+    ],
+    "applyEyebrow": "How to Apply",
+    "applyTitle": "Cara",
+    "applyHighlight": "kirim lamaran.",
+    "applyIntro": "Simple aja: kirim CV + portfolio + cover letter singkat (kenapa lo cocok di Para Suhu) ke email atau WhatsApp di bawah. Cantumkan posisi yang lo apply di subject. Kami balas dalam 5 hari kerja.",
+    "applyEmail": "Apply via Email",
+    "applyWa": "Apply via WhatsApp",
+    "waMessage": "Halo Para Suhu, gua mau apply untuk posisi:"
   }
 }

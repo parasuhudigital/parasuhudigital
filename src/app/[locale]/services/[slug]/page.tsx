@@ -230,8 +230,8 @@ export default async function ServicePage({
                   <h3 className="font-display font-semibold text-2xl text-white mb-4 tracking-[-0.02em]">
                     {bi(tier.name, locale)}
                   </h3>
-                  <div className="font-display font-bold text-4xl text-white mb-2">
-                    {tier.price}
+                  <div className="font-display font-bold text-3xl text-white mb-2">
+                    {bi(tier.price, locale)}
                   </div>
                   <p className="text-sm text-white/60 leading-relaxed min-h-[60px]">
                     {bi(tier.for, locale)}

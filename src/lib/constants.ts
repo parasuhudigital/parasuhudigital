@@ -17,7 +17,7 @@ export type Service = {
   features: BilingualString[];
   tiers: {
     name: BilingualString;
-    price: string;
+    price: BilingualString;
     for: BilingualString;
   }[];
 };
@@ -55,9 +55,9 @@ export const SERVICES: readonly Service[] = [
       { id: "Free maintenance 1 bulan post-launch", en: "Free 1-month post-launch maintenance" },
     ],
     tiers: [
-      { name: { id: "Starter", en: "Starter" }, price: "Rp 15-30jt", for: { id: "Single landing page atau small site (1-5 halaman)", en: "Single landing page or small site (1-5 pages)" } },
-      { name: { id: "Business", en: "Business" }, price: "Rp 35-75jt", for: { id: "Company profile / e-commerce dengan custom design", en: "Company profile / e-commerce with custom design" } },
-      { name: { id: "Premium", en: "Premium" }, price: "Rp 100jt+", for: { id: "Custom web app, marketplace, multi-tenant", en: "Custom web app, marketplace, multi-tenant" } },
+      { name: { id: "Starter", en: "Starter" }, price: { id: "Diskusi Yuk", en: "Get a Quote" }, for: { id: "Single landing page atau small site (1-5 halaman)", en: "Single landing page or small site (1-5 pages)" } },
+      { name: { id: "Business", en: "Business" }, price: { id: "Diskusi Yuk", en: "Get a Quote" }, for: { id: "Company profile / e-commerce dengan custom design", en: "Company profile / e-commerce with custom design" } },
+      { name: { id: "Premium", en: "Premium" }, price: { id: "Diskusi Yuk", en: "Get a Quote" }, for: { id: "Custom web app, marketplace, multi-tenant", en: "Custom web app, marketplace, multi-tenant" } },
     ],
   },
   {
@@ -92,9 +92,9 @@ export const SERVICES: readonly Service[] = [
       { id: "App Store + Play Store submission", en: "App Store + Play Store submission" },
     ],
     tiers: [
-      { name: { id: "Lite (PWA)", en: "Lite (PWA)" }, price: "Rp 35-75jt", for: { id: "Web-based app yang feel native", en: "Web-based app with native feel" } },
-      { name: { id: "Standard", en: "Standard" }, price: "Rp 100-200jt", for: { id: "React Native cross-platform, 5-10 feature", en: "React Native cross-platform, 5-10 features" } },
-      { name: { id: "Premium", en: "Premium" }, price: "Rp 250jt+", for: { id: "Native iOS + Android dengan backend lengkap", en: "Native iOS + Android with full backend" } },
+      { name: { id: "Lite (PWA)", en: "Lite (PWA)" }, price: { id: "Diskusi Yuk", en: "Get a Quote" }, for: { id: "Web-based app yang feel native", en: "Web-based app with native feel" } },
+      { name: { id: "Standard", en: "Standard" }, price: { id: "Diskusi Yuk", en: "Get a Quote" }, for: { id: "React Native cross-platform, 5-10 feature", en: "React Native cross-platform, 5-10 features" } },
+      { name: { id: "Premium", en: "Premium" }, price: { id: "Diskusi Yuk", en: "Get a Quote" }, for: { id: "Native iOS + Android dengan backend lengkap", en: "Native iOS + Android with full backend" } },
     ],
   },
   {
@@ -129,9 +129,9 @@ export const SERVICES: readonly Service[] = [
       { id: "Training & documentation", en: "Training & documentation" },
     ],
     tiers: [
-      { name: { id: "Starter", en: "Starter" }, price: "Rp 25-50jt", for: { id: "1-3 modul sederhana", en: "1-3 simple modules" } },
-      { name: { id: "Business", en: "Business" }, price: "Rp 75-150jt", for: { id: "5-10 modul dengan custom workflow", en: "5-10 modules with custom workflow" } },
-      { name: { id: "Enterprise", en: "Enterprise" }, price: "Rp 200jt+", for: { id: "Full custom system + integration kompleks", en: "Full custom system + complex integrations" } },
+      { name: { id: "Starter", en: "Starter" }, price: { id: "Diskusi Yuk", en: "Get a Quote" }, for: { id: "1-3 modul sederhana", en: "1-3 simple modules" } },
+      { name: { id: "Business", en: "Business" }, price: { id: "Diskusi Yuk", en: "Get a Quote" }, for: { id: "5-10 modul dengan custom workflow", en: "5-10 modules with custom workflow" } },
+      { name: { id: "Enterprise", en: "Enterprise" }, price: { id: "Diskusi Yuk", en: "Get a Quote" }, for: { id: "Full custom system + integration kompleks", en: "Full custom system + complex integrations" } },
     ],
   },
   {
@@ -166,9 +166,9 @@ export const SERVICES: readonly Service[] = [
       { id: "Competitor tracking", en: "Competitor tracking" },
     ],
     tiers: [
-      { name: { id: "Starter", en: "Starter" }, price: "Rp 8-15jt/bulan", for: { id: "Local SEO + 5-10 keyword target", en: "Local SEO + 5-10 target keywords" } },
-      { name: { id: "Business", en: "Business" }, price: "Rp 20-40jt/bulan", for: { id: "Nasional, 20-50 keyword, content marketing", en: "National, 20-50 keywords, content marketing" } },
-      { name: { id: "Enterprise", en: "Enterprise" }, price: "Rp 50jt+/bulan", for: { id: "Multi-domain, full content team, link building", en: "Multi-domain, full content team, link building" } },
+      { name: { id: "Starter", en: "Starter" }, price: { id: "Diskusi Yuk", en: "Get a Quote" }, for: { id: "Local SEO + 5-10 keyword target", en: "Local SEO + 5-10 target keywords" } },
+      { name: { id: "Business", en: "Business" }, price: { id: "Diskusi Yuk", en: "Get a Quote" }, for: { id: "Nasional, 20-50 keyword, content marketing", en: "National, 20-50 keywords, content marketing" } },
+      { name: { id: "Enterprise", en: "Enterprise" }, price: { id: "Diskusi Yuk", en: "Get a Quote" }, for: { id: "Multi-domain, full content team, link building", en: "Multi-domain, full content team, link building" } },
     ],
   },
   {
@@ -203,9 +203,9 @@ export const SERVICES: readonly Service[] = [
       { id: "Daily monitoring & weekly reporting", en: "Daily monitoring & weekly reporting" },
     ],
     tiers: [
-      { name: { id: "Starter", en: "Starter" }, price: "Rp 5-10jt/bulan", for: { id: "Ad spend < Rp 30jt/bulan, 1-2 platform", en: "Ad spend < Rp 30M/month, 1-2 platforms" } },
-      { name: { id: "Business", en: "Business" }, price: "Rp 15-25jt/bulan", for: { id: "Ad spend Rp 30-100jt/bulan, multi-platform", en: "Ad spend Rp 30-100M/month, multi-platform" } },
-      { name: { id: "Enterprise", en: "Enterprise" }, price: "10-15% of ad spend", for: { id: "Ad spend Rp 100jt+/bulan, full-funnel", en: "Ad spend Rp 100M+/month, full-funnel" } },
+      { name: { id: "Starter", en: "Starter" }, price: { id: "Diskusi Yuk", en: "Get a Quote" }, for: { id: "Ad spend < Rp 30jt/bulan, 1-2 platform", en: "Ad spend < Rp 30M/month, 1-2 platforms" } },
+      { name: { id: "Business", en: "Business" }, price: { id: "Diskusi Yuk", en: "Get a Quote" }, for: { id: "Ad spend Rp 30-100jt/bulan, multi-platform", en: "Ad spend Rp 30-100M/month, multi-platform" } },
+      { name: { id: "Enterprise", en: "Enterprise" }, price: { id: "Diskusi Yuk", en: "Get a Quote" }, for: { id: "Ad spend Rp 100jt+/bulan, full-funnel", en: "Ad spend Rp 100M+/month, full-funnel" } },
     ],
   },
   {
@@ -240,9 +240,9 @@ export const SERVICES: readonly Service[] = [
       { id: "Platform: IG, TikTok, FB, LinkedIn, X", en: "Platforms: IG, TikTok, FB, LinkedIn, X" },
     ],
     tiers: [
-      { name: { id: "Starter", en: "Starter" }, price: "Rp 8-15jt/bulan", for: { id: "1-2 platform, 3-5 posts/minggu", en: "1-2 platforms, 3-5 posts/week" } },
-      { name: { id: "Business", en: "Business" }, price: "Rp 20-40jt/bulan", for: { id: "Multi-platform, daily posting, video content", en: "Multi-platform, daily posting, video content" } },
-      { name: { id: "Premium", en: "Premium" }, price: "Rp 50jt+/bulan", for: { id: "Full team, influencer mgmt, content shoot", en: "Full team, influencer management, content shoots" } },
+      { name: { id: "Starter", en: "Starter" }, price: { id: "Diskusi Yuk", en: "Get a Quote" }, for: { id: "1-2 platform, 3-5 posts/minggu", en: "1-2 platforms, 3-5 posts/week" } },
+      { name: { id: "Business", en: "Business" }, price: { id: "Diskusi Yuk", en: "Get a Quote" }, for: { id: "Multi-platform, daily posting, video content", en: "Multi-platform, daily posting, video content" } },
+      { name: { id: "Premium", en: "Premium" }, price: { id: "Diskusi Yuk", en: "Get a Quote" }, for: { id: "Full team, influencer mgmt, content shoot", en: "Full team, influencer management, content shoots" } },
     ],
   },
   {
@@ -277,9 +277,9 @@ export const SERVICES: readonly Service[] = [
       { id: "Dedicated account manager", en: "Dedicated account manager" },
     ],
     tiers: [
-      { name: { id: "Growth", en: "Growth" }, price: "Rp 35-75jt/bulan", for: { id: "Bisnis yang mau scaling 2-5x dalam 12 bulan", en: "Businesses targeting 2-5x scale in 12 months" } },
-      { name: { id: "Scale", en: "Scale" }, price: "Rp 100-200jt/bulan", for: { id: "Brand established, mau go nasional", en: "Established brands going national" } },
-      { name: { id: "Enterprise", en: "Enterprise" }, price: "Custom", for: { id: "Multi-brand, multi-region operations", en: "Multi-brand, multi-region operations" } },
+      { name: { id: "Growth", en: "Growth" }, price: { id: "Diskusi Yuk", en: "Get a Quote" }, for: { id: "Bisnis yang mau scaling 2-5x dalam 12 bulan", en: "Businesses targeting 2-5x scale in 12 months" } },
+      { name: { id: "Scale", en: "Scale" }, price: { id: "Diskusi Yuk", en: "Get a Quote" }, for: { id: "Brand established, mau go nasional", en: "Established brands going national" } },
+      { name: { id: "Enterprise", en: "Enterprise" }, price: { id: "Diskusi Yuk", en: "Get a Quote" }, for: { id: "Multi-brand, multi-region operations", en: "Multi-brand, multi-region operations" } },
     ],
   },
   {
@@ -314,9 +314,9 @@ export const SERVICES: readonly Service[] = [
       { id: "Print collateral (brosur, kartu nama, dll)", en: "Print collateral (brochures, business cards, etc.)" },
     ],
     tiers: [
-      { name: { id: "Starter", en: "Starter" }, price: "Rp 10-25jt", for: { id: "Logo + brand guideline basic", en: "Basic logo + brand guidelines" } },
-      { name: { id: "Brand Package", en: "Brand Package" }, price: "Rp 35-75jt", for: { id: "Full branding + content templates", en: "Full branding + content templates" } },
-      { name: { id: "Premium", en: "Premium" }, price: "Rp 100jt+", for: { id: "Full visual identity + content production", en: "Full visual identity + content production" } },
+      { name: { id: "Starter", en: "Starter" }, price: { id: "Diskusi Yuk", en: "Get a Quote" }, for: { id: "Logo + brand guideline basic", en: "Basic logo + brand guidelines" } },
+      { name: { id: "Brand Package", en: "Brand Package" }, price: { id: "Diskusi Yuk", en: "Get a Quote" }, for: { id: "Full branding + content templates", en: "Full branding + content templates" } },
+      { name: { id: "Premium", en: "Premium" }, price: { id: "Diskusi Yuk", en: "Get a Quote" }, for: { id: "Full visual identity + content production", en: "Full visual identity + content production" } },
     ],
   },
   {
@@ -351,9 +351,9 @@ export const SERVICES: readonly Service[] = [
       { id: "Monthly optimization", en: "Monthly optimization" },
     ],
     tiers: [
-      { name: { id: "Pilot", en: "Pilot" }, price: "Rp 15-30jt", for: { id: "1 use case (chatbot atau automation)", en: "1 use case (chatbot or automation)" } },
-      { name: { id: "Implementation", en: "Implementation" }, price: "Rp 50-100jt", for: { id: "3-5 AI use case + training tim", en: "3-5 AI use cases + team training" } },
-      { name: { id: "Transformation", en: "Transformation" }, price: "Rp 150jt+", for: { id: "Full AI integration across departments", en: "Full AI integration across departments" } },
+      { name: { id: "Pilot", en: "Pilot" }, price: { id: "Diskusi Yuk", en: "Get a Quote" }, for: { id: "1 use case (chatbot atau automation)", en: "1 use case (chatbot or automation)" } },
+      { name: { id: "Implementation", en: "Implementation" }, price: { id: "Diskusi Yuk", en: "Get a Quote" }, for: { id: "3-5 AI use case + training tim", en: "3-5 AI use cases + team training" } },
+      { name: { id: "Transformation", en: "Transformation" }, price: { id: "Diskusi Yuk", en: "Get a Quote" }, for: { id: "Full AI integration across departments", en: "Full AI integration across departments" } },
     ],
   },
 ] as const;

@@ -16,6 +16,7 @@ export async function signUpAndConfirm(input: {
   password: string;
   fullName: string;
   whatsapp: string;
+  telegram: string;
 }): Promise<SignUpResult> {
   const email = input.email.trim().toLowerCase();
   if (!email || !input.password) {
@@ -30,7 +31,11 @@ export async function signUpAndConfirm(input: {
     email,
     password: input.password,
     email_confirm: true,
-    user_metadata: { full_name: input.fullName, whatsapp: input.whatsapp },
+    user_metadata: {
+      full_name: input.fullName,
+      whatsapp: input.whatsapp,
+      telegram: input.telegram,
+    },
   });
 
   if (error) {

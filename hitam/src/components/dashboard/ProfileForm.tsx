@@ -17,6 +17,7 @@ export default function ProfileForm({
     company: profile?.company ?? "",
     phone: profile?.phone ?? "",
     whatsapp: profile?.whatsapp ?? "",
+    telegram: profile?.telegram ?? "",
   });
   const [loading, setLoading] = useState(false);
   const [saved, setSaved] = useState(false);
@@ -78,16 +79,28 @@ export default function ProfileForm({
           />
         </div>
         <div>
-          <label htmlFor="phone" className="label">
-            Telepon (opsional)
+          <label htmlFor="telegram" className="label">
+            Username Telegram
           </label>
           <input
-            id="phone"
-            value={form.phone}
-            onChange={set("phone")}
+            id="telegram"
+            value={form.telegram}
+            onChange={set("telegram")}
+            placeholder="@username"
             className="input"
           />
         </div>
+      </div>
+      <div>
+        <label htmlFor="phone" className="label">
+          Telepon (opsional)
+        </label>
+        <input
+          id="phone"
+          value={form.phone}
+          onChange={set("phone")}
+          className="input"
+        />
       </div>
 
       {error && (

@@ -17,7 +17,11 @@ try {
     email,
     password,
     email_confirm: true,
-    user_metadata: { full_name: "Signup Test", whatsapp: "08120000000" },
+    user_metadata: {
+      full_name: "Signup Test",
+      whatsapp: "08120000000",
+      telegram: "@signuptest",
+    },
   });
   if (error) throw new Error("createUser: " + error.message);
   uid = data.user.id;
@@ -41,10 +45,14 @@ try {
 
   const { data: p } = await admin
     .from("hitam_profiles")
-    .select("full_name, role")
+    .select("full_name, telegram, role")
     .eq("id", uid)
     .single();
-  console.log(p ? `✓ profile created: ${p.full_name} (${p.role})` : "✗ no profile row");
+  console.log(
+    p
+      ? `✓ profile created: ${p.full_name} · tg=${p.telegram} (${p.role})`
+      : "✗ no profile row",
+  );
 
   console.log("\nSIGNUP FLOW OK");
 } catch (e) {

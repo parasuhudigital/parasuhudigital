@@ -8,6 +8,7 @@ export type ProfileInput = {
   company: string;
   phone: string;
   whatsapp: string;
+  telegram: string;
 };
 
 export async function updateProfile(
@@ -26,6 +27,7 @@ export async function updateProfile(
       company: input.company || null,
       phone: input.phone || null,
       whatsapp: input.whatsapp || null,
+      telegram: input.telegram || null,
     })
     .eq("id", user.id);
 

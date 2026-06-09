@@ -65,6 +65,7 @@ export type Profile = {
   company: string | null;
   phone: string | null;
   whatsapp: string | null;
+  telegram: string | null;
   role: Role;
   created_at: string;
 };

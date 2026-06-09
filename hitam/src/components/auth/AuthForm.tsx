@@ -14,6 +14,7 @@ export default function AuthForm({ mode }: { mode: "login" | "signup" }) {
 
   const [fullName, setFullName] = useState("");
   const [whatsapp, setWhatsapp] = useState("");
+  const [telegram, setTelegram] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [loading, setLoading] = useState(false);
@@ -26,7 +27,13 @@ export default function AuthForm({ mode }: { mode: "login" | "signup" }) {
     const supabase = createClient();
 
     if (mode === "signup") {
-      const res = await signUpAndConfirm({ email, password, fullName, whatsapp });
+      const res = await signUpAndConfirm({
+        email,
+        password,
+        fullName,
+        whatsapp,
+        telegram,
+      });
       if (!res.ok) {
         setLoading(false);
         return setError(res.error ?? "Gagal mendaftar.");
@@ -82,6 +89,19 @@ export default function AuthForm({ mode }: { mode: "login" | "signup" }) {
               onChange={(e) => setWhatsapp(e.target.value)}
               required
               placeholder="0812xxxxxxxx"
+              className="input"
+            />
+          </div>
+          <div>
+            <label htmlFor="telegram" className="label">
+              Username Telegram
+            </label>
+            <input
+              id="telegram"
+              value={telegram}
+              onChange={(e) => setTelegram(e.target.value)}
+              required
+              placeholder="@username"
               className="input"
             />
           </div>

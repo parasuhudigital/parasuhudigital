@@ -5,8 +5,8 @@ export const COMPANY = {
   tagline:
     "Divisi black-hat Para Suhu Digital. Ranking, traffic, dan aged domain dengan cara yang gak diajarin agency biasa.",
   email: "info@parasuhudigital.com",
-  whatsapp: process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "628214982408",
-  whatsappDisplay: "+62 821-4982-408",
+  whatsapp: process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "6285353723905",
+  whatsappDisplay: "+62 853-5372-3905",
   siteUrl: process.env.NEXT_PUBLIC_SITE_URL || "https://hitam.parasuhudigital.com",
   parentSite: "https://parasuhudigital.com",
   year: 2026,

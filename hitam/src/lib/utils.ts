@@ -28,7 +28,7 @@ export function formatIDRShort(amount: number): string {
   return `Rp ${amount}`;
 }
 
-const WA_NUMBER = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "628214982408";
+const WA_NUMBER = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "6285353723905";
 
 /** Build a wa.me deep link with a prefilled message. */
 export function waLink(message: string, number: string = WA_NUMBER): string {

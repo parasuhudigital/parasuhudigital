@@ -985,6 +985,108 @@ const CONTENT: Record<string, ServiceBody> = {
       }
     ],
     "riskNote": "Layanan ini high-risk high-reward, didesain buat money site dan campaign churn-and-burn — bukan brand jangka panjang. Kamu bertanggung jawab penuh atas legalitas offer, kepatuhan platform, dan regulasi di wilayah operasi kamu; kami menyediakan aset teknis, bukan jaminan hasil atau nasihat hukum."
+  },
+  "tutoring": {
+    "tagline": "Belajar langsung dari yang praktiknya jalan — bukan teori YouTube basi.",
+    "heroBadge": "🎓 1-on-1 & Group Mentoring",
+    "heroTitle": "Kuasai sendiri ilmu black-hat",
+    "heroTitleHighlight": "yang gak diajarin di mana pun.",
+    "heroSubtitle": "Mau bisa eksekusi ads anti-banned, SEO agresif, atau bangun backlink & main aged domain sendiri? Kami ajarin langsung, step-by-step, dengan materi yang disesuaikan sama kebutuhan & level kamu. Ads, SEO, backlink, cloaking-friendly funnel — pilih topiknya, kami bongkar semua.",
+    "intro": [
+      "Banyak yang mau terjun ke black-hat tapi bingung mulai dari mana — kursus online isinya teori basi, grup isinya jualan, dan yang beneran praktik jarang mau buka ilmu. Di sini beda: kamu belajar langsung dari tim yang tiap hari ngejalanin campaign nyata.",
+      "Materinya 100% disesuaikan. Mau fokus ke Meta Ads yang tahan banned, parasite SEO, jaringan PBN, atau cara baca metrik aged domain biar gak ketipu — tinggal bilang. Kami susun kurikulum sesuai target, level, dan budget kamu. Sesi privat 1-on-1 atau grup kecil."
+    ],
+    "features": [
+      "Materi disesuaikan: ads / SEO / backlink / aged domain / funnel",
+      "Mentor praktisi aktif, bukan teori doang",
+      "Sesi 1-on-1 atau grup kecil (online)",
+      "Studi kasus campaign & SERP nyata",
+      "Template, tools, & SOP yang kami pakai sendiri",
+      "Grup tanya-jawab pasca-sesi",
+      "Roadmap belajar sesuai level & target kamu"
+    ],
+    "packages": [
+      {
+        "name": "Sesi Privat",
+        "priceLabel": "Hubungi Kami",
+        "for": "1-on-1, 1 topik spesifik (mis. Meta Ads anti-banned atau audit aged domain)",
+        "includes": [
+          "Sesi privat 1-on-1 (online)",
+          "1 topik fokus pilihan kamu",
+          "Rekaman sesi + catatan materi",
+          "Q&A 7 hari pasca-sesi"
+        ],
+        "popular": false
+      },
+      {
+        "name": "Mentoring Bulanan",
+        "priceLabel": "Hubungi Kami",
+        "for": "Pendampingan rutin sambil kamu jalanin project sendiri",
+        "includes": [
+          "4 sesi/bulan (privat atau grup)",
+          "Kurikulum custom sesuai target",
+          "Review project & campaign kamu",
+          "Akses grup tanya-jawab prioritas",
+          "Template, tools, & SOP siap pakai",
+          "Roadmap belajar bertahap"
+        ],
+        "popular": true
+      },
+      {
+        "name": "Bootcamp Intensif",
+        "priceLabel": "Hubungi Kami",
+        "for": "Gas cepat dari nol sampai bisa eksekusi sendiri, multi-topik",
+        "includes": [
+          "Program intensif multi-topik (ads + SEO + backlink)",
+          "Sesi privat + praktik langsung",
+          "Setup tools & akun bareng mentor",
+          "Studi kasus end-to-end",
+          "Pendampingan sampai live campaign pertama",
+          "Akses grup alumni"
+        ],
+        "popular": false
+      }
+    ],
+    "deliverables": [
+      {
+        "title": "Materi & Kurikulum",
+        "items": [
+          "Kurikulum custom sesuai topik & level",
+          "Slide / dokumen materi tiap sesi",
+          "Rekaman semua sesi",
+          "Template, checklist & SOP siap pakai"
+        ]
+      },
+      {
+        "title": "Pendampingan",
+        "items": [
+          "Review project & akun kamu langsung",
+          "Q&A pasca-sesi via grup",
+          "Rekomendasi tools & resource",
+          "Roadmap belajar lanjutan"
+        ]
+      }
+    ],
+    "process": [
+      { "step": "01", "title": "Konsultasi Awal", "desc": "Cerita target, level, dan topik yang mau dikuasai. Kami petakan kebutuhan & susun rencana belajar.", "duration": "Hari 1" },
+      { "step": "02", "title": "Susun Kurikulum", "desc": "Kami bikin kurikulum custom + jadwal sesi sesuai pace kamu. Materi & tools disiapkan.", "duration": "Hari 1-3" },
+      { "step": "03", "title": "Sesi Mentoring", "desc": "Belajar langsung step-by-step: konsep, demo praktik nyata, lalu latihan di project kamu sendiri.", "duration": "Sesuai paket" },
+      { "step": "04", "title": "Praktik & Review", "desc": "Kamu eksekusi, kami review hasilnya, koreksi, dan dampingi sampai kamu bisa jalan sendiri.", "duration": "Ongoing" }
+    ],
+    "stats": [
+      { "value": "1-on-1", "label": "Privat atau grup kecil" },
+      { "value": "100%", "label": "Materi disesuaikan" },
+      { "value": "Praktisi", "label": "Mentor yang beneran jalan" },
+      { "value": "All-topic", "label": "Ads, SEO, backlink, domain" }
+    ],
+    "faqs": [
+      { "q": "Topik apa aja yang bisa diajarin?", "a": "Bebas sesuai kebutuhan: Meta/Google/TikTok Ads anti-banned, black hat SEO (PBN, parasite, mass index), teknik backlink, cara baca & audit aged domain, sampai bikin funnel/landing page cloaking-friendly. Tinggal bilang fokusnya, kami sesuaikan." },
+      { "q": "Cocok buat pemula total?", "a": "Cocok. Kurikulum disusun sesuai level kamu — kalau dari nol, kami mulai dari fundamental dulu baru naik ke teknik agresif. Kalau udah jalan, kami fokus ke optimasi & scaling." },
+      { "q": "Online atau offline?", "a": "Mayoritas online (video call) biar fleksibel & rekaman bisa kamu simpan. Sesi privat terjadwal sesuai kesepakatan. Offline bisa diatur khusus, tanya via WhatsApp." },
+      { "q": "Berapa harganya?", "a": "Tergantung topik, format (privat/grup), dan durasi. Chat kami via WhatsApp dengan kebutuhan kamu, nanti kami kasih penawaran yang pas." },
+      { "q": "Ilmunya beneran dibuka, gak ditutup-tutupi?", "a": "Iya. Justru itu bedanya — kami bongkar workflow, tools, dan SOP yang kami pakai sendiri, bukan teori umum. Tujuannya kamu bener-bener bisa eksekusi sendiri." }
+    ],
+    "riskNote": "Black-hat itu high-risk. Mentoring ini ngajarin teknik plus cara manajemen risikonya, tapi keputusan & tanggung jawab eksekusi tetap di tangan kamu."
   }
 };
 

@@ -6,10 +6,10 @@ import {
   ArrowUpRight,
   AlertTriangle,
   Star,
+  MessageCircle,
 } from "lucide-react";
 import { getService, serviceSlugs } from "@/lib/catalog";
 import { ServiceIcon } from "@/components/iconMap";
-import AddToCartButton from "@/components/cart/AddToCartButton";
 import ServiceProof from "@/components/ServiceProof";
 import BacklinkInventory from "@/components/BacklinkInventory";
 import { waLink, cn } from "@/lib/utils";
@@ -159,8 +159,8 @@ export default function ServicePage({
             Pilih level agresivitas kamu.
           </h2>
           <p className="mt-3 text-white/60">
-            Harga di bawah adalah estimasi mulai. Harga final dikunci setelah
-            brief — tambah ke keranjang, lanjut nego & checkout via WhatsApp.
+            Harga final tergantung scope, target, dan tingkat kesulitan. Klik
+            paket buat konsultasi & minta penawaran langsung via WhatsApp.
           </p>
         </div>
 
@@ -183,8 +183,8 @@ export default function ServicePage({
               <h3 className="font-display text-xl font-semibold text-white">
                 {pkg.name}
               </h3>
-              <div className="mt-3 font-display text-2xl font-bold text-hitam-gold">
-                {pkg.priceLabel}
+              <div className="mt-3 font-display text-2xl font-bold text-hitam-blood-light">
+                Hubungi Kami
               </div>
               <p className="mt-2 min-h-[3rem] text-sm leading-relaxed text-white/55">
                 {pkg.for}
@@ -200,19 +200,19 @@ export default function ServicePage({
                   </li>
                 ))}
               </ul>
-              <AddToCartButton
-                className="mt-6 w-full"
-                variant={pkg.popular ? "primary" : "ghost"}
-                label="Tambah ke Keranjang"
-                item={{
-                  service_slug: s.slug,
-                  service_name: s.name,
-                  package_tier: pkg.name,
-                  unit_price_idr: 0,
-                  label: `${s.name} — ${pkg.name}`,
-                  meta: { priceLabel: pkg.priceLabel },
-                }}
-              />
+              <a
+                href={waLink(
+                  `Halo Para Suhu Hitam! Gua tertarik jasa ${s.name} — paket ${pkg.name}. Boleh minta penawaran & harganya?`,
+                )}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={cn(
+                  "mt-6 w-full",
+                  pkg.popular ? "btn-primary" : "btn-ghost",
+                )}
+              >
+                <MessageCircle className="h-4 w-4" /> Hubungi Kami
+              </a>
             </div>
           ))}
         </div>
@@ -321,18 +321,20 @@ export default function ServicePage({
               kami buat strategi yang pas sama target kamu.
             </p>
             <div className="mt-7 flex flex-col gap-3 sm:flex-row">
-              <Link href="/cart" className="btn-primary px-7 py-3.5 text-base">
-                Ke Keranjang
-                <ArrowUpRight className="h-5 w-5" />
-              </Link>
               <a
-                href={waLink(`Halo Para Suhu Hitam! Mau order jasa ${s.name}.`)}
+                href={waLink(
+                  `Halo Para Suhu Hitam! Gua mau order jasa ${s.name}. Boleh minta penawaran?`,
+                )}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn-ghost px-7 py-3.5 text-base"
+                className="btn-primary px-7 py-3.5 text-base"
               >
-                Order via WhatsApp
+                Hubungi Kami Sekarang
+                <ArrowUpRight className="h-5 w-5" />
               </a>
+              <Link href="/jasa" className="btn-ghost px-7 py-3.5 text-base">
+                Lihat Layanan Lain
+              </Link>
             </div>
           </div>
         </div>

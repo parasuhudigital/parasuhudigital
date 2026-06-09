@@ -62,6 +62,14 @@ export const SERVICE_META: {
     short:
       "Landing page AMP super cepat & anti-banned untuk kampanye agresif. Loading di bawah 1 detik.",
   },
+  {
+    slug: "tutoring",
+    name: "Tutoring / Mentoring",
+    icon: "GraduationCap",
+    accent: "gold",
+    short:
+      "Diajarin langsung cara main black-hat — ads, SEO, backlink, atau apa pun. Materi & jadwal disesuaikan kebutuhan kamu.",
+  },
 ];
 
 export const NAV = [

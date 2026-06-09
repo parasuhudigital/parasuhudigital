@@ -4,6 +4,7 @@ import {
   Megaphone,
   Link2,
   Zap,
+  GraduationCap,
   type LucideIcon,
 } from "lucide-react";
 
@@ -13,6 +14,7 @@ const MAP: Record<string, LucideIcon> = {
   Megaphone,
   Link2,
   Zap,
+  GraduationCap,
 };
 
 export function ServiceIcon({

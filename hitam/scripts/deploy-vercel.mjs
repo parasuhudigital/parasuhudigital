@@ -29,6 +29,8 @@ const DEPLOY_VARS = [
   "SUPABASE_SERVICE_ROLE_KEY",
   "NEXT_PUBLIC_WHATSAPP_NUMBER",
   "NEXT_PUBLIC_SITE_URL",
+  "RESEND_API_KEY",
+  "RESEND_FROM",
 ];
 
 console.log("→ Linking Vercel project…");
@@ -67,7 +69,7 @@ console.log("\n✓ DEPLOYED:", url);
 console.log("\n→ Attaching custom domain (may fail if domain lives in another scope)…");
 try {
   execSync(
-    `${V} domains add hitam.parasuhudigital.com ${PROJECT} --cwd "${hitamDir}" ${T}`,
+    `${V} domains add hitam.parasuhudigital.com --cwd "${hitamDir}" ${T}`,
     { stdio: "inherit" },
   );
   console.log("✓ Domain attached. Point Hostinger CNAME → cname.vercel-dns.com");

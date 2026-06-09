@@ -3,8 +3,9 @@
 import { useState } from "react";
 import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
-import { Loader2, Mail, CheckCircle2 } from "lucide-react";
+import { Loader2 } from "lucide-react";
 import { createClient } from "@/lib/supabase/client";
+import { signUpAndConfirm } from "@/app/actions/auth";
 
 export default function AuthForm({ mode }: { mode: "login" | "signup" }) {
   const router = useRouter();
@@ -17,7 +18,6 @@ export default function AuthForm({ mode }: { mode: "login" | "signup" }) {
   const [password, setPassword] = useState("");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
-  const [checkEmail, setCheckEmail] = useState(false);
 
   async function onSubmit(e: React.FormEvent) {
     e.preventDefault();
@@ -26,23 +26,19 @@ export default function AuthForm({ mode }: { mode: "login" | "signup" }) {
     const supabase = createClient();
 
     if (mode === "signup") {
-      const { data, error } = await supabase.auth.signUp({
+      const res = await signUpAndConfirm({ email, password, fullName, whatsapp });
+      if (!res.ok) {
+        setLoading(false);
+        return setError(res.error ?? "Gagal mendaftar.");
+      }
+      // Account is auto-confirmed server-side — sign in immediately.
+      const { error } = await supabase.auth.signInWithPassword({
         email,
         password,
-        options: {
-          data: { full_name: fullName, whatsapp },
-          emailRedirectTo:
-            typeof window !== "undefined"
-              ? `${window.location.origin}/auth/callback?next=${encodeURIComponent(redirect)}`
-              : undefined,
-        },
       });
       setLoading(false);
-      if (error) return setError(error.message);
-      if (!data.session) {
-        // Email confirmation required.
-        setCheckEmail(true);
-        return;
+      if (error) {
+        return setError("Akun dibuat, tapi gagal login otomatis. Coba login manual.");
       }
       router.push(redirect);
       router.refresh();
@@ -57,25 +53,6 @@ export default function AuthForm({ mode }: { mode: "login" | "signup" }) {
     if (error) return setError("Email atau password salah.");
     router.push(redirect);
     router.refresh();
-  }
-
-  if (checkEmail) {
-    return (
-      <div className="text-center">
-        <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl bg-suhu-emerald/15 text-suhu-emerald">
-          <Mail className="h-7 w-7" />
-        </div>
-        <h2 className="mt-5 font-display text-xl font-bold">Cek email kamu</h2>
-        <p className="mt-2 text-sm text-white/60">
-          Kami kirim link konfirmasi ke{" "}
-          <span className="font-medium text-white">{email}</span>. Klik link-nya
-          buat aktivasi akun, lalu login.
-        </p>
-        <Link href="/login" className="btn-ghost mt-6 w-full">
-          Ke halaman login
-        </Link>
-      </div>
-    );
   }
 
   return (

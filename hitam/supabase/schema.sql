@@ -72,6 +72,28 @@ create table if not exists public.hitam_aged_domains (
 );
 create index if not exists hitam_domains_status_idx on public.hitam_aged_domains(status);
 create index if not exists hitam_domains_niche_idx  on public.hitam_aged_domains(niche);
+-- tier: regular | premium | diamond (additive for existing tables)
+alter table public.hitam_aged_domains add column if not exists tier text not null default 'regular';
+
+-- Backlink placement inventory (edu/journal/authority sites — no per-unit price).
+create table if not exists public.hitam_backlink_sites (
+  id          uuid primary key default gen_random_uuid(),
+  domain      text not null unique,
+  da          int  not null default 0,
+  pa          int  not null default 0,
+  dr          int  not null default 0,
+  ss          int  not null default 0,
+  backlinks   text,
+  kind        text not null default 'edu' check (kind in ('edu','journal','general')),
+  created_at  timestamptz not null default now()
+);
+alter table public.hitam_backlink_sites enable row level security;
+drop policy if exists hbl_select on public.hitam_backlink_sites;
+create policy hbl_select on public.hitam_backlink_sites for select using (true);
+drop policy if exists hbl_write on public.hitam_backlink_sites;
+create policy hbl_write on public.hitam_backlink_sites
+  for all using (public.hitam_is_admin()) with check (public.hitam_is_admin());
+grant select on public.hitam_backlink_sites to anon, authenticated;
 
 create sequence if not exists public.hitam_order_seq;
 

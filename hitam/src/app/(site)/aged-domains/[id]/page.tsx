@@ -4,9 +4,8 @@ import { notFound } from "next/navigation";
 import { ArrowLeft, ShieldCheck, Globe, Languages } from "lucide-react";
 import { createClient } from "@/lib/supabase/server";
 import type { AgedDomain } from "@/lib/types";
-import { formatIDR, waLink, formatIDRShort } from "@/lib/utils";
+import { waLink } from "@/lib/utils";
 import StatusBadge from "@/components/StatusBadge";
-import AddToCartButton from "@/components/cart/AddToCartButton";
 
 export async function generateMetadata({
   params,
@@ -53,7 +52,7 @@ export default async function DomainDetailPage({
   const d = data as AgedDomain;
   const available = d.status === "available";
 
-  const waMsg = `Halo Para Suhu Hitam! Gua minat aged domain *${d.domain}* (DA ${d.da}/DR ${d.dr}) seharga ${formatIDRShort(d.price_idr)}. Masih ready?`;
+  const waMsg = `Halo Para Suhu Hitam! Gua tertarik aged domain *${d.domain}* (DA ${d.da}/DR ${d.dr}). Masih ready? Berapa harganya?`;
 
   return (
     <div className="pt-32 lg:pt-40">
@@ -165,38 +164,24 @@ export default async function DomainDetailPage({
               <div className="text-xs uppercase tracking-wider text-white/45">
                 Harga
               </div>
-              <div className="mt-1 font-display text-3xl font-bold text-hitam-gold">
-                {formatIDR(d.price_idr)}
+              <div className="mt-1 font-display text-2xl font-bold text-hitam-blood-light">
+                Tanya via WhatsApp
               </div>
               <p className="mt-2 text-sm text-white/55">
-                Harga domain final. Pembayaran & transfer diatur via WhatsApp
-                setelah checkout.
+                Harga aged domain kami buka khusus buat yang serius. Chat dulu —
+                nanti kami kasih penawaran + bukti metrik lengkap.
               </p>
 
               <div className="mt-6 space-y-3">
                 {available ? (
-                  <>
-                    <AddToCartButton
-                      className="w-full"
-                      label="Tambah ke Keranjang"
-                      item={{
-                        service_slug: "aged-domain",
-                        service_name: "Aged Domain",
-                        unit_price_idr: d.price_idr,
-                        aged_domain_id: d.id,
-                        label: d.domain,
-                        meta: { domain: d.domain, da: d.da, dr: d.dr },
-                      }}
-                    />
-                    <a
-                      href={waLink(waMsg)}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="btn-ghost w-full"
-                    >
-                      Beli langsung via WhatsApp
-                    </a>
-                  </>
+                  <a
+                    href={waLink(waMsg)}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn-primary w-full"
+                  >
+                    Tertarik? Chat WA Sekarang
+                  </a>
                 ) : (
                   <div className="rounded-xl border border-white/10 bg-white/5 p-4 text-center text-sm text-white/55">
                     {d.status === "sold"

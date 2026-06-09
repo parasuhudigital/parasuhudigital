@@ -5,19 +5,17 @@ import { Search, SlidersHorizontal } from "lucide-react";
 import type { AgedDomain } from "@/lib/types";
 import DomainCard from "./DomainCard";
 
-type SortKey = "da_desc" | "price_asc" | "price_desc" | "age_desc";
+type SortKey = "da_desc" | "dr_desc" | "age_desc";
 
 const SORTS: { key: SortKey; label: string }[] = [
   { key: "da_desc", label: "DA tertinggi" },
-  { key: "price_asc", label: "Harga termurah" },
-  { key: "price_desc", label: "Harga termahal" },
+  { key: "dr_desc", label: "DR tertinggi" },
   { key: "age_desc", label: "Paling tua" },
 ];
 
 const comparators: Record<SortKey, (a: AgedDomain, b: AgedDomain) => number> = {
   da_desc: (a, b) => b.da - a.da,
-  price_asc: (a, b) => a.price_idr - b.price_idr,
-  price_desc: (a, b) => b.price_idr - a.price_idr,
+  dr_desc: (a, b) => b.dr - a.dr,
   age_desc: (a, b) => b.age_years - a.age_years,
 };
 
@@ -28,6 +26,7 @@ export default function DomainMarketplace({
 }) {
   const [q, setQ] = useState("");
   const [niche, setNiche] = useState("all");
+  const [tier, setTier] = useState("all");
   const [onlyAvailable, setOnlyAvailable] = useState(false);
   const [sort, setSort] = useState<SortKey>("da_desc");
 
@@ -41,10 +40,11 @@ export default function DomainMarketplace({
       (d) =>
         (q === "" || d.domain.toLowerCase().includes(q.toLowerCase())) &&
         (niche === "all" || d.niche === niche) &&
+        (tier === "all" || d.tier === tier) &&
         (!onlyAvailable || d.status === "available"),
     );
     return list.sort(comparators[sort]);
-  }, [domains, q, niche, onlyAvailable, sort]);
+  }, [domains, q, niche, tier, onlyAvailable, sort]);
 
   return (
     <div>
@@ -60,6 +60,17 @@ export default function DomainMarketplace({
         </div>
 
         <div className="flex flex-wrap items-center gap-3">
+          <select
+            value={tier}
+            onChange={(e) => setTier(e.target.value)}
+            className="input w-auto"
+          >
+            <option value="all">Semua tier</option>
+            <option value="regular">Regular</option>
+            <option value="premium">Premium</option>
+            <option value="diamond">Diamond</option>
+          </select>
+
           <select
             value={niche}
             onChange={(e) => setNiche(e.target.value)}

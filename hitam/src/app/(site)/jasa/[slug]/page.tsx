@@ -11,6 +11,7 @@ import { getService, serviceSlugs } from "@/lib/catalog";
 import { ServiceIcon } from "@/components/iconMap";
 import AddToCartButton from "@/components/cart/AddToCartButton";
 import ServiceProof from "@/components/ServiceProof";
+import BacklinkInventory from "@/components/BacklinkInventory";
 import { waLink, cn } from "@/lib/utils";
 import type { ServiceAccent } from "@/lib/constants";
 
@@ -145,6 +146,8 @@ export default function ServicePage({
       </section>
 
       <ServiceProof slug={s.slug} />
+
+      {s.slug === "backlink" && <BacklinkInventory />}
 
       {/* Packages */}
       <section id="paket" className="container-w container-px py-20 lg:py-28">

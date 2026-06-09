@@ -34,9 +34,11 @@ export type ServiceContent = {
 // ─────────────────────────── Database row types ───────────────────────────
 
 export type DomainStatus = "available" | "reserved" | "sold";
+export type DomainTier = "regular" | "premium" | "diamond";
 
 export type AgedDomain = {
   id: string;
+  tier: DomainTier;
   domain: string;
   tld: string;
   da: number;
@@ -55,6 +57,17 @@ export type AgedDomain = {
   status: DomainStatus;
   highlight: string | null;
   created_at: string;
+};
+
+export type BacklinkSite = {
+  id: string;
+  domain: string;
+  da: number;
+  pa: number;
+  dr: number;
+  ss: number;
+  backlinks: string | null;
+  kind: "edu" | "journal" | "general";
 };
 
 export type Role = "client" | "admin";

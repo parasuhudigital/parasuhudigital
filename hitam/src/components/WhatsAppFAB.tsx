@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { X, MessageCircle } from "lucide-react";
 import { waLink } from "@/lib/utils";
 import { COMPANY } from "@/lib/constants";
+import { useT, useLocale } from "./i18n/LocaleProvider";
 
 const WA_SVG = (
   <svg viewBox="0 0 24 24" className="h-6 w-6 fill-white" aria-hidden="true">
@@ -56,16 +57,20 @@ function Option({
 
 /** Floating "Hubungi Kami" launcher — expands to WhatsApp + Telegram. */
 export default function WhatsAppFAB() {
+  const dict = useT();
+  const locale = useLocale();
   const [visible, setVisible] = useState(false);
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
-    const t = setTimeout(() => setVisible(true), 700);
-    return () => clearTimeout(t);
+    const timer = setTimeout(() => setVisible(true), 700);
+    return () => clearTimeout(timer);
   }, []);
 
   const wa = waLink(
-    "Halo Para Suhu Hitam! Gua mau tanya-tanya soal jasa kalian nih.",
+    locale === "en"
+      ? "Hi Para Suhu Hitam! I'd like to ask about your services."
+      : "Halo Para Suhu Hitam! Gua mau tanya-tanya soal jasa kalian nih.",
   );
   const tg = `https://t.me/${COMPANY.telegram}`;
 
@@ -115,7 +120,7 @@ export default function WhatsAppFAB() {
 
         <button
           onClick={() => setOpen((o) => !o)}
-          aria-label="Hubungi Kami"
+          aria-label={dict.fab.contactUs}
           aria-expanded={open}
           className="group relative flex h-14 w-14 items-center justify-center rounded-full bg-hitam-blood text-white shadow-[0_8px_30px_rgba(255,45,74,0.45)] transition-all hover:scale-105 hover:bg-hitam-blood-light md:h-16 md:w-16"
         >
@@ -131,7 +136,7 @@ export default function WhatsAppFAB() {
           </span>
           {!open && (
             <span className="pointer-events-none absolute right-[115%] top-1/2 hidden -translate-y-1/2 whitespace-nowrap rounded-lg border border-white/10 bg-hitam-black px-3 py-1.5 text-xs text-white opacity-0 transition-opacity group-hover:opacity-100 md:block">
-              Hubungi Kami
+              {dict.fab.contactUs}
             </span>
           )}
         </button>

@@ -1,8 +1,7 @@
+"use client";
+
 import { cn } from "@/lib/utils";
-import {
-  ORDER_STATUS_LABEL,
-  DOMAIN_STATUS_LABEL,
-} from "@/lib/constants";
+import { useT } from "./i18n/LocaleProvider";
 
 const ORDER_STYLES: Record<string, string> = {
   pending: "bg-amber-500/15 text-amber-400 border-amber-500/30",
@@ -28,8 +27,9 @@ export default function StatusBadge({
   kind?: "order" | "domain";
   className?: string;
 }) {
+  const t = useT();
   const styles = kind === "domain" ? DOMAIN_STYLES : ORDER_STYLES;
-  const labels = kind === "domain" ? DOMAIN_STATUS_LABEL : ORDER_STATUS_LABEL;
+  const labels = kind === "domain" ? t.domainStatus : t.orderStatus;
   return (
     <span
       className={cn(

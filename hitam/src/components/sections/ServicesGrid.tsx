@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import { SERVICE_META, type ServiceAccent } from "@/lib/constants";
+import { getServerT } from "@/lib/i18n.server";
 import { ServiceIcon } from "../iconMap";
 import { cn } from "@/lib/utils";
 
@@ -17,6 +18,7 @@ const accentHover: Record<ServiceAccent, string> = {
 };
 
 export default function ServicesGrid() {
+  const { t } = getServerT();
   return (
     <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
       {SERVICE_META.map((s) => (
@@ -37,13 +39,13 @@ export default function ServicesGrid() {
             <ServiceIcon name={s.icon} className="h-6 w-6" />
           </div>
           <h3 className="mt-5 font-display text-xl font-semibold text-white">
-            {s.name}
+            {t.serviceMeta[s.slug]?.name ?? s.name}
           </h3>
           <p className="mt-2 flex-1 text-sm leading-relaxed text-white/55">
-            {s.short}
+            {t.serviceMeta[s.slug]?.short ?? s.short}
           </p>
           <span className="mt-5 inline-flex items-center gap-1 text-sm font-medium text-white/70 transition-colors group-hover:text-hitam-blood-light">
-            Lihat detail & paket
+            {t.servicesSection.cardCta}
             <ArrowUpRight className="h-4 w-4 transition-transform group-hover:rotate-45" />
           </span>
         </Link>
@@ -55,18 +57,17 @@ export default function ServicesGrid() {
       >
         <div>
           <div className="chip border-hitam-gold/30 text-hitam-gold">
-            Marketplace
+            {t.servicesSection.mpBadge}
           </div>
           <h3 className="mt-5 font-display text-xl font-semibold text-white">
-            Stok Aged Domain Siap Beli
+            {t.servicesSection.mpTitle}
           </h3>
           <p className="mt-2 text-sm leading-relaxed text-white/55">
-            Domain tua bermetrik tinggi, history bersih, langsung checkout. Cek
-            stok terbaru kami.
+            {t.servicesSection.mpDesc}
           </p>
         </div>
         <span className="mt-5 inline-flex items-center gap-1 text-sm font-medium text-hitam-gold">
-          Buka marketplace
+          {t.servicesSection.mpCta}
           <ArrowUpRight className="h-4 w-4 transition-transform group-hover:rotate-45" />
         </span>
       </Link>

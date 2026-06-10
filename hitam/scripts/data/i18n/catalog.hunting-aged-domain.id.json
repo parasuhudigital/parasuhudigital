@@ -1,0 +1,202 @@
+{
+  "tagline": "Aged domain custom, di-hunt sesuai brief kamu — bukan stok sisa, bukan metrik bohongan.",
+  "heroBadge": "🔒 Clean History Guaranteed",
+  "heroTitle": "Domain tua bersih,",
+  "heroTitleHighlight": "di-hunt khusus buat money site kamu.",
+  "heroSubtitle": "Kasih kami brief: niche, target DA/DR, bahasa, dan history yang kamu mau. Kami hunting kandidatnya satu per satu, audit habis-habisan history dan backlink-nya, verifikasi metrik real lewat Ahrefs + Moz + Majestic, lalu hand-over domain bersih siap pakai. Bukan domain random dari stok marketplace — ini hunting on-demand, dikurasi khusus buat target ranking kamu.",
+  "intro": [
+    "Authority itu butuh waktu bertahun-tahun. Aged domain memotong jalannya. Tapi 90% domain tua yang beredar di luar sana itu jebakan: history judi/dewasa yang nyangkut, backlink toxic, metrik DR yang di-pump pakai PBN murahan, atau status deindex yang gak ketahuan sampai kamu udah bayar. Beli yang salah, bukannya naik ranking, money site kamu malah kena seret turun.",
+    "Di sinilah hunting on-demand beda dari beli stok. Kami gak nawarin kamu daftar domain sisa yang udah dipegang 50 orang lain. Kami berangkat dari brief kamu — niche apa, target DA/DR berapa, bahasa apa, history sebersih apa — lalu berburu kandidat yang benar-benar cocok. Setiap kandidat lewat audit history (Wayback Machine, dropped record, status index), audit spam & toxic backlink, dan verifikasi silang metrik di tiga tools sekaligus biar gak ketipu angka inflated.",
+    "Yang kamu terima di akhir: domain bersih, metrik real yang bisa kamu cek ulang sendiri, plus dokumentasi audit lengkap. Dan kalau metrik utama drop signifikan dalam masa garansi, kami replace. Ini cara aman main aged domain tanpa harus jadi korban penjual yang cuma jualan angka."
+  ],
+  "features": [
+    "Hunting 100% custom sesuai brief — niche, DA/DR, bahasa, history kamu yang nentuin",
+    "Verifikasi metrik silang 3 tools: Ahrefs (DR), Moz (DA), Majestic (TF/CF)",
+    "Audit history penuh via Wayback Machine — cek bekas judi, dewasa, gambling, scam",
+    "Deteksi metrik inflated & PBN-pumped sebelum kamu bayar",
+    "Audit toxic & spam backlink, plus disavow-ready list",
+    "Cek status index Google & riwayat dropped/deindex domain",
+    "Trust Flow / Citation Flow ratio sehat (bukan link farm)",
+    "Garansi replace kalau metrik utama drop dalam masa garansi",
+    "Hand-over lengkap: domain + laporan audit + raw data metrik",
+    "Domain eksklusif buat kamu — gak dijual ke klien lain"
+  ],
+  "packages": [
+    {
+      "name": "Solo Hunt",
+      "priceLabel": "Mulai Rp 1,5jt",
+      "for": "1 domain target sesuai brief, niche umum, DA/DR menengah — buat tes air atau single money site",
+      "includes": [
+        "1 aged domain sesuai brief kamu",
+        "Target DA/DR menengah (DR 15-30)",
+        "Audit history dasar (Wayback + status index)",
+        "Verifikasi metrik via Ahrefs",
+        "Cek spam score & toxic backlink ringkas",
+        "Laporan audit ringkas (PDF)",
+        "Garansi replace 14 hari kalau metrik drop"
+      ],
+      "popular": false
+    },
+    {
+      "name": "Pro Hunt",
+      "priceLabel": "Mulai Rp 4,5jt",
+      "for": "Paket 3 domain dikurasi, niche spesifik, target DA/DR tinggi & clean history ketat — buat scaling PBN atau cluster money site",
+      "includes": [
+        "3 aged domain dikurasi sesuai brief",
+        "Target DA/DR tinggi (DR 30-50)",
+        "Niche & bahasa spesifik sesuai pesanan",
+        "Audit history penuh (Wayback + dropped record + deindex check)",
+        "Verifikasi silang 3 tools (Ahrefs + Moz + Majestic)",
+        "Audit toxic backlink + disavow-ready list",
+        "Laporan audit lengkap + raw data metrik per domain",
+        "Garansi replace 30 hari",
+        "Prioritas pengerjaan"
+      ],
+      "popular": true
+    },
+    {
+      "name": "Authority Hunt",
+      "priceLabel": "Rp 12jt+",
+      "for": "High-DR / niche super sulit / volume besar, history super bersih & metrik premium — buat agency, reseller, atau brand-grade money site",
+      "includes": [
+        "High-DR domain (DR 50+) atau niche super sulit",
+        "Volume custom (5, 10, 20+ domain)",
+        "History audit forensik (full timeline + manual review)",
+        "Verifikasi silang 3 tools + manual spot-check backlink",
+        "Link profile & anchor text analysis mendalam + topical/geo match",
+        "Laporan forensik lengkap per domain + rekomendasi penggunaan",
+        "Garansi replace 60 hari",
+        "Dedicated handler + konsultasi strategi deployment",
+        "Reseller / white-label rate tersedia"
+      ],
+      "popular": false
+    }
+  ],
+  "deliverables": [
+    {
+      "title": "Laporan Audit Per Domain",
+      "items": [
+        "Timeline history lengkap dari Wayback Machine (screenshot bukti tiap era)",
+        "Verifikasi clean history — bebas konten judi, dewasa, gambling, scam, spam",
+        "Status index Google terkini + riwayat dropped/deindex",
+        "Spam score & toxic backlink ratio dengan flag merah yang jelas",
+        "Verdict: aman dipakai, perlu disavow, atau di-skip"
+      ]
+    },
+    {
+      "title": "Verifikasi Metrik Real (Anti-Inflated)",
+      "items": [
+        "DR (Ahrefs) + screenshot dashboard sebagai bukti",
+        "DA & PA (Moz) cross-check",
+        "Trust Flow & Citation Flow (Majestic) + TF/CF ratio sehat",
+        "Referring domains real vs link farm — dibedakan jelas",
+        "Catatan deteksi PBN-pumped atau metrik artifisial kalau ada"
+      ]
+    },
+    {
+      "title": "Backlink & Link Profile",
+      "items": [
+        "Daftar referring domains beserta kualitasnya",
+        "Anchor text distribution (cek over-optimization)",
+        "Toxic & spam link yang di-flag + disavow-ready list (.txt)",
+        "Topical relevance backlink terhadap niche target kamu",
+        "Geo-distribution backlink (relevan untuk geo-targeting)"
+      ]
+    },
+    {
+      "title": "Hand-Over & Ownership",
+      "items": [
+        "Domain di-reclaim/registrasi atas nama kamu — ownership penuh",
+        "Panduan transfer/push ke registrar pilihan kamu",
+        "Raw data metrik (export) biar kamu bisa cek ulang sendiri",
+        "Rekomendasi penggunaan: money site, PBN tier, atau 301 redirect",
+        "Sertifikat garansi replace dengan periode sesuai paket"
+      ]
+    }
+  ],
+  "process": [
+    {
+      "step": "01",
+      "title": "Brief & Scoping",
+      "desc": "Kamu kasih detail: niche, target DA/DR, bahasa, level clean history, dan rencana pakai (money site / PBN / 301). Kami kunci kriteria dan budget, lalu mulai berburu. Makin spesifik brief kamu, makin presisi kandidatnya.",
+      "duration": "Hari 1"
+    },
+    {
+      "step": "02",
+      "title": "Riset & Sourcing Kandidat",
+      "desc": "Kami sisir pasar dropped domain, auction, dan expired sesuai kriteria. Long-list kandidat dikumpulkan dan disaring kasar berdasarkan metrik awal dan relevansi niche sebelum masuk audit mendalam.",
+      "duration": "Hari 2-4"
+    },
+    {
+      "step": "03",
+      "title": "Audit History & Verifikasi Metrik",
+      "desc": "Tiap kandidat lewat audit forensik: Wayback Machine, status index, dropped record, spam score, toxic backlink, dan verifikasi silang metrik di Ahrefs + Moz + Majestic. Yang inflated atau ada history kotor langsung dicoret.",
+      "duration": "Hari 4-8"
+    },
+    {
+      "step": "04",
+      "title": "Reclaim / Registrasi",
+      "desc": "Kandidat lolos audit kami amankan — reclaim dari auction atau registrasi langsung — sebelum keburu disambar orang lain. Kepemilikan disiapkan untuk pindah ke nama kamu.",
+      "duration": "Hari 8-10"
+    },
+    {
+      "step": "05",
+      "title": "Hand-Over Lengkap",
+      "desc": "Domain + laporan audit + raw data metrik + disavow list diserahkan. Kami pandu transfer ke registrar kamu dan kasih rekomendasi deployment. Garansi replace mulai berlaku sejak hand-over.",
+      "duration": "Hari 10-12"
+    }
+  ],
+  "stats": [
+    {
+      "value": "3 tools",
+      "label": "Verifikasi metrik silang (Ahrefs + Moz + Majestic)"
+    },
+    {
+      "value": "100%",
+      "label": "Domain di-audit history-nya, bukan asal metrik"
+    },
+    {
+      "value": "60 hari",
+      "label": "Garansi replace maksimal (paket Authority)"
+    },
+    {
+      "value": "0 inflated",
+      "label": "Metrik PBN-pumped ditolak sebelum hand-over"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Bedanya hunting on-demand sama beli di Marketplace aged domain apa?",
+      "a": "Marketplace itu stok siap beli — kamu pilih dari domain yang sudah ada, bisa jadi udah dilirik banyak orang. Hunting on-demand kebalikannya: kami berburu dari nol sesuai brief spesifik kamu (niche, DA/DR, bahasa, history). Hasilnya eksklusif, dikurasi khusus, dan gak dijual ke klien lain. Kalau kebutuhan kamu generik dan butuh cepat, marketplace cukup. Kalau kamu butuh domain yang benar-benar pas dengan target ranking, hunting jawabannya."
+    },
+    {
+      "q": "Gimana kalian mastiin metriknya real, bukan DR yang di-pump?",
+      "a": "Kami gak percaya satu angka dari satu tool. Tiap domain diverifikasi silang di Ahrefs (DR), Moz (DA), dan Majestic (TF/CF). Kalau DR tinggi tapi referring domain-nya cuma link farm atau Trust Flow-nya anjlok, itu sinyal metrik dipompa pakai PBN murahan — langsung kami coret. Kamu juga dapat raw data screenshot buat cek ulang sendiri. Kami gak akan hand-over domain yang metriknya artifisial."
+    },
+    {
+      "q": "Apa garansinya kalau setelah dibeli metriknya drop?",
+      "a": "Kami kasih garansi replace: kalau metrik utama (DR/DA) drop signifikan dalam masa garansi — 14 hari (Solo), 30 hari (Pro), atau 60 hari (Authority) — kami ganti dengan domain setara sesuai brief, gratis. Yang gak ditanggung: drop karena kamu sendiri yang spam backlink berlebihan atau deploy konten yang melanggar guideline setelah hand-over. Garansi soal kualitas domain saat diserahkan, bukan cara kamu pakai."
+    },
+    {
+      "q": "History 'bersih' itu maksudnya gimana? Pasti aman?",
+      "a": "Clean history artinya kami audit penuh via Wayback Machine dan record dropped: bebas bekas konten judi, dewasa, gambling, scam, atau spam yang bisa nyeret reputasi domain. Kami juga cek status index dan toxic backlink. Tapi jujur: 'bersih saat audit' bukan jaminan absolut Google gak akan pernah re-evaluasi history lama. Kami minimalkan risiko serendah mungkin dengan audit forensik — itu yang bisa kami kontrol, dan itu yang kami garansi."
+    },
+    {
+      "q": "Domainnya jadi atas nama siapa? Aman gak soal kerahasiaan?",
+      "a": "Domain di-reclaim atau registrasi lalu di-hand-over jadi milik kamu sepenuhnya — kami pandu push/transfer ke registrar pilihan kamu. Soal kerahasiaan: brief, niche, dan domain yang kamu pesan kami jaga konfidensial dan gak kami pajang sebagai portfolio. Apa yang kamu lakukan dengan domainnya setelah hand-over sepenuhnya urusan dan tanggung jawab kamu."
+    },
+    {
+      "q": "Berapa lama prosesnya dari brief sampai terima domain?",
+      "a": "Solo Hunt biasanya 5-7 hari kerja. Pro Hunt 7-12 hari kerja tergantung kerumitan brief. Authority Hunt 12-20 hari kerja, karena high-DR atau niche super sulit butuh sourcing lebih dalam dan audit forensik manual. Niche yang sangat sempit atau target DA/DR tinggi bisa nambah waktu — kami kasih estimasi realistis di tahap scoping, bukan janji palsu."
+    },
+    {
+      "q": "Sistem pembayarannya gimana?",
+      "a": "Umumnya 50% DP di awal buat mulai hunting, 50% pelunasan saat domain lolos audit dan siap hand-over. Untuk paket Authority atau volume besar, bisa diatur per-batch. Kami terima transfer bank dan crypto (USDT) buat klien yang prefer. Detail dikonfirmasi via WhatsApp di tahap scoping."
+    },
+    {
+      "q": "Aged domain ini cocok buat brand jangka panjang gak?",
+      "a": "Tergantung gimana kamu pakai. Untuk money site, PBN, niche site, atau 301 redirect buat dongkrak authority — ini powerful banget. Untuk brand korporat jangka panjang yang gak mau ambil risiko sama sekali, kami jujur: aged domain selalu bawa residual risk dari history-nya. Kalau kamu butuh sebersih-bersihnya tanpa kompromi, mending diskusi dulu sama kami soal trade-off-nya sebelum mutusin."
+    }
+  ],
+  "riskNote": "Aged domain adalah strategi high-risk high-reward: history lama selalu menyisakan residual risk yang bisa di-re-evaluasi Google kapan saja, sehingga lebih cocok untuk money site, PBN, dan churn-and-burn ketimbang brand korporat jangka panjang. Kami meminimalkan risiko lewat audit forensik dan menggaransi kualitas domain saat hand-over — tapi keputusan dan cara penggunaan setelah serah-terima sepenuhnya tanggung jawab kamu."
+}

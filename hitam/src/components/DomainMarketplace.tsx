@@ -4,14 +4,9 @@ import { useMemo, useState } from "react";
 import { Search, SlidersHorizontal } from "lucide-react";
 import type { AgedDomain } from "@/lib/types";
 import DomainCard from "./DomainCard";
+import { useT, useLocale } from "./i18n/LocaleProvider";
 
 type SortKey = "da_desc" | "dr_desc" | "age_desc";
-
-const SORTS: { key: SortKey; label: string }[] = [
-  { key: "da_desc", label: "DA tertinggi" },
-  { key: "dr_desc", label: "DR tertinggi" },
-  { key: "age_desc", label: "Paling tua" },
-];
 
 const comparators: Record<SortKey, (a: AgedDomain, b: AgedDomain) => number> = {
   da_desc: (a, b) => b.da - a.da,
@@ -24,11 +19,19 @@ export default function DomainMarketplace({
 }: {
   domains: AgedDomain[];
 }) {
+  const t = useT();
+  const locale = useLocale();
   const [q, setQ] = useState("");
   const [niche, setNiche] = useState("all");
   const [tier, setTier] = useState("all");
   const [onlyAvailable, setOnlyAvailable] = useState(false);
   const [sort, setSort] = useState<SortKey>("da_desc");
+
+  const SORTS: { key: SortKey; label: string }[] = [
+    { key: "da_desc", label: t.marketplace.sortDa },
+    { key: "dr_desc", label: t.marketplace.sortDr },
+    { key: "age_desc", label: t.marketplace.sortAge },
+  ];
 
   const niches = useMemo(
     () => Array.from(new Set(domains.map((d) => d.niche))).sort(),
@@ -54,7 +57,7 @@ export default function DomainMarketplace({
           <input
             value={q}
             onChange={(e) => setQ(e.target.value)}
-            placeholder="Cari nama domain…"
+            placeholder={t.marketplace.searchPlaceholder}
             className="input pl-10"
           />
         </div>
@@ -65,7 +68,7 @@ export default function DomainMarketplace({
             onChange={(e) => setTier(e.target.value)}
             className="input w-auto"
           >
-            <option value="all">Semua tier</option>
+            <option value="all">{t.marketplace.allTiers}</option>
             <option value="regular">Regular</option>
             <option value="premium">Premium</option>
             <option value="diamond">Diamond</option>
@@ -76,7 +79,7 @@ export default function DomainMarketplace({
             onChange={(e) => setNiche(e.target.value)}
             className="input w-auto"
           >
-            <option value="all">Semua niche</option>
+            <option value="all">{t.marketplace.allNiches}</option>
             {niches.map((n) => (
               <option key={n} value={n}>
                 {n}
@@ -103,24 +106,25 @@ export default function DomainMarketplace({
               onChange={(e) => setOnlyAvailable(e.target.checked)}
               className="h-4 w-4 accent-hitam-blood"
             />
-            Hanya tersedia
+            {t.marketplace.availableOnly}
           </label>
         </div>
       </div>
 
       <div className="mt-6 flex items-center gap-2 text-sm text-white/50">
         <SlidersHorizontal className="h-4 w-4" />
-        Menampilkan {filtered.length} dari {domains.length} domain
+        {t.marketplace.showing} {filtered.length} {t.marketplace.of}{" "}
+        {domains.length} {t.marketplace.domains}
       </div>
 
       {filtered.length === 0 ? (
         <div className="card mt-6 p-12 text-center text-white/50">
-          Gak ada domain yang cocok sama filter kamu. Coba longgarin filternya.
+          {t.marketplace.empty}
         </div>
       ) : (
         <div className="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {filtered.map((d) => (
-            <DomainCard key={d.id} domain={d} />
+            <DomainCard key={d.id} domain={d} t={t} locale={locale} />
           ))}
         </div>
       )}

@@ -3,37 +3,41 @@
 import { useEffect, useState } from "react";
 import { ShoppingBag, X } from "lucide-react";
 import { SOCIAL_PROOF } from "@/lib/proof";
+import { SOCIAL_PROOF_EN } from "@/lib/proof.en";
+import { useLocale, useT } from "./i18n/LocaleProvider";
 
 /** Bottom-left rotating "social proof" purchase notifications. */
 export default function SocialProof() {
+  const locale = useLocale();
+  const dict = useT();
+  const data = locale === "en" ? SOCIAL_PROOF_EN : SOCIAL_PROOF;
+
   const [index, setIndex] = useState(0);
   const [show, setShow] = useState(false);
   const [dismissed, setDismissed] = useState(false);
 
   useEffect(() => {
-    if (dismissed || SOCIAL_PROOF.length === 0) return;
+    if (dismissed || data.length === 0) return;
     let cycle: ReturnType<typeof setTimeout>;
-
     const start = setTimeout(() => setShow(true), 3500);
-
     const loop = () => {
       setShow(false);
       cycle = setTimeout(() => {
-        setIndex((i) => (i + 1) % SOCIAL_PROOF.length);
+        setIndex((i) => (i + 1) % data.length);
         setShow(true);
       }, 600);
     };
-
     const interval = setInterval(loop, 6500);
     return () => {
       clearTimeout(start);
       clearTimeout(cycle);
       clearInterval(interval);
     };
-  }, [dismissed]);
+  }, [dismissed, data.length]);
 
   if (dismissed) return null;
-  const item = SOCIAL_PROOF[index];
+  const item = data[index % data.length];
+  if (!item) return null;
 
   return (
     <div
@@ -51,7 +55,9 @@ export default function SocialProof() {
         <div className="min-w-0">
           <p className="text-sm leading-snug text-white">
             <span className="font-semibold">{item.name}</span>{" "}
-            <span className="text-white/60">dari {item.city}</span>
+            <span className="text-white/60">
+              {dict.social.from} {item.city}
+            </span>
           </p>
           <p className="mt-0.5 truncate text-xs text-white/70">{item.action}</p>
           <p className="mt-1 flex items-center gap-1 font-mono text-[10px] uppercase tracking-wider text-suhu-emerald">
@@ -61,7 +67,7 @@ export default function SocialProof() {
         </div>
         <button
           onClick={() => setDismissed(true)}
-          aria-label="Tutup notifikasi"
+          aria-label="Close"
           className="absolute right-2 top-2 text-white/30 transition-colors hover:text-white/70"
         >
           <X className="h-3.5 w-3.5" />

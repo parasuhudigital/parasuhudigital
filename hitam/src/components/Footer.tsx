@@ -2,9 +2,18 @@ import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import Logo from "./Logo";
 import { COMPANY, SERVICE_META, NAV } from "@/lib/constants";
+import { getServerT } from "@/lib/i18n.server";
 import { waLink } from "@/lib/utils";
 
 export default function Footer() {
+  const { t } = getServerT();
+  const navLabel: Record<string, string> = {
+    "/aged-domains": t.nav.agedDomain,
+    "/jasa": t.nav.services,
+    "/#cara-kerja": t.nav.howItWorks,
+    "/#testimoni": t.nav.testimonials,
+  };
+
   return (
     <footer className="border-t border-hitam-border bg-hitam-void">
       <div className="container-w container-px py-16">
@@ -20,14 +29,14 @@ export default function Footer() {
               rel="noopener noreferrer"
               className="btn-primary mt-6"
             >
-              Konsultasi via WhatsApp
+              {t.footer.consultWa}
               <ArrowUpRight className="h-4 w-4" />
             </a>
           </div>
 
           <div>
             <h4 className="mb-4 font-mono text-[11px] uppercase tracking-[0.2em] text-hitam-blood">
-              Layanan
+              {t.footer.services}
             </h4>
             <ul className="space-y-2.5">
               {SERVICE_META.map((s) => (
@@ -36,7 +45,7 @@ export default function Footer() {
                     href={`/jasa/${s.slug}`}
                     className="text-sm text-white/60 transition-colors hover:text-white"
                   >
-                    {s.name}
+                    {t.serviceMeta[s.slug]?.name ?? s.name}
                   </Link>
                 </li>
               ))}
@@ -45,7 +54,7 @@ export default function Footer() {
                   href="/aged-domains"
                   className="text-sm text-white/60 transition-colors hover:text-white"
                 >
-                  Marketplace Aged Domain
+                  {t.nav.marketplace}
                 </Link>
               </li>
             </ul>
@@ -53,7 +62,7 @@ export default function Footer() {
 
           <div>
             <h4 className="mb-4 font-mono text-[11px] uppercase tracking-[0.2em] text-hitam-blood">
-              Navigasi
+              {t.footer.nav}
             </h4>
             <ul className="space-y-2.5">
               {NAV.map((n) => (
@@ -62,7 +71,7 @@ export default function Footer() {
                     href={n.href}
                     className="text-sm text-white/60 transition-colors hover:text-white"
                   >
-                    {n.label}
+                    {navLabel[n.href] ?? n.label}
                   </Link>
                 </li>
               ))}
@@ -71,7 +80,7 @@ export default function Footer() {
                   href="/dashboard"
                   className="text-sm text-white/60 transition-colors hover:text-white"
                 >
-                  Dashboard Klien
+                  {t.nav.clientDashboard}
                 </Link>
               </li>
             </ul>
@@ -79,7 +88,7 @@ export default function Footer() {
 
           <div>
             <h4 className="mb-4 font-mono text-[11px] uppercase tracking-[0.2em] text-hitam-blood">
-              Kontak
+              {t.footer.contact}
             </h4>
             <ul className="space-y-2.5 text-sm text-white/60">
               <li>
@@ -127,14 +136,10 @@ export default function Footer() {
 
         <div className="mt-14 flex flex-col gap-4 border-t border-hitam-border pt-8 text-xs text-white/40 md:flex-row md:items-center md:justify-between">
           <p>
-            © {COMPANY.year} {COMPANY.brand} · Divisi {COMPANY.division}. Semua
-            hak dilindungi.
+            © {COMPANY.year} {COMPANY.brand} · {COMPANY.division}.{" "}
+            {t.footer.rights}
           </p>
-          <p className="max-w-xl leading-relaxed">
-            Disclaimer: layanan black-hat bersifat high-risk high-reward.
-            Gunakan untuk money site / churn-and-burn, bukan brand jangka
-            panjang. Risiko teknis sepenuhnya tanggung jawab pemesan.
-          </p>
+          <p className="max-w-xl leading-relaxed">{t.footer.disclaimer}</p>
         </div>
       </div>
     </footer>

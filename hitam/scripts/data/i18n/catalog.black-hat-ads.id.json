@@ -1,0 +1,197 @@
+{
+  "tagline": "Iklan tetap jalan, walau produknya \"susah lolos\".",
+  "heroBadge": "⚠️ High-Risk High-Reward",
+  "heroTitle": "Produk kamu sering kena banned?",
+  "heroTitleHighlight": "Kita yang bikin iklannya tetap ngebut.",
+  "heroSubtitle": "Buat kamu yang jualan produk gray-area dan capek akun iklan mati tiap minggu: kita sediain akun agency trusted, kelola kampanye biar tetap aktif, urus banding kalau kena, dan ganti akun secepat kilat begitu ada masalah. Lima platform sekaligus — Meta, Google, TikTok, Snack Video, Google Discovery — dengan satu tujuan: budget tetap kebakar ke arah yang benar, ROAS naik, omzet jalan.",
+  "intro": [
+    "Kamu udah tahu rasanya: scaling lagi enak-enaknya, ROAS lagi cakep, tiba-tiba akun di-disable dan semua momentum hilang. Produk kamu masuk kategori yang platform anggap sensitif — supplement, beauty claim agresif, layanan keuangan, gaming, atau niche lain yang ad reviewer-nya galak. Tim iklan biasa angkat tangan di sini. Kita enggak.",
+    "Divisi Hitam Para Suhu Digital adalah unit khusus untuk produk high-risk. Kita main di akun agency dan trusted account dengan limit besar dan history bersih, kelola kampanye dengan disiplin biar nggak gampang dipencet, dan udah siapin akun cadangan dari hari pertama. Jadi kalau satu akun tumbang, kampanye kamu lompat ke akun baru dalam hitungan jam — bukan minggu.",
+    "Kita jujur dari awal: ini bukan jalur aman jangka panjang dan kita nggak akan janji surga. Ini jalur agresif untuk kamu yang butuh volume cepat, berani ambil risiko, dan ngerti bahwa di dunia ini akun adalah barang habis pakai. Yang kita jamin: eksekusi rapi, akun pengganti selalu ready, dan angka yang transparan tiap minggu."
+  ],
+  "features": [
+    "Akun agency & trusted account untuk 5 platform: Meta, Google, TikTok, Snack Video, Google Discovery",
+    "Setup kampanye full-funnel khusus produk yang sulit di-approve",
+    "Manajemen harian biar kampanye tetap aktif & spending stabil",
+    "Handle banding/appeal saat akun atau iklan kena flag",
+    "Pool akun cadangan ready — ganti akun cepat begitu kena, kampanye lanjut hari itu juga",
+    "Scaling budget bertahap dari ratusan ribu sampai puluhan juta per hari",
+    "Optimasi ROAS: cut yang boncos, gandakan yang profit",
+    "Migrasi pixel, audience & data antar-akun biar learning nggak hangus",
+    "Laporan transparan: spend, ROAS, status akun, sisa stok akun cadangan",
+    "Manajer dedicated yang standby kalau ada akun tumbang mendadak"
+  ],
+  "packages": [
+    {
+      "name": "Starter Burn",
+      "priceLabel": "Mulai Rp 7,5jt/bulan",
+      "for": "Tes air, 1 platform, daily budget kecil-menengah. Buat kamu yang mau validasi produk gray-area sebelum gas pol.",
+      "includes": [
+        "1 platform pilihan (Meta / Google / TikTok / Snack Video / Discovery)",
+        "1 akun agency/trusted aktif + 1 akun cadangan standby",
+        "Setup kampanye + 3 set creative awal",
+        "Manajemen harian & optimasi ROAS dasar",
+        "Handle banding standar saat kena flag",
+        "Ganti akun cepat 1x/bulan kalau tumbang",
+        "Laporan mingguan: spend, ROAS, status akun"
+      ],
+      "popular": false
+    },
+    {
+      "name": "Pro Scaler",
+      "priceLabel": "Mulai Rp 18jt/bulan",
+      "for": "Produk udah terbukti convert, siap scaling serius di 2-3 platform sekaligus dengan daily budget belasan juta. Pilihan paling banyak diambil.",
+      "includes": [
+        "2-3 platform jalan paralel",
+        "Pool akun trusted + minimal 3 akun cadangan per platform",
+        "Setup full-funnel + creative rotation rutin",
+        "Optimasi ROAS harian + scaling budget bertahap",
+        "Handle banding prioritas + migrasi pixel/audience antar-akun",
+        "Ganti akun cepat unlimited (selama stok ready)",
+        "Manajer dedicated + laporan 2x/minggu",
+        "War room WhatsApp buat respons cepat saat akun kena"
+      ],
+      "popular": true
+    },
+    {
+      "name": "Brutal Mode",
+      "priceLabel": "Rp 40jt+/bulan",
+      "for": "Gas maksimal di 5 platform, daily budget puluhan juta, target volume agresif. Buat money site & campaign churn-and-burn skala besar.",
+      "includes": [
+        "Semua 5 platform aktif serentak",
+        "Pool akun trusted besar + cadangan dalam jumlah banyak",
+        "Tim dedicated (media buyer + appeal specialist + creative)",
+        "Scaling agresif sampai puluhan juta/hari",
+        "Optimasi ROAS real-time + reallocation budget antar-platform",
+        "Banding prioritas tertinggi + replace akun instan",
+        "Strategi multi-akun & multi-domain rotation",
+        "Laporan harian + standby 7 hari/minggu",
+        "Konsultasi strategi exit sebelum akun \"panas\""
+      ],
+      "popular": false
+    }
+  ],
+  "deliverables": [
+    {
+      "title": "Infrastruktur Akun",
+      "items": [
+        "Akun agency & trusted account dengan history bersih untuk tiap platform",
+        "Pool akun cadangan yang udah di-warm-up dan siap pakai",
+        "Setup pixel, tracking & domain verification per akun",
+        "Rotasi & manajemen multi-akun biar nggak saling kena imbas"
+      ]
+    },
+    {
+      "title": "Manajemen & Optimasi Kampanye",
+      "items": [
+        "Setup kampanye full-funnel: prospecting, retargeting, scaling",
+        "Optimasi ROAS harian — pause yang boncos, scale yang profit",
+        "Scaling budget bertahap, dari ratusan ribu sampai puluhan juta/hari",
+        "Creative rotation rutin biar fatigue & flag-rate ditekan"
+      ]
+    },
+    {
+      "title": "Survival & Recovery",
+      "items": [
+        "Handle banding/appeal tiap kali akun atau iklan kena flag",
+        "Replace akun cepat — kampanye pindah ke akun baru di hari yang sama",
+        "Migrasi audience, pixel & data biar fase learning nggak hangus",
+        "Monitoring kesehatan akun: estimasi durasi bertahan & sinyal bahaya"
+      ]
+    },
+    {
+      "title": "Reporting & Komunikasi",
+      "items": [
+        "Laporan spend, ROAS, CPA & status tiap akun",
+        "Update stok akun cadangan yang masih ready",
+        "War room WhatsApp buat respons cepat saat akun mendadak tumbang",
+        "Review strategi berkala + rekomendasi kapan harus rem atau gas"
+      ]
+    }
+  ],
+  "process": [
+    {
+      "step": "01",
+      "title": "Audit Produk & Risk Profiling",
+      "desc": "Kita bedah produk, landing page, dan history akun kamu sebelumnya. Dari sini kita tentukan platform mana yang paling realistis, estimasi seberapa \"panas\" produknya, dan berapa banyak akun cadangan yang perlu disiapin.",
+      "duration": "1-3 hari"
+    },
+    {
+      "step": "02",
+      "title": "Setup Akun & Infrastruktur",
+      "desc": "Kita siapin akun agency/trusted plus pool cadangan, pasang pixel & tracking, dan verifikasi domain. Semua di-warm-up dulu biar nggak langsung dicurigai pas spending naik.",
+      "duration": "3-7 hari"
+    },
+    {
+      "step": "03",
+      "title": "Launch & Stabilisasi",
+      "desc": "Kampanye full-funnel kita gas dengan budget terukur. Fokus minggu awal: cari pemenang creative & audience sambil jaga akun tetap hidup dan stabil.",
+      "duration": "Minggu 1-2"
+    },
+    {
+      "step": "04",
+      "title": "Scaling & Optimasi ROAS",
+      "desc": "Begitu ada kombinasi yang profit, kita scale budget bertahap, reallocate ke platform yang paling cuan, dan rotasi creative biar performa nggak loyo. Target: ROAS naik konsisten tanpa bikin akun cepat panas.",
+      "duration": "Berkelanjutan"
+    },
+    {
+      "step": "05",
+      "title": "Recovery & Replace Cycle",
+      "desc": "Kalau akun kena, kita langsung ajukan banding dan paralel pindahin kampanye ke akun cadangan di hari yang sama. Tujuannya satu: downtime nyaris nol, momentum spending nggak putus.",
+      "duration": "Same-day response"
+    }
+  ],
+  "stats": [
+    {
+      "value": "5",
+      "label": "Platform di-cover serentak"
+    },
+    {
+      "value": "ROAS 3-7x",
+      "label": "Range realistis di kampanye scaling"
+    },
+    {
+      "value": "< 24 jam",
+      "label": "Replace akun saat tumbang"
+    },
+    {
+      "value": "Rp 50jt+/hari",
+      "label": "Daily budget yang pernah di-handle"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Produk gue sering banget kena banned. Kalian beneran bisa bikin iklannya jalan?",
+      "a": "Bisa, dan itu memang spesialisasi kita. Bedanya bukan soal \"jurus rahasia\" instan, tapi infrastruktur: akun trusted dengan history bersih, manajemen kampanye yang disiplin biar nggak gampang dipencet, dan pool akun cadangan yang selalu ready. Jadi fokusnya bukan menjamin akun nggak pernah mati, tapi memastikan begitu mati, kampanye kamu langsung lanjut di akun lain tanpa kehilangan banyak momentum."
+    },
+    {
+      "q": "Akunnya bisa bertahan berapa lama?",
+      "a": "Jujur: tergantung produk, agresivitas scaling, dan platformnya. Untuk produk gray-area, umur akun bisa dari beberapa minggu sampai beberapa bulan. Justru karena itu kita kerja dengan asumsi akun = barang habis pakai dan selalu siapin cadangan. Yang kita optimalkan bukan umur satu akun, tapi total volume & profit yang bisa kamu tarik sebelum harus pindah."
+    },
+    {
+      "q": "Berapa ROAS yang realistis?",
+      "a": "Range yang sehat di kampanye scaling biasanya 3-7x, tergantung margin produk dan platform. Kita nggak akan janji ROAS dua digit yang nggak masuk akal. Yang kita lakukan: cut cepat kampanye yang boncos, gandakan yang profit, dan transparan soal angka tiap minggu biar kamu bisa hitung sendiri untung-ruginya."
+    },
+    {
+      "q": "Kalau akun kena banding, berapa lama recovery-nya?",
+      "a": "Banding kita ajukan secepatnya, tapi hasilnya di tangan platform — kadang menang, kadang nggak. Makanya kita nggak pernah cuma mengandalkan banding. Begitu satu akun tumbang, kampanye kamu kita pindahin ke akun cadangan di hari yang sama, jadi spending tetap jalan sambil banding diproses paralel."
+    },
+    {
+      "q": "Ini legal dan aman buat brand gue nggak?",
+      "a": "Ini jalur high-risk. Iklan agresif untuk produk yang sulit di-approve berarti kamu menerima kemungkinan akun di-disable, iklan ditolak, dan dalam kasus tertentu sanksi dari platform. Kita posisikan ini buat money site, dropship, atau campaign churn-and-burn — bukan buat brand utama yang reputasinya kamu jaga jangka panjang. Kalau kamu butuh jalur aman & berkelanjutan, kita arahkan ke divisi Putih kita."
+    },
+    {
+      "q": "Gimana soal kerahasiaan? Gue nggak mau identitas gue kebawa-bawa.",
+      "a": "Komunikasi bisa lewat kanal privat dan data kamu kita pegang seperlunya aja. Tapi kita transparan: nggak ada layanan iklan yang 100% anonim, karena platform tetap punya sistem tracking sendiri. Yang kita lakukan adalah memisahkan infrastruktur kampanye dari aset pribadi kamu sebisa mungkin."
+    },
+    {
+      "q": "Sistem pembayarannya gimana? Ada garansi?",
+      "a": "Fee manajemen dibayar di muka per bulan, terpisah dari ad spend (ad spend kamu yang tanggung langsung). Karena ini layanan high-risk, kita nggak kasih garansi akun-nggak-mati atau garansi ROAS — itu janji yang nggak jujur. Yang kita garansi: eksekusi sesuai paket, akun pengganti selalu kita usahakan ready, dan laporan transparan. Kalau di tengah jalan kamu mau stop, kita atur dengan jelas di kontrak."
+    },
+    {
+      "q": "Bedanya sama jasa Suhu Ads yang biasa apa?",
+      "a": "Suhu Ads (divisi Putih) main di akun & produk yang patuh policy, fokus brand jangka panjang dan akun yang stabil. Divisi Hitam ini khusus produk gray-area yang sering ditolak — kita main di akun trusted, siapin cadangan, dan jago recovery. Beda risiko, beda tujuan. Kalau ragu produk kamu masuk yang mana, konsultasi dulu, nanti kita kasih rekomendasi jujur."
+    }
+  ],
+  "riskNote": "Black-hat ads = high-risk high-reward. Akun bisa di-disable kapan aja, banding nggak selalu menang, dan platform berhak kasih sanksi — jadi layanan ini cocok untuk money site, dropship, atau campaign churn-and-burn, bukan brand utama yang reputasinya kamu jaga jangka panjang. Kita jual eksekusi rapi & recovery cepat, bukan jaminan akun abadi atau ROAS ajaib."
+}

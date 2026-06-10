@@ -7,11 +7,15 @@ import { Loader2 } from "lucide-react";
 import { createClient } from "@/lib/supabase/client";
 import { signUpAndConfirm } from "@/app/actions/auth";
 import { fbqTrack } from "@/lib/analytics";
+import { useT, useLocale } from "../i18n/LocaleProvider";
 
 export default function AuthForm({ mode }: { mode: "login" | "signup" }) {
   const router = useRouter();
   const params = useSearchParams();
   const redirect = params.get("redirect") || "/dashboard";
+  const dict = useT();
+  const locale = useLocale();
+  const ta = dict.auth;
 
   const [fullName, setFullName] = useState("");
   const [whatsapp, setWhatsapp] = useState("");
@@ -28,25 +32,21 @@ export default function AuthForm({ mode }: { mode: "login" | "signup" }) {
     const supabase = createClient();
 
     if (mode === "signup") {
-      const res = await signUpAndConfirm({
-        email,
-        password,
-        fullName,
-        whatsapp,
-        telegram,
-      });
+      const res = await signUpAndConfirm({ email, password, fullName, whatsapp, telegram });
       if (!res.ok) {
         setLoading(false);
-        return setError(res.error ?? "Gagal mendaftar.");
+        return setError(
+          res.error ?? (locale === "en" ? "Sign up failed." : "Gagal mendaftar."),
+        );
       }
-      // Account is auto-confirmed server-side — sign in immediately.
-      const { error } = await supabase.auth.signInWithPassword({
-        email,
-        password,
-      });
+      const { error } = await supabase.auth.signInWithPassword({ email, password });
       setLoading(false);
       if (error) {
-        return setError("Akun dibuat, tapi gagal login otomatis. Coba login manual.");
+        return setError(
+          locale === "en"
+            ? "Account created, but auto-login failed. Please sign in manually."
+            : "Akun dibuat, tapi gagal login otomatis. Coba login manual.",
+        );
       }
       fbqTrack("CompleteRegistration");
       fbqTrack("Lead");
@@ -55,12 +55,12 @@ export default function AuthForm({ mode }: { mode: "login" | "signup" }) {
       return;
     }
 
-    const { error } = await supabase.auth.signInWithPassword({
-      email,
-      password,
-    });
+    const { error } = await supabase.auth.signInWithPassword({ email, password });
     setLoading(false);
-    if (error) return setError("Email atau password salah.");
+    if (error)
+      return setError(
+        locale === "en" ? "Wrong email or password." : "Email atau password salah.",
+      );
     router.push(redirect);
     router.refresh();
   }
@@ -71,7 +71,7 @@ export default function AuthForm({ mode }: { mode: "login" | "signup" }) {
         <>
           <div>
             <label htmlFor="fullName" className="label">
-              Nama / Nama Bisnis
+              {ta.name}
             </label>
             <input
               id="fullName"
@@ -84,7 +84,7 @@ export default function AuthForm({ mode }: { mode: "login" | "signup" }) {
           </div>
           <div>
             <label htmlFor="whatsapp" className="label">
-              Nomor WhatsApp
+              {ta.whatsapp}
             </label>
             <input
               id="whatsapp"
@@ -97,7 +97,7 @@ export default function AuthForm({ mode }: { mode: "login" | "signup" }) {
           </div>
           <div>
             <label htmlFor="telegram" className="label">
-              Username Telegram
+              {ta.telegram}
             </label>
             <input
               id="telegram"
@@ -113,7 +113,7 @@ export default function AuthForm({ mode }: { mode: "login" | "signup" }) {
 
       <div>
         <label htmlFor="email" className="label">
-          Email
+          {ta.email}
         </label>
         <input
           id="email"
@@ -121,14 +121,14 @@ export default function AuthForm({ mode }: { mode: "login" | "signup" }) {
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           required
-          placeholder="kamu@email.com"
+          placeholder="you@email.com"
           className="input"
         />
       </div>
 
       <div>
         <label htmlFor="password" className="label">
-          Password
+          {ta.password}
         </label>
         <input
           id="password"
@@ -137,7 +137,7 @@ export default function AuthForm({ mode }: { mode: "login" | "signup" }) {
           onChange={(e) => setPassword(e.target.value)}
           required
           minLength={6}
-          placeholder="Minimal 6 karakter"
+          placeholder={ta.passwordHint}
           className="input"
         />
       </div>
@@ -152,28 +152,28 @@ export default function AuthForm({ mode }: { mode: "login" | "signup" }) {
         {loading ? (
           <>
             <Loader2 className="h-4 w-4 animate-spin" />
-            {mode === "signup" ? "Mendaftarkan…" : "Masuk…"}
+            {mode === "signup" ? ta.signingUp : ta.signingIn}
           </>
         ) : mode === "signup" ? (
-          "Daftar Sekarang"
+          ta.registerNow
         ) : (
-          "Masuk"
+          ta.signin
         )}
       </button>
 
       <p className="text-center text-sm text-white/50">
         {mode === "signup" ? (
           <>
-            Sudah punya akun?{" "}
+            {ta.haveAccount}{" "}
             <Link href="/login" className="text-hitam-blood-light hover:underline">
-              Masuk
+              {ta.signin}
             </Link>
           </>
         ) : (
           <>
-            Belum punya akun?{" "}
+            {ta.noAccount}{" "}
             <Link href="/signup" className="text-hitam-blood-light hover:underline">
-              Daftar gratis
+              {ta.registerFree}
             </Link>
           </>
         )}

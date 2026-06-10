@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import SectionHeading from "@/components/SectionHeading";
 import DomainMarketplace from "@/components/DomainMarketplace";
 import { createClient } from "@/lib/supabase/server";
+import { getServerT } from "@/lib/i18n.server";
 import type { AgedDomain } from "@/lib/types";
 
 export const metadata: Metadata = {
@@ -12,6 +13,7 @@ export const metadata: Metadata = {
 };
 
 export default async function AgedDomainsPage() {
+  const { t } = getServerT();
   const supabase = createClient();
   const { data } = await supabase
     .from("hitam_aged_domains")
@@ -24,10 +26,10 @@ export default async function AgedDomainsPage() {
     <div className="pt-32 lg:pt-40">
       <section className="container-w container-px">
         <SectionHeading
-          eyebrow="Marketplace"
-          title="Aged domain bersih,"
-          highlight="metrik real, siap pakai."
-          intro="Setiap domain sudah kami audit history & verifikasi metriknya. Pilih, tambah ke keranjang, checkout. Yang bagus cepat habis — gak ada restock untuk domain yang sama."
+          eyebrow={t.marketplace.eyebrow}
+          title={t.marketplace.title}
+          highlight={t.marketplace.titleHighlight}
+          intro={t.marketplace.intro}
         />
       </section>
 

@@ -4,20 +4,23 @@ import { useMemo, useState } from "react";
 import { Search, MessageCircle, ShieldCheck } from "lucide-react";
 import type { BacklinkSite } from "@/lib/types";
 import { waLink, cn } from "@/lib/utils";
-
-const KINDS: { key: string; label: string }[] = [
-  { key: "all", label: "Semua tipe" },
-  { key: "edu", label: "Edu (.ac.id/.co.id)" },
-  { key: "journal", label: "Jurnal Kampus" },
-  { key: "general", label: "Authority Umum" },
-];
+import { useT, useLocale } from "./i18n/LocaleProvider";
 
 const PER_PAGE = 60;
 
 export default function BacklinkList({ sites }: { sites: BacklinkSite[] }) {
+  const t = useT();
+  const locale = useLocale();
   const [q, setQ] = useState("");
   const [kind, setKind] = useState("all");
   const [page, setPage] = useState(1);
+
+  const KINDS: { key: string; label: string }[] = [
+    { key: "all", label: t.backlink.allTypes },
+    { key: "edu", label: t.backlink.typeEdu },
+    { key: "journal", label: t.backlink.typeJournal },
+    { key: "general", label: t.backlink.typeGeneral },
+  ];
 
   const filtered = useMemo(
     () =>
@@ -32,7 +35,9 @@ export default function BacklinkList({ sites }: { sites: BacklinkSite[] }) {
   );
   const shown = filtered.slice(0, page * PER_PAGE);
   const wa = waLink(
-    "Halo Para Suhu Hitam! Gua mau pasang backlink dari situs authority kalian. Boleh minta list lengkap + harga paketnya?",
+    locale === "en"
+      ? "Hi Para Suhu Hitam! I'd like to place backlinks from your authority sites. Can I get the full list + package pricing?"
+      : "Halo Para Suhu Hitam! Gua mau pasang backlink dari situs authority kalian. Boleh minta list lengkap + harga paketnya?",
   );
 
   return (
@@ -46,7 +51,7 @@ export default function BacklinkList({ sites }: { sites: BacklinkSite[] }) {
               setQ(e.target.value);
               setPage(1);
             }}
-            placeholder="Cari domain backlink…"
+            placeholder={t.backlink.searchPlaceholder}
             className="input pl-10"
           />
         </div>
@@ -65,12 +70,12 @@ export default function BacklinkList({ sites }: { sites: BacklinkSite[] }) {
           ))}
         </select>
         <a href={wa} target="_blank" rel="noopener noreferrer" className="btn-primary shrink-0">
-          <MessageCircle className="h-4 w-4" /> Pesan via WA
+          <MessageCircle className="h-4 w-4" /> {t.backlink.orderWa}
         </a>
       </div>
 
       <p className="mt-4 text-sm text-white/50">
-        {filtered.length} situs tersedia · diurutkan dari DA tertinggi
+        {filtered.length} {t.backlink.sitesAvailable}
       </p>
 
       <div className="mt-4 overflow-x-auto rounded-2xl border border-hitam-border">
@@ -82,18 +87,14 @@ export default function BacklinkList({ sites }: { sites: BacklinkSite[] }) {
               <th className="px-3 py-3 font-medium">PA</th>
               <th className="px-3 py-3 font-medium">DR</th>
               <th className="px-3 py-3 font-medium">Spam</th>
-              <th className="px-3 py-3 font-medium">Tipe</th>
+              <th className="px-3 py-3 font-medium">{locale === "en" ? "Type" : "Tipe"}</th>
             </tr>
           </thead>
           <tbody className="divide-y divide-hitam-border">
             {shown.map((s) => (
               <tr key={s.id} className="hover:bg-white/[0.02]">
-                <td className="break-all px-4 py-2.5 font-mono text-white/90">
-                  {s.domain}
-                </td>
-                <td className="px-3 py-2.5 font-mono font-semibold text-hitam-gold">
-                  {s.da}
-                </td>
+                <td className="break-all px-4 py-2.5 font-mono text-white/90">{s.domain}</td>
+                <td className="px-3 py-2.5 font-mono font-semibold text-hitam-gold">{s.da}</td>
                 <td className="px-3 py-2.5 font-mono text-white/70">{s.pa}</td>
                 <td className="px-3 py-2.5 font-mono text-white/70">{s.dr}</td>
                 <td className="px-3 py-2.5">
@@ -123,7 +124,7 @@ export default function BacklinkList({ sites }: { sites: BacklinkSite[] }) {
       {shown.length < filtered.length && (
         <div className="mt-6 text-center">
           <button onClick={() => setPage((p) => p + 1)} className="btn-ghost">
-            Tampilkan lebih banyak ({filtered.length - shown.length} lagi)
+            {t.backlink.showMore} ({filtered.length - shown.length} {t.backlink.more})
           </button>
         </div>
       )}

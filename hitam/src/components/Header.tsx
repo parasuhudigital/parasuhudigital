@@ -14,8 +14,10 @@ import {
   ArrowUpRight,
 } from "lucide-react";
 import Logo from "./Logo";
-import { NAV, SERVICE_META } from "@/lib/constants";
+import { SERVICE_META } from "@/lib/constants";
 import { useCart } from "./cart/CartProvider";
+import { useT } from "./i18n/LocaleProvider";
+import LanguageSwitcher from "./i18n/LanguageSwitcher";
 import { cn } from "@/lib/utils";
 
 export default function Header({
@@ -25,6 +27,7 @@ export default function Header({
   userEmail?: string | null;
   isAdmin?: boolean;
 }) {
+  const t = useT();
   const { count, ready } = useCart();
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -44,6 +47,11 @@ export default function Header({
     };
   }, [open]);
 
+  const extraNav = [
+    { label: t.nav.howItWorks, href: "/#cara-kerja" },
+    { label: t.nav.testimonials, href: "/#testimoni" },
+  ];
+
   return (
     <>
       <header
@@ -62,7 +70,7 @@ export default function Header({
               href="/aged-domains"
               className="px-3.5 py-2 text-sm text-white/75 transition-colors hover:text-white"
             >
-              Aged Domain
+              {t.nav.agedDomain}
             </Link>
 
             <div
@@ -74,7 +82,7 @@ export default function Header({
                 href="/jasa"
                 className="flex items-center gap-1 px-3.5 py-2 text-sm text-white/75 transition-colors hover:text-white"
               >
-                Layanan
+                {t.nav.services}
                 <ChevronDown
                   className={cn(
                     "h-3.5 w-3.5 transition-transform",
@@ -108,10 +116,10 @@ export default function Header({
                           />
                           <span>
                             <span className="block text-sm font-medium text-white group-hover:text-hitam-blood-light">
-                              {s.name}
+                              {t.serviceMeta[s.slug]?.name ?? s.name}
                             </span>
                             <span className="mt-0.5 line-clamp-1 block text-xs text-white/45">
-                              {s.short}
+                              {t.serviceMeta[s.slug]?.short ?? s.short}
                             </span>
                           </span>
                         </Link>
@@ -122,23 +130,25 @@ export default function Header({
               </AnimatePresence>
             </div>
 
-            {NAV.filter((n) => !["/aged-domains", "/jasa"].includes(n.href)).map(
-              (n) => (
-                <Link
-                  key={n.href}
-                  href={n.href}
-                  className="px-3.5 py-2 text-sm text-white/75 transition-colors hover:text-white"
-                >
-                  {n.label}
-                </Link>
-              ),
-            )}
+            {extraNav.map((n) => (
+              <Link
+                key={n.href}
+                href={n.href}
+                className="px-3.5 py-2 text-sm text-white/75 transition-colors hover:text-white"
+              >
+                {n.label}
+              </Link>
+            ))}
           </nav>
 
           <div className="flex items-center gap-2">
+            <div className="hidden md:block">
+              <LanguageSwitcher />
+            </div>
+
             <Link
               href="/cart"
-              aria-label="Keranjang"
+              aria-label={t.nav.cart}
               className="relative flex h-10 w-10 items-center justify-center rounded-full border border-white/10 text-white/80 transition-colors hover:border-hitam-blood/50 hover:text-white"
             >
               <ShoppingCart className="h-[18px] w-[18px]" />
@@ -157,7 +167,7 @@ export default function Header({
                     className="inline-flex items-center gap-1.5 rounded-full border border-hitam-blood/40 px-4 py-2 text-sm font-medium text-hitam-blood-light transition-colors hover:bg-hitam-blood/10"
                   >
                     <Shield className="h-4 w-4" />
-                    Admin
+                    {t.nav.admin}
                   </Link>
                 )}
                 <Link
@@ -165,7 +175,7 @@ export default function Header({
                   className="inline-flex items-center gap-1.5 rounded-full bg-hitam-blood px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-hitam-blood-light"
                 >
                   <LayoutDashboard className="h-4 w-4" />
-                  Dashboard
+                  {t.nav.dashboard}
                 </Link>
               </div>
             ) : (
@@ -174,10 +184,10 @@ export default function Header({
                   href="/login"
                   className="px-3.5 py-2 text-sm text-white/80 transition-colors hover:text-white"
                 >
-                  Masuk
+                  {t.nav.signin}
                 </Link>
                 <Link href="/signup" className="btn-primary px-5 py-2.5">
-                  Daftar
+                  {t.nav.register}
                   <ArrowUpRight className="h-4 w-4" />
                 </Link>
               </div>
@@ -185,7 +195,7 @@ export default function Header({
 
             <button
               onClick={() => setOpen(true)}
-              aria-label="Buka menu"
+              aria-label="Menu"
               className="flex h-10 w-10 items-center justify-center rounded-full border border-white/10 text-white lg:hidden"
             >
               <Menu className="h-5 w-5" />
@@ -207,7 +217,7 @@ export default function Header({
                 <Logo />
                 <button
                   onClick={() => setOpen(false)}
-                  aria-label="Tutup menu"
+                  aria-label="Close"
                   className="flex h-10 w-10 items-center justify-center rounded-full border border-white/10"
                 >
                   <X className="h-5 w-5" />
@@ -220,9 +230,12 @@ export default function Header({
                   onClick={() => setOpen(false)}
                   className="block py-3 font-display text-2xl font-semibold text-white"
                 >
-                  Aged Domain
+                  {t.nav.agedDomain}
                 </Link>
-                {NAV.filter((n) => n.href !== "/aged-domains").map((n) => (
+                {[
+                  { label: t.nav.services, href: "/jasa" },
+                  ...extraNav,
+                ].map((n) => (
                   <Link
                     key={n.href}
                     href={n.href}
@@ -235,7 +248,7 @@ export default function Header({
 
                 <div className="mt-6 border-t border-white/5 pt-6">
                   <p className="mb-3 font-mono text-[11px] uppercase tracking-[0.2em] text-hitam-blood">
-                    Jasa
+                    {t.nav.services}
                   </p>
                   {SERVICE_META.map((s) => (
                     <Link
@@ -244,9 +257,16 @@ export default function Header({
                       onClick={() => setOpen(false)}
                       className="block py-2 text-base text-white/70"
                     >
-                      {s.name}
+                      {t.serviceMeta[s.slug]?.name ?? s.name}
                     </Link>
                   ))}
+                </div>
+
+                <div className="mt-6 border-t border-white/5 pt-6">
+                  <p className="mb-3 font-mono text-[11px] uppercase tracking-[0.2em] text-hitam-blood">
+                    {t.nav.language}
+                  </p>
+                  <LanguageSwitcher />
                 </div>
               </nav>
 
@@ -259,7 +279,7 @@ export default function Header({
                         onClick={() => setOpen(false)}
                         className="btn-ghost w-full"
                       >
-                        <Shield className="h-4 w-4" /> Admin Panel
+                        <Shield className="h-4 w-4" /> {t.nav.admin}
                       </Link>
                     )}
                     <Link
@@ -267,7 +287,7 @@ export default function Header({
                       onClick={() => setOpen(false)}
                       className="btn-primary w-full"
                     >
-                      <LayoutDashboard className="h-4 w-4" /> Dashboard
+                      <LayoutDashboard className="h-4 w-4" /> {t.nav.dashboard}
                     </Link>
                   </>
                 ) : (
@@ -277,14 +297,14 @@ export default function Header({
                       onClick={() => setOpen(false)}
                       className="btn-ghost w-full"
                     >
-                      <LogIn className="h-4 w-4" /> Masuk
+                      <LogIn className="h-4 w-4" /> {t.nav.signin}
                     </Link>
                     <Link
                       href="/signup"
                       onClick={() => setOpen(false)}
                       className="btn-primary w-full"
                     >
-                      Daftar Sekarang
+                      {t.nav.register}
                     </Link>
                   </>
                 )}

@@ -1,9 +1,11 @@
 import { createPublicClient } from "@/lib/supabase/public";
 import SectionHeading from "./SectionHeading";
 import BacklinkList from "./BacklinkList";
+import { getServerT } from "@/lib/i18n.server";
 import type { BacklinkSite } from "@/lib/types";
 
 export default async function BacklinkInventory() {
+  const { t } = getServerT();
   const supabase = createPublicClient();
   const { data } = await supabase
     .from("hitam_backlink_sites")
@@ -16,10 +18,10 @@ export default async function BacklinkInventory() {
     <section className="border-y border-hitam-border bg-hitam-void">
       <div className="container-w container-px py-20 lg:py-24">
         <SectionHeading
-          eyebrow="Inventory Backlink"
-          title="Situs authority siap"
-          highlight="ditanami backlink kamu."
-          intro={`${sites.length}+ situs edu (.ac.id/.co.id), jurnal kampus, & authority DA tinggi — stok real yang siap dipasangi hidden backlink, blogroll, atau contextual link. Harga paket via chat.`}
+          eyebrow={t.backlink.eyebrow}
+          title={t.backlink.title}
+          highlight={t.backlink.titleHighlight}
+          intro={`${sites.length}${t.backlink.introA}`}
         />
         <BacklinkList sites={sites} />
       </div>

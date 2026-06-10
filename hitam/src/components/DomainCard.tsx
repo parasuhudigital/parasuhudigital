@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { ArrowUpRight, ShieldCheck, MessageCircle } from "lucide-react";
 import type { AgedDomain, DomainTier } from "@/lib/types";
+import type { Dict, Locale } from "@/lib/i18n";
 import { cn, waLink } from "@/lib/utils";
 import StatusBadge from "./StatusBadge";
 
@@ -42,11 +43,21 @@ function Metric({
   );
 }
 
-export default function DomainCard({ domain }: { domain: AgedDomain }) {
+export default function DomainCard({
+  domain,
+  t,
+  locale = "id",
+}: {
+  domain: AgedDomain;
+  t: Dict;
+  locale?: Locale;
+}) {
   const available = domain.status === "available";
   const tier = TIER[domain.tier] ?? TIER.regular;
   const wa = waLink(
-    `Halo Para Suhu Hitam! Gua tertarik aged domain *${domain.domain}* (DA ${domain.da} / DR ${domain.dr}). Masih ready? Berapa harganya?`,
+    locale === "en"
+      ? `Hi Para Suhu Hitam! I'm interested in aged domain *${domain.domain}* (DA ${domain.da} / DR ${domain.dr}). Still available? What's the price?`
+      : `Halo Para Suhu Hitam! Gua tertarik aged domain *${domain.domain}* (DA ${domain.da} / DR ${domain.dr}). Masih ready? Berapa harganya?`,
   );
 
   return (
@@ -74,11 +85,13 @@ export default function DomainCard({ domain }: { domain: AgedDomain }) {
           <span className="chip">{domain.niche}</span>
         )}
         {domain.age_years > 0 && (
-          <span className="chip">{domain.age_years} thn</span>
+          <span className="chip">
+            {domain.age_years} {t.common.years}
+          </span>
         )}
         {domain.spam_score <= 3 && (
           <span className="inline-flex items-center gap-1 rounded-full border border-suhu-emerald/30 bg-suhu-emerald/10 px-2 py-0.5 text-[10px] font-medium text-suhu-emerald">
-            <ShieldCheck className="h-3 w-3" /> Clean
+            <ShieldCheck className="h-3 w-3" /> {t.common.clean}
           </span>
         )}
       </div>
@@ -97,12 +110,12 @@ export default function DomainCard({ domain }: { domain: AgedDomain }) {
       </div>
 
       <div className="mt-5 flex items-center justify-between border-t border-hitam-border pt-4">
-        <span className="text-xs text-white/45">Harga: tanya via chat</span>
+        <span className="text-xs text-white/45">{t.common.priceAskChat}</span>
         <Link
           href={`/aged-domains/${domain.id}`}
           className="inline-flex items-center gap-1 text-sm text-white/60 transition-colors hover:text-white"
         >
-          Detail <ArrowUpRight className="h-4 w-4" />
+          {t.common.detail} <ArrowUpRight className="h-4 w-4" />
         </Link>
       </div>
 
@@ -113,14 +126,14 @@ export default function DomainCard({ domain }: { domain: AgedDomain }) {
           rel="noopener noreferrer"
           className="btn-primary mt-3 w-full"
         >
-          <MessageCircle className="h-4 w-4" /> Tertarik? Chat WA
+          <MessageCircle className="h-4 w-4" /> {t.common.interestedChatWa}
         </a>
       ) : (
         <button
           disabled
           className="mt-3 w-full cursor-not-allowed rounded-full border border-white/10 px-6 py-3 text-sm font-medium text-white/30"
         >
-          {domain.status === "sold" ? "Terjual" : "Sedang Dipesan"}
+          {domain.status === "sold" ? t.common.sold : t.common.reserved}
         </button>
       )}
     </div>

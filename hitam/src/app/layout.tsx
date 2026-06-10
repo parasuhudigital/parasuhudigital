@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Bricolage_Grotesque, Inter, JetBrains_Mono } from "next/font/google";
 import { CartProvider } from "@/components/cart/CartProvider";
 import MetaPixel from "@/components/MetaPixel";
+import { LocaleProvider } from "@/components/i18n/LocaleProvider";
+import { getLocale } from "@/lib/i18n.server";
 import { COMPANY } from "@/lib/constants";
 import "./globals.css";
 
@@ -55,14 +57,17 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  const locale = getLocale();
   return (
     <html
-      lang="id"
+      lang={locale}
       className={`${displayFont.variable} ${sansFont.variable} ${monoFont.variable}`}
     >
       <body className="bg-hitam-black font-sans text-white antialiased">
         <MetaPixel />
-        <CartProvider>{children}</CartProvider>
+        <LocaleProvider locale={locale}>
+          <CartProvider>{children}</CartProvider>
+        </LocaleProvider>
       </body>
     </html>
   );

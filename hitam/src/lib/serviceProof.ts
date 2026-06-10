@@ -1,3 +1,5 @@
+import type { Locale } from "./i18n";
+
 export type ProofConfig = {
   eyebrow: string;
   title: string;
@@ -8,12 +10,7 @@ export type ProofConfig = {
   caption: string;
 };
 
-/**
- * Per-service "bukti hasil" sections. Stats are real figures transcribed from
- * client dashboards (Search Console / Meta Ads Manager). Screenshots are loaded
- * from /public/proof/<slug>/01.png.. and auto-hidden until the files exist.
- */
-export const SERVICE_PROOF: Record<string, ProofConfig> = {
+const ID: Record<string, ProofConfig> = {
   "black-hat-seo": {
     eyebrow: "Bukti Hasil SEO",
     title: "Klien kami nangkring di",
@@ -27,8 +24,7 @@ export const SERVICE_PROOF: Record<string, ProofConfig> = {
       { value: "6+ niche", label: "Industri di-ranking" },
     ],
     imageCount: 8,
-    caption:
-      "Screenshot Google Search Console dari situs klien nyata (3 bulan terakhir).",
+    caption: "Screenshot Google Search Console dari situs klien nyata (3 bulan terakhir).",
   },
   "black-hat-ads": {
     eyebrow: "Bukti Hasil Ads",
@@ -43,8 +39,7 @@ export const SERVICE_PROOF: Record<string, ProofConfig> = {
       { value: "400+", label: "Ads aktif dikelola" },
     ],
     imageCount: 8,
-    caption:
-      "Screenshot Meta Ads Manager dari akun klien (angka & nama disamarkan).",
+    caption: "Screenshot Meta Ads Manager dari akun klien (angka & nama disamarkan).",
   },
   "landing-page": {
     eyebrow: "Contoh Hasil",
@@ -61,4 +56,57 @@ export const SERVICE_PROOF: Record<string, ProofConfig> = {
     imageCount: 6,
     caption: "Contoh landing page money site / affiliate garapan tim kami.",
   },
+};
+
+const EN: Record<string, ProofConfig> = {
+  "black-hat-seo": {
+    eyebrow: "SEO Results Proof",
+    title: "Our clients sit on",
+    highlight: "Google page 1.",
+    intro:
+      "Real data from Google Search Console, across niches — from catering to gensets, car rentals to shoes. Average position 6–7, impressions into the hundreds of thousands.",
+    stats: [
+      { value: "167K+", label: "Organic impressions / site" },
+      { value: "728", label: "Organic clicks / 3 months" },
+      { value: "Top 6–7", label: "Avg. Google position" },
+      { value: "6+ niches", label: "Industries ranked" },
+    ],
+    imageCount: 8,
+    caption: "Google Search Console screenshots from real client sites (last 3 months).",
+  },
+  "black-hat-ads": {
+    eyebrow: "Ads Results Proof",
+    title: "Thousands of leads from accounts everyone said",
+    highlight: "'can't get approved'.",
+    intro:
+      "Exported straight from Meta Ads Manager. Accounts stay live, budgets scale, leads keep flowing. CPL stays low even in tough niches.",
+    stats: [
+      { value: "2,900+", label: "Leads per account" },
+      { value: "550K+", label: "Impressions accumulated" },
+      { value: "$3–6", label: "Cost per lead" },
+      { value: "400+", label: "Active ads managed" },
+    ],
+    imageCount: 8,
+    caption: "Meta Ads Manager screenshots from client accounts (figures & names redacted).",
+  },
+  "landing-page": {
+    eyebrow: "Sample Work",
+    title: "Landing pages built to",
+    highlight: "convert, not just look pretty.",
+    intro:
+      "Ultra-fast AMP, ban-proof, copywriting that forces the click. Real money-site & affiliate landing pages our team built for aggressive campaigns.",
+    stats: [
+      { value: "<1 sec", label: "Loading time" },
+      { value: "AMP", label: "Google-friendly" },
+      { value: "Ban-proof", label: "Bulletproof hosting" },
+      { value: "A/B", label: "Variant testing" },
+    ],
+    imageCount: 6,
+    caption: "Sample money-site / affiliate landing pages built by our team.",
+  },
+};
+
+export const SERVICE_PROOF: Record<Locale, Record<string, ProofConfig>> = {
+  id: ID,
+  en: EN,
 };

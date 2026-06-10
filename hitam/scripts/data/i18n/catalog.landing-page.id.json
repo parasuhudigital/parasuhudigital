@@ -1,0 +1,187 @@
+{
+  "tagline": "Landing page kilat yang siap tempur buat campaign ads paling agresif.",
+  "heroBadge": "⚡ Load <1 Detik · Anti-Banned",
+  "heroTitle": "Landing Page AMP yang nge-load",
+  "heroTitleHighlight": "sebelum jempol kamu sempat scroll.",
+  "heroSubtitle": "Untuk kamu yang main di traffic mahal dan volume gede: setiap 100ms delay itu duit yang nguap. Kami bangun LP super ringan berbasis AMP — prelander, money page, A/B variant, hosting bulletproof — yang siap nelan traffic ads agresif tanpa loading lemot dan tanpa LP gampang tumbang.",
+  "intro": [
+    "Kalau kamu jalanin campaign di niche gambling, finance, health, atau affiliate, kamu tahu masalahnya bukan cuma bikin LP cantik. Masalahnya: LP harus nge-load instan biar bounce rate gak bunuh ROAS, harus tahan banting biar gak tumbang pas trafik lagi panas, dan harus convert dingin-dingin dari klik pertama. Landing page biasa yang berat 3 detik? Itu kuburan budget.",
+    "Kami fokus di satu hal: kecepatan eksekusi dan kecepatan halaman. AMP page yang load di bawah 1 detik, prelander/safe page yang nyaringin trafik, money page yang dioptimasi habis-habisan buat konversi, plus copywriting yang ditulis buat ngegerakin orang ambil tindakan — bukan buat dikagumi. Semua mobile-first, karena 90%+ trafik ads kamu dari HP.",
+    "Ini layanan high-risk high-reward. Cocok buat money site dan campaign churn-and-burn yang butuh LP cepat jadi, cepat live, dan tahan tekanan. Kami kasih kamu mesin konversi yang ngebut — strategi distribusi trafik dan kepatuhan platform tetap ada di tangan kamu."
+  ],
+  "features": [
+    "AMP page murni, render <1 detik bahkan di koneksi 3G",
+    "Prelander / safe page buat warming & filter kualitas trafik",
+    "Money page dengan funnel konversi yang diasah per niche",
+    "Copywriting konversi tinggi: headline, hook, CTA yang nendang",
+    "Hosting bulletproof anti-banned dengan uptime tinggi",
+    "A/B variant siap pakai buat split-test angle & offer",
+    "Mobile-first 100%, lulus Core Web Vitals di zona hijau",
+    "Tracking & pixel siap pasang (Meta, TikTok, Google, custom postback)",
+    "Struktur ringan: zero bloat, zero script sampah",
+    "Deploy kilat — LP pertama bisa live dalam hitungan hari"
+  ],
+  "packages": [
+    {
+      "name": "Sprint",
+      "priceLabel": "Mulai Rp 3,5jt",
+      "for": "Solo affiliate / single offer yang butuh 1 LP cepat live",
+      "includes": [
+        "1 AMP money page conversion-optimized",
+        "Copywriting konversi (1 angle)",
+        "Mobile-first responsive",
+        "Setup tracking & pixel dasar",
+        "Loading <1 detik tergaransi",
+        "Hosting standar 1 bulan"
+      ],
+      "popular": false
+    },
+    {
+      "name": "Blitz",
+      "priceLabel": "Mulai Rp 8,5jt",
+      "for": "Media buyer aktif yang butuh prelander + money page + split-test",
+      "includes": [
+        "Prelander/safe page + money page",
+        "Copywriting konversi (hingga 3 angle)",
+        "2 A/B variant siap split-test",
+        "Hosting bulletproof anti-banned",
+        "Tracking lengkap + postback affiliate",
+        "Core Web Vitals hijau + audit speed",
+        "Revisi cepat 2x dalam 14 hari"
+      ],
+      "popular": true
+    },
+    {
+      "name": "Brutal",
+      "priceLabel": "Rp 25jt+",
+      "for": "Tim agresif & high-volume buyer yang gas banyak offer sekaligus",
+      "includes": [
+        "Multi-LP system (prelander + multi money page)",
+        "Copywriting konversi unlimited angle",
+        "A/B variant scalable + framework testing",
+        "Hosting bulletproof premium, multi-domain",
+        "Funnel & tracking arsitektur custom",
+        "Dashboard performa + monitoring uptime",
+        "Priority deploy + revisi cepat 30 hari",
+        "Konsultasi optimasi konversi mingguan"
+      ],
+      "popular": false
+    }
+  ],
+  "deliverables": [
+    {
+      "title": "Aset Halaman",
+      "items": [
+        "File AMP page valid & lulus AMP test",
+        "Prelander/safe page siap live",
+        "Money page conversion-optimized",
+        "Set A/B variant per angle/offer",
+        "Source file + akses edit"
+      ]
+    },
+    {
+      "title": "Copy & Konversi",
+      "items": [
+        "Headline & sub-headline bertingkat",
+        "Body copy persuasif per angle",
+        "CTA & microcopy yang dioptimasi",
+        "Struktur funnel dari hook ke closing"
+      ]
+    },
+    {
+      "title": "Infrastruktur & Tracking",
+      "items": [
+        "Hosting bulletproof anti-banned + domain pointing",
+        "Setup pixel (Meta, TikTok, Google)",
+        "Postback & event tracking affiliate",
+        "Laporan speed (PageSpeed / Core Web Vitals)",
+        "Panduan deploy & rollover variant"
+      ]
+    }
+  ],
+  "process": [
+    {
+      "step": "01",
+      "title": "Brief & Recon",
+      "desc": "Kami bedah offer, niche, target trafik, dan angle. Kamu kasih akses tracker & aset; kami susun blueprint LP dan struktur funnel.",
+      "duration": "1-2 hari"
+    },
+    {
+      "step": "02",
+      "title": "Copy & Desain Konversi",
+      "desc": "Tim copywriter racik headline, hook, dan CTA. Desain mobile-first disusun ringan tanpa elemen yang bikin lemot.",
+      "duration": "2-4 hari"
+    },
+    {
+      "step": "03",
+      "title": "Build AMP & Setup Hosting",
+      "desc": "Halaman dibangun murni AMP, divalidasi, lalu di-deploy ke hosting bulletproof. Tracking & pixel dipasang dan dites.",
+      "duration": "2-3 hari"
+    },
+    {
+      "step": "04",
+      "title": "QA Speed & A/B Variant",
+      "desc": "Uji load <1 detik di berbagai device, validasi Core Web Vitals, siapkan A/B variant buat split-test angle.",
+      "duration": "1-2 hari"
+    },
+    {
+      "step": "05",
+      "title": "Go-Live & Optimasi",
+      "desc": "LP live dan siap nelan trafik. Kami pantau performa, bantu rotasi variant, dan tuning konversi sesuai paket.",
+      "duration": "Ongoing"
+    }
+  ],
+  "stats": [
+    {
+      "value": "<1 detik",
+      "label": "Waktu load LP di mobile"
+    },
+    {
+      "value": "3-7 hari",
+      "label": "LP pertama live & siap gas"
+    },
+    {
+      "value": "90+",
+      "label": "Skor PageSpeed mobile rata-rata"
+    },
+    {
+      "value": "99,9%",
+      "label": "Uptime hosting bulletproof"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "AMP itu apa dan kenapa penting buat campaign ads?",
+      "a": "AMP (Accelerated Mobile Pages) adalah format halaman super ringan yang render hampir instan di mobile. Buat campaign ads, ini krusial: makin cepat LP load, makin kecil bounce rate, makin tinggi konversi, dan makin sehat ROAS kamu. Trafik ads itu mahal — kamu gak mau kehilangan klik gara-gara loading lemot."
+    },
+    {
+      "q": "Apa beda prelander, safe page, dan money page?",
+      "a": "Prelander/safe page adalah halaman antara buat warming trafik dan nyaringin pengunjung sebelum mereka masuk ke money page — halaman utama tempat konversi terjadi. Kombinasi keduanya bikin funnel kamu lebih bersih dan angka konversi lebih stabil."
+    },
+    {
+      "q": "Hosting bulletproof beneran anti-banned?",
+      "a": "Kami pakai infrastruktur hosting yang dirancang tahan banting dengan uptime tinggi, cocok buat niche berisiko. Tapi jujur: tidak ada yang 100% kebal. 'Anti-banned' artinya jauh lebih tahan dan stabil dibanding hosting biasa, bukan jaminan mutlak. Kami transparan soal ini di depan."
+    },
+    {
+      "q": "Apakah kalian kasih instruksi cloaking atau cara ngakalin deteksi platform?",
+      "a": "Tidak. Kami bangun aset LP cepat, konversi tinggi, dan tahan banting — itu fokus kami. Strategi distribusi trafik dan kepatuhan terhadap kebijakan platform sepenuhnya tanggung jawab dan keputusan kamu sebagai operator campaign."
+    },
+    {
+      "q": "Ada garansi konversi?",
+      "a": "Kami garansi deliverable teknis: load <1 detik, AMP valid, mobile-first, dan A/B variant siap pakai. Soal angka konversi, itu dipengaruhi offer, kualitas trafik, dan angle kamu — yang kami pegang adalah ngasih mesin LP terbaik plus framework testing biar kamu bisa optimasi cepat."
+    },
+    {
+      "q": "Gimana soal anonimitas dan kerahasiaan project?",
+      "a": "Kerahasiaan dijaga penuh. Detail offer, niche, dan campaign kamu tidak kami bagikan ke pihak ketiga atau dijadikan portfolio publik tanpa izin. Komunikasi bisa lewat channel terenkripsi sesuai preferensi kamu."
+    },
+    {
+      "q": "Pembayaran gimana? Bisa crypto?",
+      "a": "Kami terima transfer bank dan e-wallet. Untuk crypto (USDT/BTC) bisa diatur per kesepakatan. Skema standar: DP di awal buat mulai build, pelunasan sebelum LP final di-handover dan di-deploy."
+    },
+    {
+      "q": "Berapa cepat LP bisa live?",
+      "a": "LP pertama biasanya live dalam 3-7 hari kerja tergantung paket dan kompleksitas funnel. Paket Brutal dapat priority deploy biar kamu bisa gas multiple offer lebih cepat."
+    }
+  ],
+  "riskNote": "Layanan ini high-risk high-reward, didesain buat money site dan campaign churn-and-burn — bukan brand jangka panjang. Kamu bertanggung jawab penuh atas legalitas offer, kepatuhan platform, dan regulasi di wilayah operasi kamu; kami menyediakan aset teknis, bukan jaminan hasil atau nasihat hukum."
+}

@@ -1,15 +1,11 @@
-const STATS = [
-  { value: "500+", label: "Money site dibantu naik" },
-  { value: "±14 hari", label: "Rata-rata nembus page 1" },
-  { value: "30+", label: "Aged domain ready stock" },
-  { value: "100%", label: "Anonim & rahasia" },
-];
+import { getServerT } from "@/lib/i18n.server";
 
 export default function Stats() {
+  const { t } = getServerT();
   return (
     <section className="border-y border-hitam-border bg-hitam-void">
       <div className="container-w container-px grid grid-cols-2 gap-8 py-14 lg:grid-cols-4">
-        {STATS.map((s) => (
+        {t.stats.map((s) => (
           <div key={s.label} className="text-center">
             <div className="font-display text-4xl font-bold text-gradient-blood lg:text-5xl">
               {s.value}

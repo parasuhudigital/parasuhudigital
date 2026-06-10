@@ -1,9 +1,10 @@
 import SectionHeading from "./SectionHeading";
 import ProofGallery from "./ProofGallery";
 import { SERVICE_PROOF } from "@/lib/serviceProof";
+import { getLocale } from "@/lib/i18n.server";
 
 export default function ServiceProof({ slug }: { slug: string }) {
-  const p = SERVICE_PROOF[slug];
+  const p = SERVICE_PROOF[getLocale()][slug];
   if (!p) return null;
 
   return (

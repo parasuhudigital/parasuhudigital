@@ -6,6 +6,7 @@ import { createClient } from "@/lib/supabase/server";
 import type { AgedDomain } from "@/lib/types";
 import { waLink } from "@/lib/utils";
 import StatusBadge from "@/components/StatusBadge";
+import TrackView from "@/components/TrackView";
 
 export async function generateMetadata({
   params,
@@ -56,6 +57,7 @@ export default async function DomainDetailPage({
 
   return (
     <div className="pt-32 lg:pt-40">
+      <TrackView event="ViewContent" params={{ content_name: d.domain, content_category: "aged-domain" }} />
       <div className="container-w container-px">
         <Link
           href="/aged-domains"

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Bricolage_Grotesque, Inter, JetBrains_Mono } from "next/font/google";
 import { CartProvider } from "@/components/cart/CartProvider";
+import MetaPixel from "@/components/MetaPixel";
 import { COMPANY } from "@/lib/constants";
 import "./globals.css";
 
@@ -60,6 +61,7 @@ export default function RootLayout({
       className={`${displayFont.variable} ${sansFont.variable} ${monoFont.variable}`}
     >
       <body className="bg-hitam-black font-sans text-white antialiased">
+        <MetaPixel />
         <CartProvider>{children}</CartProvider>
       </body>
     </html>

@@ -12,6 +12,7 @@ import { getService, serviceSlugs } from "@/lib/catalog";
 import { ServiceIcon } from "@/components/iconMap";
 import ServiceProof from "@/components/ServiceProof";
 import BacklinkInventory from "@/components/BacklinkInventory";
+import TrackView from "@/components/TrackView";
 import { waLink, cn } from "@/lib/utils";
 import type { ServiceAccent } from "@/lib/constants";
 
@@ -54,6 +55,7 @@ export default function ServicePage({
 
   return (
     <div className="pt-32 lg:pt-40">
+      <TrackView event="ViewContent" params={{ content_name: s.name, content_category: "jasa" }} />
       {/* Hero */}
       <section className="container-w container-px">
         <div className="relative">

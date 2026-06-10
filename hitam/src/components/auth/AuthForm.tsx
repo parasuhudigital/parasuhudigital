@@ -6,6 +6,7 @@ import { useRouter, useSearchParams } from "next/navigation";
 import { Loader2 } from "lucide-react";
 import { createClient } from "@/lib/supabase/client";
 import { signUpAndConfirm } from "@/app/actions/auth";
+import { fbqTrack } from "@/lib/analytics";
 
 export default function AuthForm({ mode }: { mode: "login" | "signup" }) {
   const router = useRouter();
@@ -47,6 +48,8 @@ export default function AuthForm({ mode }: { mode: "login" | "signup" }) {
       if (error) {
         return setError("Akun dibuat, tapi gagal login otomatis. Coba login manual.");
       }
+      fbqTrack("CompleteRegistration");
+      fbqTrack("Lead");
       router.push(redirect);
       router.refresh();
       return;

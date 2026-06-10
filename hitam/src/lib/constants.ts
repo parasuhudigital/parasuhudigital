@@ -7,6 +7,8 @@ export const COMPANY = {
   email: "info@parasuhudigital.com",
   whatsapp: process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "6285353723905",
   whatsappDisplay: "+62 853-5372-3905",
+  telegram: "callmeagentax",
+  telegramDisplay: "@callmeagentax",
   siteUrl: process.env.NEXT_PUBLIC_SITE_URL || "https://hitam.parasuhudigital.com",
   parentSite: "https://parasuhudigital.com",
   year: 2026,

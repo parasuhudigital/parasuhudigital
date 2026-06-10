@@ -94,6 +94,16 @@ export default function Footer() {
               </li>
               <li>
                 <a
+                  href={`https://t.me/${COMPANY.telegram}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="transition-colors hover:text-white"
+                >
+                  Telegram {COMPANY.telegramDisplay}
+                </a>
+              </li>
+              <li>
+                <a
                   href={`mailto:${COMPANY.email}`}
                   className="transition-colors hover:text-white"
                 >

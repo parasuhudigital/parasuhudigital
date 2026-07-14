@@ -26,7 +26,7 @@ export default function MetaPixel() {
       const target = e.target as HTMLElement | null;
       const anchor = target?.closest?.("a");
       const href = anchor?.getAttribute("href") ?? "";
-      if (href.startsWith("https://wa.me/") || href.startsWith("https://t.me/")) {
+      if (href.startsWith("https://wa.me/") || href.startsWith("https://telegram.me/")) {
         if (typeof window.fbq === "function") {
           window.fbq("track", "Contact");
           window.fbq("track", "Lead");

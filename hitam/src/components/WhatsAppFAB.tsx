@@ -72,7 +72,7 @@ export default function WhatsAppFAB() {
       ? "Hi Para Suhu Hitam! I'd like to ask about your services."
       : "Halo Para Suhu Hitam! Gua mau tanya-tanya soal jasa kalian nih.",
   );
-  const tg = `https://t.me/${COMPANY.telegram}`;
+  const tg = `https://telegram.me/${COMPANY.telegram}`;
 
   return (
     <>

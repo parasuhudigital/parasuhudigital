@@ -103,7 +103,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href={`https://t.me/${COMPANY.telegram}`}
+                  href={`https://telegram.me/${COMPANY.telegram}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="transition-colors hover:text-white"
